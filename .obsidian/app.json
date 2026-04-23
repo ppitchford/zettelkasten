@@ -3,5 +3,6 @@
   "alwaysUpdateLinks": true,
   "openBehavior": "daily",
   "newFileLocation": "folder",
-  "newFileFolderPath": "inbox"
+  "newFileFolderPath": "inbox",
+  "promptDelete": false
 }

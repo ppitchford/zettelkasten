@@ -1,6 +1,8 @@
 ---
 id:
 date:
+aliases:
+  - "{{title}}"
 ---
 # Title
 > What is the single idea this note captures?

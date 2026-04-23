@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/20260325144335.md",
+                "file": "notes/20260325150246.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260325144335"
+              "title": "20260325150246"
             }
           }
         ]
@@ -84,6 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notes/20260325150246.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +94,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 20260325150246"
             }
           },
           {
@@ -158,32 +159,33 @@
   },
   "active": "6f44707b1cae0a94",
   "lastOpenFiles": [
-    "notes/sedafJLoj",
+    "notes/20260325144335.md",
+    "inbox/20260423111415.md",
+    "inbox/20260422102309.md",
+    "inbox/20260423111706.md",
+    "inbox/20260423111913.md",
+    "inbox/20260423112440.md",
+    "inbox/20260423113014.md",
+    "inbox/20260423113629.md",
+    "inbox/20260423114152.md",
+    "journal/20260325000000.md",
+    "inbox/id.md",
+    "inbox/a-zettel-is-atomic-and-self-contained.md",
+    "notes/20260421125305.md",
+    "notes/20260422102309.md",
+    "notes/20260422104107.md",
+    "notes/20260422105550.md",
+    "templates/daily.md",
+    "templates/index.md",
+    "templates/note.md",
     "notes/20260402142853.md",
     "notes/20260325150246.md",
+    "notes/sedafJLoj",
     "notes/20260402143352.md",
     "notes/20260402145825.md",
     "notes/20260402150916.md",
     "notes/20260402154729.md",
     "notes/20260403150637.md",
-    "notes/20260421125041.md",
-    "notes/20260421125144.md",
-    "notes/20260421125305.md",
-    "notes/20260421125339.md",
-    "notes/20260422102309.md",
-    "notes/20260422104107.md",
-    "notes/20260422105550.md",
-    "inbox/20260422102309.md",
-    "notes/20260325144335.md",
-    "templates/note.md",
-    "templates/daily.md",
-    "templates/index.md",
-    "inbox/id.md",
-    "inbox/a-zettel-is-atomic-and-self-contained.md",
-    "journal/20260413000000.md",
-    "attachments",
-    "journal/20260402000000.md",
-    "journal/20260401000000.md",
-    "journal/20260331000000.md"
+    "attachments"
   ]
 }
