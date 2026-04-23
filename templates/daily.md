@@ -1,9 +1,7 @@
 ---
-id: {{id}}
-date: {{date}}
+id:
+date:
 ---
-
-# {{date}}
 > What happened today worth remembering?
 > What did you learn, observe, or think about?
 

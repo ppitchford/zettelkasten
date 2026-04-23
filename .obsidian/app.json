@@ -1,0 +1,7 @@
+{
+  "attachmentFolderPath": "attachments",
+  "alwaysUpdateLinks": true,
+  "openBehavior": "daily",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "inbox"
+}
