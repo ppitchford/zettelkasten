@@ -1,6 +1,6 @@
 ---
-id:
-date:
+id: {{date:YYYYMMDDHHmmss}}
+date: {{date:YYYY-MM-DD}}
 ---
 # Title
 > What cluster of ideas does this entry point into?

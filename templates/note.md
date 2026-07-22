@@ -1,7 +1,6 @@
 ---
-id:
-  "{ date }":
-date:
+id: {{date:YYYYMMDDHHmmss}}
+date: {{date:YYYY-MM-DD}}
 aliases:
 ---
 # Title
