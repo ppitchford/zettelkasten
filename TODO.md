@@ -17,10 +17,10 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
 - [x] Retire `journal/`: stop generating daily journal notes; the weekly note is now both plan and record. *(done in Phase 1: daily-notes disabled, `daily-notes.json` cleared, `journal/` removed.)*
 - [x] Establish the **calendar** as a thin appointment layer only (time-bound events, not a task store). *(documented as the Task system section in `Style guide.md`.)*
 
-### 3. Reading inbox
-- [ ] Create the **reading-inbox note** with an explicit header stating it is *lossy* — skim, pull what still compels, let the rest fall away without guilt.
-- [ ] Populate it with the routed backlog items (see Appendix A).
-- [ ] (Optional) Adopt the Obsidian **Web Clipper** for future capture straight into the inbox.
+### 3. Reading inbox — ✅ core done (3.3 deferred)
+- [x] Create the **reading-inbox note** with an explicit header stating it is *lossy* — skim, pull what still compels, let the rest fall away without guilt. *(`Reading inbox.md`.)*
+- [x] Populate it with the routed backlog items (see Appendix A). *(29 items, plain bullets; dups collapsed — also settles the Phase 6 dedup line.)*
+- [ ] (Optional) Adopt the Obsidian **Web Clipper** for future capture straight into the inbox. *(deferred — install/config when wanted.)*
 
 ### 4. Projects
 - [ ] Create **`Projects.md`** index listing active projects, each linking to its note.
