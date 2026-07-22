@@ -1,5 +1,7 @@
 [
   "obsidian-contextual-typography",
   "obsidian-smart-typography",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "templater-obsidian",
+  "obsidian-git"
 ]
