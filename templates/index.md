@@ -1,5 +1,5 @@
 ---
-id: {{date:YYYYMMDDHHmmss}}
+id: "{{date:YYYYMMDDHHmmss}}"
 date: {{date:YYYY-MM-DD}}
 ---
 # Title
