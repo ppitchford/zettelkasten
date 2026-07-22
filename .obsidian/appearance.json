@@ -1,8 +1,9 @@
 {
-  "cssTheme": "Minimal",
+  "cssTheme": "Sanctum",
   "showViewHeader": false,
-  "interfaceFontFamily": "Inter",
-  "textFontFamily": "Source Code Pro",
-  "monospaceFontFamily": "Source Code Pro",
-  "accentColor": "#776a95"
+  "interfaceFontFamily": "Helvetica",
+  "textFontFamily": "iA Writer Quattro S",
+  "monospaceFontFamily": "CommitMono Nerd Font",
+  "accentColor": "",
+  "showRibbon": true
 }
