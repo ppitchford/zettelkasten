@@ -4,5 +4,6 @@
   "openBehavior": "daily",
   "newFileLocation": "folder",
   "newFileFolderPath": "inbox",
-  "promptDelete": false
+  "promptDelete": false,
+  "showInlineTitle": false
 }
