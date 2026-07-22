@@ -28,3 +28,10 @@ A note body stays grounded in its single source. Original synthesis and cross-so
 
 ## Frontmatter
 `id` and `date` are scaffolded by the Unique note creator from `templates/note`. `aliases` carries the human-readable title so backlinks read as prose rather than timestamps. Titles are written by hand after the idea is fully formed — never auto-generated.
+
+## Task system
+One weekly-note stream plus project notes, with the calendar as a thin appointment layer.
+
+- **Weekly notes** (`log/GGGG-[W]WW`) are both plan and record: a Plan section of `- [ ]` tasks up top, optional `## YYYY-MM-DD` day subheadings below for the inline record. Undone items roll forward to next week or drop — a plan, not a debt ledger. Notes created or developed in a day are linked under that day, giving each note a dated provenance trail.
+- **Projects** live in their own notes, indexed by `Projects.md`. A task tied to a project belongs in the project note; surface its next action into the week only when you intend to do it.
+- **Calendar** holds only time-bound events — appointments and dated deadlines. It is never a task store. If a thing isn't tied to a clock, it goes in a weekly note or a project, not the calendar.
