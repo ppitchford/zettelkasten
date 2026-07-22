@@ -12,10 +12,10 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
 - [x] Update path-qualified internal links to bare wikilinks (batch script — reuse the alias-injection approach); verify no broken links after the move. *(also converted 9 Markdown-style links to wikilinks; 39 links verified, 0 broken.)*
 - [x] Convert template frontmatter from `zk` `{{id}}`/`{{date}}` placeholders to Obsidian Templates syntax; retires the carried-over YAML warnings. *(dropped templater for the core Unique note creator; ids quoted so they register as text.)*
 
-### 2. Task system
-- [ ] Create a **weekly-note template**: plan section up top, optional `## YYYY-MM-DD` daily subheadings for the inline record; undone items roll forward or drop.
-- [ ] Retire `journal/`: stop generating daily journal notes; the weekly note is now both plan and record.
-- [ ] Establish the **calendar** as a thin appointment layer only (time-bound events, not a task store).
+### 2. Task system — ✅ done
+- [x] Create a **weekly-note template**: plan section up top, optional `## YYYY-MM-DD` daily subheadings for the inline record; undone items roll forward or drop. *(`templates/weekly.md`; notes live in `log/`, ISO-week named, created via core Templates; created notes linked under their day for provenance.)*
+- [x] Retire `journal/`: stop generating daily journal notes; the weekly note is now both plan and record. *(done in Phase 1: daily-notes disabled, `daily-notes.json` cleared, `journal/` removed.)*
+- [x] Establish the **calendar** as a thin appointment layer only (time-bound events, not a task store). *(documented as the Task system section in `Style guide.md`.)*
 
 ### 3. Reading inbox
 - [ ] Create the **reading-inbox note** with an explicit header stating it is *lossy* — skim, pull what still compels, let the rest fall away without guilt.
