@@ -1,4 +1,5 @@
 {
   "format": "YYYYMMDDHHmmss",
-  "template": "templates/note"
+  "template": "templates/note",
+  "folder": ""
 }
