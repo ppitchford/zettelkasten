@@ -46,7 +46,7 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
   - Spilhaus print → Someday (office, post-remodel).
   - Cog-vs-replicate decision → calendar (manual — conversation scheduled tomorrow).
   - Find a Mindful alternative → revisit in ~a month (calendar reminder, manual).
-- [ ] Add to **calendar**: Maeve builds (crib, mobile arm, bookcase) against their target date. *(manual — external calendar.)*
+- [x] Handle **Maeve builds** (crib, mobile arm, bookcase): they are multi-week projects, so the grouped project note `projects/Maeve builds.md` holds the build steps and the calendar holds only the shared target date (manual, external). *(step shells to fill.)*
 
 **Collaborative follow-ups (one at a time, interactive):**
 - [ ] Develop the **translation-device** seed into a real note.

@@ -14,3 +14,4 @@ Active projects, each linking to its note. A project note holds the full task li
 - [[Medicine cabinet install]] — bathroom install (next: clear-coat the pieces)
 - [[Kitchen shelf]] — shelf build and install (next: round the corner)
 - [[Desktop made for one]] — single-user desktop environment (proof-of-concept)
+- [[Maeve builds]] — nursery woodworking: crib, mobile arm, bookcase (target-dated)
