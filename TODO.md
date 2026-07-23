@@ -31,14 +31,19 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
 - [x] Create project note: **Kitchen shelf** — ordered next action surfaced (see Appendix B).
 - [x] Create project note: **Desktop "made for one"** (proof-of-concept) — next action; link to its seed note. *(Seed note is Phase 5; forward-linked as `[[Desktop made for one — seed]]`.)*
 
-### 5. Someday park, seed notes & misc routing
-- [ ] Create **`Someday.md`** park (inert, promotable; skimmed on random-revisit, not a queue); populate from Appendix C.
-- [ ] Create seed note: **real-time translation device** (triangular, dual e-ink).
-- [ ] Create seed note: **Desktop "made for one"** (idea side); link to its project note.
-- [ ] Create reference note: **grimdark paints/technique** pulled from the listed videos.
-- [ ] (Optional) Create recipe note: **Santa Maria seasoning**.
-- [ ] Add to **this week's** note: Pay IRS penalty, Juniper kit pickup, valve estimates (×3), Six Types of Working Genius, bene_crafts Patreon, Spilhaus print, Cog-vs-replicate decision, find a Mindful alternative.
-- [ ] Add to **calendar**: Maeve builds (crib, mobile arm, bookcase) against their target date.
+### 5. Someday park, seed notes & misc routing — mostly done
+- [x] Create **`Someday.md`** park (inert, promotable; skimmed on random-revisit, not a queue); populate from Appendix C.
+- [x] Create seed note: **real-time translation device** (triangular, dual e-ink). *(shell only — develop collaboratively, below.)*
+- [x] Create seed note: **Desktop "made for one"** (idea side); link to its project note. *(shell only — develop collaboratively, below.)*
+- [x] Create reference note: **grimdark paints/technique**. *(source-pointer to the Bene_Crafts Patreon; guides are paywalled, so distill technique when accessed.)*
+- [x] (Optional) Create recipe note: **Santa Maria seasoning**. *(full recipe + substitution + references.)*
+- [ ] **Route the actionable items** (from the previous Someday list): Pay IRS penalty, Juniper kit pickup, valve estimates (×3), Six Types of Working Genius, bene_crafts Patreon, Spilhaus print, Cog-vs-replicate decision, find a Mindful alternative. *(placement TBD — weekly note vs a general tracker; not yet routed.)*
+- [ ] Add to **calendar**: Maeve builds (crib, mobile arm, bookcase) against their target date. *(manual — external calendar.)*
+
+**Collaborative follow-ups (one at a time, interactive):**
+- [ ] Develop the **translation-device** seed into a real note.
+- [ ] Develop the **Desktop made-for-one** seed into a real note.
+- [ ] Distill **grimdark technique** from the Bene_Crafts guides into its reference note.
 
 ### 6. Backlog cleanup & verification
 - [ ] Do **not** migrate: "genuine joy…" (already written), "Monotasking" (already drafted).
