@@ -10,7 +10,7 @@ tags:
 
 Nursery woodworking for Maeve — three multi-week builds against a shared target date. The steps live here; the calendar holds only the target completion date as an all-day event.
 
-**Status:** active
+**Status:** planned
 **Next action:** _(fill — first step of whichever build starts)_
 **Target date:** _(fill — also an all-day calendar event)_
 

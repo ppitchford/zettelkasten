@@ -14,12 +14,12 @@ The active and planned projects. A project note holds the full task list and the
 - [[ArtSpacesSoCal]] — roadmap revisit + task sync
 - [[Medicine cabinet install]] — bathroom install (next: clear-coat the pieces)
 - [[Kitchen shelf]] — shelf build and install (next: round the corner)
-- [[Desktop made for one]] — single-user desktop environment (proof-of-concept)
-- [[Maeve builds]] — nursery woodworking: crib, mobile arm, bookcase (target-dated)
 
 ## Planned (next 6 months)
 Committed to start within the horizon, not yet active. Promote into Active — a full note, next actions surfaced into a weekly plan — when work begins. No empty shells: a planned project stays a line here until it has real scope or starts.
 
+- [[Maeve builds]] — nursery woodworking: crib, mobile arm, bookcase (target-dated)
+- [[Desktop made for one]] — single-user desktop environment (proof-of-concept)
 - Build a fireplace surround
 - Grow a bonsai tree (for Maeve)
 - Create an online prediction market for everyday people's issues

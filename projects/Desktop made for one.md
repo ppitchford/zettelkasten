@@ -10,7 +10,7 @@ tags:
 
 Proof-of-concept for a desktop environment built for a single user rather than a general audience.
 
-**Status:** active — proof-of-concept
+**Status:** planned — proof-of-concept
 **Next action:** define the proof-of-concept scope
 
 ## Tasks
