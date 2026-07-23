@@ -40,3 +40,4 @@ An inert park of things that might one day be worth doing. **This is not a queue
 
 ## Home
 - Smart-home replacement (doorbell / lock / cameras / thermostat)
+- Spilhaus print for the office (once remodeled)

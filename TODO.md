@@ -37,7 +37,15 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
 - [x] Create seed note: **Desktop "made for one"** (idea side); link to its project note. *(shell only — develop collaboratively, below.)*
 - [x] Create reference note: **grimdark paints/technique**. *(source-pointer to the Bene_Crafts Patreon; guides are paywalled, so distill technique when accessed.)*
 - [x] (Optional) Create recipe note: **Santa Maria seasoning**. *(full recipe + substitution + references.)*
-- [ ] **Route the actionable items** (from the previous Someday list): Pay IRS penalty, Juniper kit pickup, valve estimates (×3), Six Types of Working Genius, bene_crafts Patreon, Spilhaus print, Cog-vs-replicate decision, find a Mindful alternative. *(placement TBD — weekly note vs a general tracker; not yet routed.)*
+- [x] **Route the actionable items** (from the previous Someday list):
+  - Pay IRS penalty → calendar (manual — deadline).
+  - Juniper kit pickup → already completed.
+  - Valve estimates (×3) → calendar, future date (manual — a 2-year-horizon improvement).
+  - Six Types of Working Genius → Reading inbox.
+  - bene_crafts Patreon → already captured in the grimdark note.
+  - Spilhaus print → Someday (office, post-remodel).
+  - Cog-vs-replicate decision → calendar (manual — conversation scheduled tomorrow).
+  - Find a Mindful alternative → revisit in ~a month (calendar reminder, manual).
 - [ ] Add to **calendar**: Maeve builds (crib, mobile arm, bookcase) against their target date. *(manual — external calendar.)*
 
 **Collaborative follow-ups (one at a time, interactive):**

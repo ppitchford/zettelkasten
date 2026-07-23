@@ -43,3 +43,4 @@ When something here earns real thought, it graduates: process it into a note
 - Master Claude Code: Proven Daily Workflows from 3 Technical Founders — video
 - Set up Claude Code for maximum productivity
 - Use AI agents like employees
+- Six Types of Working Genius
