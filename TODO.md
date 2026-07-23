@@ -22,14 +22,14 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
 - [x] Populate it with the routed backlog items (see Appendix A). *(29 items, plain bullets; dups collapsed — also settles the Phase 6 dedup line.)*
 - [ ] (Optional) Adopt the Obsidian **Web Clipper** for future capture straight into the inbox. *(deferred — install/config when wanted.)*
 
-### 4. Projects
-- [ ] Create **`Projects.md`** index listing active projects, each linking to its note.
-- [ ] Create project note: **`frame`** (screenshot tool) — fold the 15 roadmap items into internal Tier 1 / Tier 2 (Post-v1) / Tier 3 (Parked) sections (see Appendix B).
-- [ ] Create project note: **Personal Website** — tasks: revisit roadmap in Claude, implement Plausible analytics.
-- [ ] Create project note: **ArtSpacesSoCal** — task: revisit roadmap in Claude, sync tasks to actual roadmap.
-- [ ] Create project note: **Medicine-cabinet install** — ordered next action surfaced (see Appendix B).
-- [ ] Create project note: **Kitchen shelf** — ordered next action surfaced (see Appendix B).
-- [ ] Create project note: **Desktop "made for one"** (proof-of-concept) — next action; link to its seed note.
+### 4. Projects — ✅ done
+- [x] Create **`Projects.md`** index listing active projects, each linking to its note.
+- [x] Create project note: **`frame`** (screenshot tool). *(Points to the living `~/projects/frame/ROADMAP.md` as source of truth — Tier 1 shipped, Tier 2 gate open — rather than copying it. The Appendix B "15 items" list was stale.)*
+- [x] Create project note: **Personal Website** — tasks: revisit roadmap in Claude, implement Plausible analytics.
+- [x] Create project note: **ArtSpacesSoCal** — task: revisit roadmap in Claude, sync tasks to actual roadmap.
+- [x] Create project note: **Medicine-cabinet install** — ordered next action surfaced (see Appendix B).
+- [x] Create project note: **Kitchen shelf** — ordered next action surfaced (see Appendix B).
+- [x] Create project note: **Desktop "made for one"** (proof-of-concept) — next action; link to its seed note. *(Seed note is Phase 5; forward-linked as `[[Desktop made for one — seed]]`.)*
 
 ### 5. Someday park, seed notes & misc routing
 - [ ] Create **`Someday.md`** park (inert, promotable; skimmed on random-revisit, not a queue); populate from Appendix C.
