@@ -54,10 +54,10 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
 - [ ] Develop the **Desktop made-for-one** seed into a real note.
 - [ ] Distill **grimdark technique** from the Bene_Crafts guides into its reference note.
 
-### 6. Backlog cleanup & verification
-- [ ] Do **not** migrate: "genuine joy…" (already written), "Monotasking" (already drafted).
-- [ ] Collapse duplicates to one reading-inbox entry each: "The peril of laziness lost", "You Can't Tell People Anything" (= Habitat Chronicles).
-- [ ] Final pass: confirm every Things3 item is accounted for and Things3 lists can be archived.
+### 6. Backlog cleanup & verification — ✅ done
+- [x] Do **not** migrate: "genuine joy…" (already written — the surface-acting / anhedonia cluster), "Monotasking" (not migrated; not in the Reading inbox — the draft lives outside this vault, confirm before archiving).
+- [x] Collapse duplicates to one reading-inbox entry each: "The peril of laziness lost", "You Can't Tell People Anything" (= Habitat Chronicles). *(single entries verified.)*
+- [x] Final pass: every appendix item accounted for — Appendix A (29) all in the Reading inbox, Appendix C all in Someday (counts 7/4/2/5/2/2), Appendix B covered by the frame/Medicine-cabinet/Kitchen-shelf notes. **Things3 lists can be archived** (pending the Monotasking-draft confirmation above).
 
 ## Notes
 - **Reading inbox is lossy by design.** ~three dozen items is fine *if* it's a skim-and-shed capture, not a must-finish debt ledger. That framing is the whole safeguard.
