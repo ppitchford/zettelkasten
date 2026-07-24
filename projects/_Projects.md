@@ -22,10 +22,9 @@ Committed to start within the horizon, not yet active. Promote into Active — a
 - [[Desktop made for one]] — single-user desktop environment (proof-of-concept)
 - Build a fireplace surround. Include lists for materials, cuts, and the work breakdown structure.
 - Grow a bonsai tree (for Maeve)
-- Create an online prediction market for everyday people's issues
+- Create an online prediction market for everyday people's issues, similar to those found on the r/AITAH subreddit.
 - Build a super-forecaster for student success
-- Create and online prediction market for average people’s issues similar to the one’s found on the “r/AITAH” subreddit.
-- Set up a systems for tracking one-time and recurring expenses associated to the house (1673 Archer).
+- Set up a system for tracking one-time and recurring expenses for the house (1673 Archer).
 
 ## Someday
 An inert park of things that might one day be worth doing. **This is not a queue.** Nothing here is owed. Skim it on a random revisit, and if one item has quietly grown a real thought or a real pull, promote it — into a seed note, a project, or a weekly plan. Everything else stays parked without guilt, and parking something is a legitimate resting place, not a deferral of a debt.
