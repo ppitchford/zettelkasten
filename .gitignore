@@ -1,1 +1,5 @@
 .zk/
+
+# Per-device Obsidian UI state — churns on every device, causes sync conflicts
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

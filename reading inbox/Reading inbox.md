@@ -6,13 +6,21 @@ aliases:
 ---
 # Reading inbox
 
-**This is a lossy inbox — by design.** Skim it, pull what still compels you, and
-let the rest fall away without guilt. It is a capture surface, not a reading debt
-to clear. An item you never come back to has done its job by not surviving. Don't
-count it, don't finish it, don't feel it looming.
+This folder **is** the reading inbox: each item is an article clipped here by the
+Obsidian Web Clipper — full text plus its source URL — kept out of the root zettel
+space until it earns real thought.
 
-When something here earns real thought, it graduates: process it into a note
-(collaboratively, one at a time) and delete the line. Everything else is free to rot.
+**It is lossy by design.** Skim the folder, pull what still compels you, and let the
+rest fall away without guilt. It is a capture surface, not a reading debt to clear.
+A clip you never come back to has done its job by not surviving — delete it freely.
+Don't count them, don't finish them, don't feel them looming.
+
+When a clip earns real thought, it **graduates**: we process it into a zettel
+(collaboratively, one at a time), mint the note's own `id`, and delete the clip.
+
+## Legacy backlog (pre-clipper)
+Titles routed from Things3 before the clipper existed — no URLs, just names. Same
+lossy rule: re-clip what still pulls at you, ignore the rest.
 
 - Separate Writing and Formatting
 - How to Record and Retrieve Anything You've Ever Had to Look Up Twice

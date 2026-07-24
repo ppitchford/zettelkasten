@@ -59,6 +59,13 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
 - [x] Collapse duplicates to one reading-inbox entry each: "The peril of laziness lost", "You Can't Tell People Anything" (= Habitat Chronicles). *(single entries verified.)*
 - [x] Final pass: every appendix item accounted for — Appendix A (29) all in the Reading inbox, Appendix C all in Someday (counts 7/4/2/5/2/2), Appendix B covered by the frame/Medicine-cabinet/Kitchen-shelf notes. **Things3 lists can be archived** (pending the Monotasking-draft confirmation above).
 
+### 7. Capture pipeline, mobile access & workflow migration — 🚧 in progress
+- [x] **Clip model decided:** one note per article into the `reading inbox/` folder — external clips stay out of the root zettel space until they graduate. Clip frontmatter is `title`/`source`/`author`/`published`/`created` (no `id`/`tags` at capture; mint the `id` on graduation).
+- [x] **Reconcile the folder vs. note collision:** `Reading inbox.md` moved into `reading inbox/` as the folder's index/manifesto; the 30 pre-clipper titles parked under a "Legacy backlog" heading. Root note space is clean; no links broke.
+- [x] **Web Clipper — fixed.** Root cause was the AppImage's `obsidian.desktop` handler missing the `%u` field code, so Firefox launched Obsidian with no URL → vault picker, no note. Added `%u` to the `Exec=` line + `update-desktop-database`; clips now land in `reading inbox/`. Extension set to Vault `zettelkasten`, Note location `reading inbox/`.
+- [ ] **Mobile git sync (iOS).** Remote is SSH — unusable on iOS. Create a fine-grained GitHub PAT (repo `zettelkasten`, Contents R/W), then `obsidian-git` **Clone** over HTTPS into a fresh mobile vault; user `ppitchford`, password = token.
+- [ ] **Migrate existing notes/workflow to the new capture flow.** Walk the current notes and document the intended day-to-day loop (capture → skim/shed → graduate).
+
 ## Notes
 - **Reading inbox is lossy by design.** ~three dozen items is fine *if* it's a skim-and-shed capture, not a must-finish debt ledger. That framing is the whole safeguard.
 - **Seed-note discipline:** promote a parked item to a seed note only when there's a real thought to write — an empty seed note is the same anti-pattern as a forced link.

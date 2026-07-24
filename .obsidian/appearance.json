@@ -5,5 +5,6 @@
   "textFontFamily": "iA Writer Quattro S",
   "monospaceFontFamily": "CommitMono Nerd Font",
   "accentColor": "",
-  "showRibbon": true
+  "showRibbon": true,
+  "baseFontSize": 14
 }

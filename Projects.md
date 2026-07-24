@@ -20,7 +20,9 @@ Committed to start within the horizon, not yet active. Promote into Active — a
 
 - [[Maeve builds]] — nursery woodworking: crib, mobile arm, bookcase (target-dated)
 - [[Desktop made for one]] — single-user desktop environment (proof-of-concept)
-- Build a fireplace surround
+- Build a fireplace surround. Include lists for materials, cuts, and the work breakdown structure.
 - Grow a bonsai tree (for Maeve)
 - Create an online prediction market for everyday people's issues
 - Build a super-forecaster for student success
+- Create and online prediction market for average people’s issues similar to the one’s found on the “r/AITAH” subreddit.
+- Set up a systems for tracking one-time and recurring expenses associated to the house (1673 Archer).
