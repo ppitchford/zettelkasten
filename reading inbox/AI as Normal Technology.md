@@ -2,7 +2,7 @@
 title: "AI as Normal Technology"
 source: "https://www.instapaper.com/read/2026183558"
 author:
-  - "[[Arvind Narayanan]]"
+  - "Arvind Narayanan"
 published: 91 min
 created: 2026-07-24
 ---

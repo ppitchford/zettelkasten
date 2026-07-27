@@ -2,7 +2,7 @@
 title: "Collections: The Late Bronze Age Collapse, A Very Brief Introduction"
 source: "https://www.instapaper.com/read/2027531060"
 author:
-  - "[[Bret Devereaux]]"
+  - "Bret Devereaux"
 published: 26 min
 created: 2026-07-24
 ---

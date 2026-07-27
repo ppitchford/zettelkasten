@@ -2,8 +2,8 @@
 title: "Surrender as a non-stupid life strategy"
 source: "https://www.instapaper.com/read/2022790663"
 author:
-  - "[[Sasha ChapinJun 23]]"
-  - "[[2026]]"
+  - "Sasha ChapinJun 23"
+  - "2026"
 published: 9 min
 created: 2026-07-24
 ---

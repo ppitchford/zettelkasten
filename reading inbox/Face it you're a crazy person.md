@@ -2,7 +2,7 @@
 title: "Face it: you're a crazy person"
 source: "https://www.instapaper.com/read/1997498595"
 author:
-  - "[[Adam Mastroianni]]"
+  - "Adam Mastroianni"
 published: 15 min
 created: 2026-07-24
 ---

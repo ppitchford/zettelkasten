@@ -2,7 +2,7 @@
 title: "People who had placed online bets on the war tried to get a reporter to rewrite his story"
 source: "https://www.instapaper.com/read/2026183603"
 author:
-  - "[[By]]"
+  - "By"
 published: 3 min
 created: 2026-07-24
 ---

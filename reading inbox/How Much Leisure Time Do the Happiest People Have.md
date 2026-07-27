@@ -2,7 +2,7 @@
 title: "How Much Leisure Time Do the Happiest People Have?"
 source: "https://www.instapaper.com/read/2023020357"
 author:
-  - "[[Joe Pinsker]]"
+  - "Joe Pinsker"
 published: 5 min
 created: 2026-07-24
 ---

@@ -2,8 +2,8 @@
 title: "Get Phones Out of Schools Now"
 source: "https://www.instapaper.com/read/2023019738"
 author:
-  - "[[Jonathan Haidt]]"
-  - "[[Jean M. Twenge]]"
+  - "Jonathan Haidt"
+  - "Jean M. Twenge"
 published: 14 min
 created: 2026-07-24
 ---

@@ -2,7 +2,7 @@
 title: "Natural — Derek Wessman Blog"
 source: "https://www.instapaper.com/read/2024740742"
 author:
-  - "[[derekwessman.com]]"
+  - "derekwessman.com"
 published: 15 min
 created: 2026-07-24
 ---

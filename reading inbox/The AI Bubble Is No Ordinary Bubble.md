@@ -2,7 +2,7 @@
 title: "The AI Bubble Is No Ordinary Bubble"
 source: "https://www.instapaper.com/read/2029151832"
 author:
-  - "[[Annie Lowrey]]"
+  - "Annie Lowrey"
 published: 6 min
 created: 2026-07-24
 ---

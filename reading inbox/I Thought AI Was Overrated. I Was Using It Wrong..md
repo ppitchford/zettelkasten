@@ -2,7 +2,7 @@
 title: "I Thought AI Was Overrated. I Was Using It Wrong."
 source: "https://www.instapaper.com/read/1997503216"
 author:
-  - "[[Avinash Shekar]]"
+  - "Avinash Shekar"
 published: 3 min
 created: 2026-07-24
 ---

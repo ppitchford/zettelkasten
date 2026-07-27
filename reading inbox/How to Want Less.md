@@ -2,7 +2,7 @@
 title: "How to Want Less"
 source: "https://www.instapaper.com/read/2024594276"
 author:
-  - "[[Arthur C. Brooks]]"
+  - "Arthur C. Brooks"
 published: 26 min
 created: 2026-07-24
 ---

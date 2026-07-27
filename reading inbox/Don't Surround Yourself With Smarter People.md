@@ -2,7 +2,7 @@
 title: "Don't Surround Yourself With Smarter People"
 source: "https://www.instapaper.com/read/2023162641"
 author:
-  - "[[Venkat]]"
+  - "Venkat"
 published: 18 min
 created: 2026-07-24
 ---

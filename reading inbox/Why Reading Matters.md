@@ -2,7 +2,7 @@
 title: "Why Reading Matters"
 source: "https://www.instapaper.com/read/2027530877"
 author:
-  - "[[Study Hacks]]"
+  - "Study Hacks"
 published: 3 min
 created: 2026-07-24
 ---

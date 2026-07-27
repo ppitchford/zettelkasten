@@ -2,7 +2,7 @@
 title: "‘There’s this deep mystery of what, actually, is this thing?’: the philosopher inside Google DeepMind AI"
 source: "https://www.instapaper.com/read/2025265780"
 author:
-  - "[[Robert P Baird]]"
+  - "Robert P Baird"
 published: 29 min
 created: 2026-07-24
 ---

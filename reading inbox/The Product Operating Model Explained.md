@@ -2,7 +2,7 @@
 title: "The Product Operating Model Explained"
 source: "https://www.instapaper.com/read/2025257103"
 author:
-  - "[[Itamar Gilad]]"
+  - "Itamar Gilad"
 published: 9 min
 created: 2026-07-24
 ---

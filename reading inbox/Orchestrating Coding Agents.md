@@ -2,7 +2,7 @@
 title: "Orchestrating Coding Agents"
 source: "https://www.instapaper.com/read/2000215052"
 author:
-  - "[[Melty Labs]]"
+  - "Melty Labs"
 published: 61 min
 created: 2026-07-24
 ---

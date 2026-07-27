@@ -2,7 +2,7 @@
 title: "Backseat Software – Mike Swanson's Blog"
 source: "https://www.instapaper.com/read/1997498650"
 author:
-  - "[[Dmitri Zdorov]]"
+  - "Dmitri Zdorov"
 published: 16 min
 created: 2026-07-24
 ---

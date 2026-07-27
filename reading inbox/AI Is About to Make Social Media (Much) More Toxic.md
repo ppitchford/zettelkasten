@@ -2,8 +2,8 @@
 title: "AI Is About to Make Social Media (Much) More Toxic"
 source: "https://www.instapaper.com/read/2023019766"
 author:
-  - "[[Jonathan Haidt]]"
-  - "[[Eric Schmidt]]"
+  - "Jonathan Haidt"
+  - "Eric Schmidt"
 published: 15 min
 created: 2026-07-24
 ---

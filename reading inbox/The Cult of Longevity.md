@@ -2,7 +2,7 @@
 title: "The Cult of Longevity"
 source: "https://www.instapaper.com/read/2029152247"
 author:
-  - "[[David Runciman]]"
+  - "David Runciman"
 published: 27 min
 created: 2026-07-24
 ---

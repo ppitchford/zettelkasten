@@ -2,7 +2,7 @@
 title: "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting"
 source: "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git?utm_source=hackernewsletter&utm_medium=email&utm_term=startup_news"
 author:
-  - "[[Ryan Merket]]"
+  - "Ryan Merket"
 published: 2026-07-21
 created: 2026-07-24
 ---

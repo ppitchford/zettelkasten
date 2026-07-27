@@ -2,8 +2,8 @@
 title: "Your AI Is Not a Tool"
 source: "https://www.instapaper.com/read/2022790677"
 author:
-  - "[[L. M. SacasasJun 21]]"
-  - "[[2026]]"
+  - "L. M. SacasasJun 21"
+  - "2026"
 published: 11 min
 created: 2026-07-24
 ---

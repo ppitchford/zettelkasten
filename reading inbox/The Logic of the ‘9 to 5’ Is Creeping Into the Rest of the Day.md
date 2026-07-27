@@ -2,7 +2,7 @@
 title: "The Logic of the ‘9 to 5’ Is Creeping Into the Rest of the Day"
 source: "https://www.instapaper.com/read/2023020322"
 author:
-  - "[[Julie Beck]]"
+  - "Julie Beck"
 published: 9 min
 created: 2026-07-24
 ---

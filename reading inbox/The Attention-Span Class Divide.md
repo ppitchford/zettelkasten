@@ -2,7 +2,7 @@
 title: "The Attention-Span Class Divide"
 source: "https://www.instapaper.com/read/2029151769"
 author:
-  - "[[Xochitl Gonzalez]]"
+  - "Xochitl Gonzalez"
 published: 7 min
 created: 2026-07-24
 ---

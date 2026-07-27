@@ -2,7 +2,7 @@
 title: "Workism Is Making Americans Miserable"
 source: "https://www.instapaper.com/read/2023020371"
 author:
-  - "[[Derek Thompson]]"
+  - "Derek Thompson"
 published: 13 min
 created: 2026-07-24
 ---

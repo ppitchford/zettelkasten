@@ -2,7 +2,7 @@
 title: "What You Won't Learn About the Odyssey from a Movie"
 source: "https://www.instapaper.com/read/2026009675"
 author:
-  - "[[Ted Gioia]]"
+  - "Ted Gioia"
 published: 7 min
 created: 2026-07-24
 ---

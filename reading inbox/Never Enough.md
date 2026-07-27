@@ -2,7 +2,7 @@
 title: "Never Enough"
 source: "https://dark.ronacher.eu/2026/7/21/never-enough/?utm_source=hackernewsletter&utm_medium=email&utm_term=fav"
 author:
-  - "[[Armin Ronacher]]"
+  - "Armin Ronacher"
 published: 2026-07-21
 created: 2026-07-24
 ---

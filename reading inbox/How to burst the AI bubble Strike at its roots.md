@@ -2,7 +2,7 @@
 title: "How to burst the AI bubble: Strike at its roots"
 source: "https://www.instapaper.com/read/2023638740"
 author:
-  - "[[Ars Technica]]"
+  - "Ars Technica"
 published: 21 min
 created: 2026-07-24
 ---

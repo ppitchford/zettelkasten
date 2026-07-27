@@ -2,7 +2,7 @@
 title: "Show, Don’t Tell: A Llama PM's guide to writing GenAI evals - Daniel D. McKinnon"
 source: "https://www.instapaper.com/read/1997499366"
 author:
-  - "[[dmckinno@gmail.com]]"
+  - "dmckinno@gmail.com"
 published: 10 min
 created: 2026-07-24
 ---

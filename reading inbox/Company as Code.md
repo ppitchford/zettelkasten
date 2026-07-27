@@ -2,7 +2,7 @@
 title: "Company as Code"
 source: "https://www.instapaper.com/read/1997503180"
 author:
-  - "[[Daniel Rothmann]]"
+  - "Daniel Rothmann"
 published: 8 min
 created: 2026-07-24
 ---

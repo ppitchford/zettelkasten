@@ -2,7 +2,7 @@
 title: "Maybe you’re not Actually Trying"
 source: "https://www.instapaper.com/read/1997503329"
 author:
-  - "[[Cate Hall]]"
+  - "Cate Hall"
 published: 7 min
 created: 2026-07-24
 ---

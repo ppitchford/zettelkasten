@@ -2,7 +2,7 @@
 title: "How to Embrace Doing Nothing"
 source: "https://www.instapaper.com/read/2023020312"
 author:
-  - "[[Arthur C. Brooks]]"
+  - "Arthur C. Brooks"
 published: 7 min
 created: 2026-07-24
 ---

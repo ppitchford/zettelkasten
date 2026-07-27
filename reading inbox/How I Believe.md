@@ -2,7 +2,7 @@
 title: "How I Believe"
 source: "https://www.instapaper.com/read/1997498817"
 author:
-  - "[[Mills Baker]]"
+  - "Mills Baker"
 published: 18 min
 created: 2026-07-24
 ---

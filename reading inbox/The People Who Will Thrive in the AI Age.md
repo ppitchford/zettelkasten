@@ -2,7 +2,7 @@
 title: "The People Who Will Thrive in the AI Age"
 source: "https://www.instapaper.com/read/2025265839"
 author:
-  - "[[David Brooks]]"
+  - "David Brooks"
 published: 16 min
 created: 2026-07-24
 ---

@@ -2,8 +2,8 @@
 title: "Climbing the Claude ladder: from prompting to orchestrating"
 source: "https://www.instapaper.com/read/2000214564"
 author:
-  - "[[Garrett]]"
-  - "[[31 Mar 2026]]"
+  - "Garrett"
+  - "31 Mar 2026"
 published: 11 min
 created: 2026-07-24
 ---

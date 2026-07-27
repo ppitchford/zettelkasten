@@ -2,7 +2,7 @@
 title: "How I built Timeframe, our family e-paper dashboard"
 source: "https://www.instapaper.com/read/1997503369"
 author:
-  - "[[Joel Hawksley]]"
+  - "Joel Hawksley"
 published: 7 min
 created: 2026-07-24
 ---

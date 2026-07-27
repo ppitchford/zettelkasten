@@ -2,8 +2,8 @@
 title: "If You Build It, They Will Come"
 source: "https://www.instapaper.com/read/2029151810"
 author:
-  - "[[Ben Landau-TaylorJul 17]]"
-  - "[[2026]]"
+  - "Ben Landau-TaylorJul 17"
+  - "2026"
 published: 2 min
 created: 2026-07-24
 ---

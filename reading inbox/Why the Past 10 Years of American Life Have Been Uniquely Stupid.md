@@ -2,7 +2,7 @@
 title: "Why the Past 10 Years of American Life Have Been Uniquely Stupid"
 source: "https://www.instapaper.com/read/2023019712"
 author:
-  - "[[Jonathan Haidt]]"
+  - "Jonathan Haidt"
 published: 35 min
 created: 2026-07-24
 ---

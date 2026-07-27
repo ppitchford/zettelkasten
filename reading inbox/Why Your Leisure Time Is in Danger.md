@@ -2,7 +2,7 @@
 title: "Why Your Leisure Time Is in Danger"
 source: "https://www.instapaper.com/read/2023020394"
 author:
-  - "[[Krzysztof Pelc]]"
+  - "Krzysztof Pelc"
 published: 8 min
 created: 2026-07-24
 ---

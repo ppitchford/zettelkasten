@@ -2,8 +2,8 @@
 title: "The UK is a cautionary tale for the U.S."
 source: "https://www.instapaper.com/read/2029151887"
 author:
-  - "[[Noah SmithJul 20]]"
-  - "[[2026]]"
+  - "Noah SmithJul 20"
+  - "2026"
 published: 14 min
 created: 2026-07-24
 ---

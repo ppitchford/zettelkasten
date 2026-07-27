@@ -2,7 +2,7 @@
 title: "Why I Write | The Orwell Foundation"
 source: "https://www.instapaper.com/read/2023162614"
 author:
-  - "[[orwellfoundation.com]]"
+  - "orwellfoundation.com"
 published: 12 min
 created: 2026-07-24
 ---

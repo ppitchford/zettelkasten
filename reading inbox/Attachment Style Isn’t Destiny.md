@@ -2,7 +2,7 @@
 title: "Attachment Style Isn’t Destiny"
 source: "https://www.instapaper.com/read/2022793334"
 author:
-  - "[[Faith Hill]]"
+  - "Faith Hill"
 published: 7 min
 created: 2026-07-24
 ---

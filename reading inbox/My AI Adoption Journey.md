@@ -2,7 +2,7 @@
 title: "My AI Adoption Journey"
 source: "https://www.instapaper.com/read/1997503134"
 author:
-  - "[[mitchellh.com]]"
+  - "mitchellh.com"
 published: 10 min
 created: 2026-07-24
 ---

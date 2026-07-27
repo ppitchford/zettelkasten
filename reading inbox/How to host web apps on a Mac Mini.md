@@ -2,7 +2,7 @@
 title: "How to host web apps on a Mac Mini"
 source: "https://www.instapaper.com/read/2024123006"
 author:
-  - "[[philipithomas.com]]"
+  - "philipithomas.com"
 published: 6 min
 created: 2026-07-24
 ---

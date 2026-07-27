@@ -2,8 +2,8 @@
 title: "Anatomy of the .claude/ Folder"
 source: "https://www.instapaper.com/read/1998721738"
 author:
-  - "[[Avi ChawlaMar 23]]"
-  - "[[2026]]"
+  - "Avi ChawlaMar 23"
+  - "2026"
 published: 8 min
 created: 2026-07-24
 ---

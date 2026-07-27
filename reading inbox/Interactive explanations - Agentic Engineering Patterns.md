@@ -2,7 +2,7 @@
 title: "Interactive explanations - Agentic Engineering Patterns"
 source: "https://www.instapaper.com/read/1997503973"
 author:
-  - "[[Simon Willison]]"
+  - "Simon Willison"
 published: 3 min
 created: 2026-07-24
 ---

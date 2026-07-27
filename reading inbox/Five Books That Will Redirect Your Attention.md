@@ -2,7 +2,7 @@
 title: "Five Books That Will Redirect Your Attention"
 source: "https://www.instapaper.com/read/2024591200"
 author:
-  - "[[Rhian Sasseen]]"
+  - "Rhian Sasseen"
 published: 6 min
 created: 2026-07-24
 ---

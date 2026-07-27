@@ -2,7 +2,7 @@
 title: "How to write good prompts"
 source: "https://www.instapaper.com/read/2002116605"
 author:
-  - "[[Andy Matuschak]]"
+  - "Andy Matuschak"
 published: 54 min
 created: 2026-07-24
 ---
