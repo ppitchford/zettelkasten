@@ -1,0 +1,111 @@
+---
+id: "20260727000000"
+date: 2026-07-27
+aliases:
+  - Log
+---
+# Log
+
+The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, a thought with legs to a `#seedling` note, the rest kept as record or deleted.
+
+## 2026-07-27
+- Retired the weekly-note stream in favor of this single running log.
+
+**To route (carried from the last weekly plan):**
+- [ ] Make hotel reservation for our drive from UT to CA.
+- [ ] Request Shane Peters forward his emails with the City of San Marcos.
+- [ ] Forward Shane's emails to Rachel to send to the lawyer for review.
+- [ ] Audit your task manager (Things3) and migrate tasks to Obsidian (Upcoming; Areas & Projects).
+- [ ] Update the name of Ornatus to SGDW (Solar Gradient Desktop Wallpaper).
+- [ ] Add tasks with dates and recurring tasks to your Google Calendar.
+- [ ] Schedule an appointment with a Primary Care doctor to establish care, have an annual physical, and have blood/lab work completed.
+- [ ] Determine what systems to use for class management, payments, etc. #yoga-studio
+- [ ] Review data in your Apple Passwords app.
+- [ ] After your review, migrate the remaining data from Apple Passwords to your 1Password vault. #waiting
+- [ ] Organize your bathroom cabinets. #waiting 
+- [ ] [Check your Deco DNS settings.](https://forum.mikrotik.com/t/slow-network-speeds-with-pi-hole-as-dns/172892/8) #waiting 
+
+## 2026-07-24
+- Audit
+
+## 2026-04-23
+- 8:30 appointment with Dr. Hirsch at *San Deigo Ear, Nose, and Throat*.
+	- My sleep test score was '5' which is borderline for sleep apnea.
+	- The medication has helped with my breathing, but I have a definitive deviated septum on my right side.
+	- The recommendation is to lose ~10-20 lbs of weight, sleep on my side, use nasal strips, and continue to address my allergy issues.
+	- If I continue to have issues in the next 3-6 months inquire to schedule a septoplasty.
+- Distilled Sari Azout's [Letter to a friend who is thinking of starting something new](https://www.sariazout.com/p/letter-to-a-friend) into six zettels and created a seventh synthesis zettel ([[20260423111706|Insecurity work is dangerous because it is frictionless]]).
+- Downloaded Obsidian and migrated note system. This required very little effort as the Neovim system was already using Markdown.
+
+**Notes created:**
+- [[20260423111415|Insecurity work produces no progress but repeats without notice]]
+- [[20260423111706|Insecurity work is dangerous because it is frictionless]]
+- [[20260423111913|Ideas require emotional capital as much as financial capital]]
+- [[20260423112440|The passion economy places a double burden on work]]
+- [[20260423113014|Pre-commit your stopping conditions before the pressure arrives]]
+- [[20260423113629|Industry norms pull a business toward conformity]]
+- [[20260423114152|The antidote to outcome-driven anxiety is treating the process as the destination]]
+
+## 2026-04-22
+**Notes created:**
+- [[20260422102309|Solving the right problem unlocks creative immersion]]
+- [[20260422104107|The moment to begin writing is a threshold, not a schedule]]
+- [[20260422105550|Emotional restraint is most powerful at the moment it breaks]]
+
+## 2026-04-21
+- 7:00 am — Oil change appointment at the Chevrolet dealership in Carlsbad.
+- 8:00 am — Rescheduled my dentist and orthodontia appointments.
+
+**Notes created:**
+- [[20260421125041|A novel begins with a vital, surprising, unanswered question]]
+- [[20260421125144|A novel requires months or years of incubation before serious writing begins]]
+- [[20260421125305|The first challenge in writing prose is finding the voice and tone]]
+- [[20260421125339|Overcoming the confidence struggle requires giving yourself permission to write privately]]
+
+## 2026-04-02
+- Completed the overhaul of my LinkedIn profile, working on the experience, education, and skills sections.
+- Continued to make progress on my Apple to Linux migration, setting up screenshot utilities and 1password.
+- Created zettels on the article about [[20260402142853|Surface acting]].
+
+**Notes created:**
+- [[20260402142853|Surface acting]]
+- [[20260402143352|Social expectations drive performative emotions]]
+- [[20260402145825|Genuine emotions build psychological resources]]
+- [[20260402150916|Anhedonic flatness]]
+- [[20260402154729|Contentment performance creates a vicious cycle]]
+
+## 2026-04-01
+- Purchased my first orbital sander.
+- Worked with Claude on defining target industries and roles for my job search.
+- Spent more time than I should have working through my resume.
+
+## 2026-03-31
+- Most of today was spent focused on migrating from Things3 to Todoist.
+	- I used Claude to assist in establishing a new system to managing tasks.
+	- This system keeps projects at a surface level, relies more heavily on a daily review, and allocates the weekly review to focus on auditing work in progress.
+- In discussing with Claude what roles I should seek out, I'm able to position myself as a data/technical product manager.
+	- The personal blog/website will be a component of my job search.
+- Paid the annual CAM difference for the studio space.
+- I need to schedule more time for reading, note-taking/thinking, and writing.
+
+## 2026-03-29
+- Read several more chapters of the second Eisenhorn book 'Malleus'.
+- Set up my zettelkasten, opting to use the `zk` plugin instead of cobbling together two or three others.
+- I had shell scripts added to my `.zshrc` in case I ever run into an issue with `zk` and need to deactivate it.
+- Migrated two notes from my git repository into the new local directory.
+
+## 2026-03-26
+- Created a git repository for notes on GitHub.
+- Implemented a spell check plugin for Neovim.
+- Implemented a feature to automatically save zettels using pure Neovim Lua and built-in commands.
+
+## 2026-03-25
+- Completed the 'Premium Audit' that was requested by Employers.
+- Switched my $SHELL on my Framework 13 from `bash` to `zsh`.
+	- I ported over my existing `.zshrc` from my MacBook Airmo and modified it to remove references to MacOS specific software.
+- I set up this note taking system using the Zettelkasten (German for "slip-box") knowledge management method popularized by Niklas Luhmann.
+- Scripts were added to the `.zshrc` to generate each note type using templates.
+
+**Notes created:**
+- [[20260325144335|A zettel is atomic and self-contained]]
+- [[20260325150246|A zettel gains meaning through its connections]]

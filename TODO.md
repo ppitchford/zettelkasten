@@ -59,12 +59,12 @@ Restructure the Obsidian vault around a flattened layout, a weekly-note stream t
 - [x] Collapse duplicates to one reading-inbox entry each: "The peril of laziness lost", "You Can't Tell People Anything" (= Habitat Chronicles). *(single entries verified.)*
 - [x] Final pass: every appendix item accounted for — Appendix A (29) all in the Reading inbox, Appendix C all in Someday (counts 7/4/2/5/2/2), Appendix B covered by the frame/Medicine-cabinet/Kitchen-shelf notes. **Things3 lists can be archived** (pending the Monotasking-draft confirmation above).
 
-### 7. Capture pipeline, mobile access & workflow migration — 🚧 in progress
+### 7. Capture pipeline, mobile access & workflow migration — ✅ done
 - [x] **Clip model decided:** one note per article into the `reading inbox/` folder — external clips stay out of the root zettel space until they graduate. Clip frontmatter is `title`/`source`/`author`/`published`/`created` (no `id`/`tags` at capture; mint the `id` on graduation).
 - [x] **Reconcile the folder vs. note collision:** `Reading inbox.md` moved into `reading inbox/` as the folder's index/manifesto; the 30 pre-clipper titles parked under a "Legacy backlog" heading. Root note space is clean; no links broke.
 - [x] **Web Clipper — fixed.** Root cause was the AppImage's `obsidian.desktop` handler missing the `%u` field code, so Firefox launched Obsidian with no URL → vault picker, no note. Added `%u` to the `Exec=` line + `update-desktop-database`; clips now land in `reading inbox/`. Extension set to Vault `zettelkasten`, Note location `reading inbox/`.
 - [x] **Mobile git sync (iOS) — working.** Fine-grained GitHub PAT (repo `zettelkasten`, Contents R/W) + `obsidian-git` Clone over HTTPS into a fresh iOS vault. Repo synced and plugin configured on the phone. *(Habit: pull on startup, and pull before editing on either device to avoid conflicts.)*
-- [ ] **Migrate existing notes/workflow to the new capture flow.** Walk the current notes and document the intended day-to-day loop (capture → skim/shed → graduate).
+- [x] **Workflow simplified & documented.** After the GTD-in-Obsidian apparatus grew too heavy, cut to **three surfaces**: a single running log (`_Log.md`, newest-first, capture + daily record), project notes (tasks + next action, Active→Planned→Someday), and the calendar (dated events only). Retired the weekly-note stream — all weekly notes folded into `_Log.md`, `templates/weekly.md` and `log/` removed. The daily **Morning Review** runs over the three; documented in `_Style guide.md`. Open tasks from the last weekly plan carried to the top of `_Log.md` to route.
 
 ## Notes
 - **Reading inbox is lossy by design.** ~three dozen items is fine *if* it's a skim-and-shed capture, not a must-finish debt ledger. That framing is the whole safeguard.
