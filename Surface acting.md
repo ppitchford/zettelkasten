@@ -1,6 +1,4 @@
 ---
-aliases:
-  - Surface acting
 id: "20260402142853"
 date: 2026-04-02
 ---
@@ -8,7 +6,7 @@ date: 2026-04-02
 Surface acting is the habitual display of emotions you don't feel internally. Over time, the display replaces the internal act of checking what you actually feel.
 
 ## Links
-- [[20260402143352|Social expectations drive performative emotions]] — Provide the context for surface acting.
+- [[Social expectations drive performative emotions]] — Provide the context for surface acting.
 
 ## References
 [People who say they don't remember the last time they felt genuine joy aren't being dramatic - they've spent so long performing contentment that they forgot what the real thing feels like](https://vegoutmag.com/lifestyle/gen-people-who-say-they-dont-remember-the-last-time-they-felt-genuine-joy-arent-being-dramatic-theyve-spent-so-long-performing-contentment-that-they-forgot-what-the-real-thing-feels-like/)

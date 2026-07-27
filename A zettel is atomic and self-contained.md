@@ -1,0 +1,9 @@
+---
+id: "20260325144335"
+date: 2026-03-25
+---
+# A zettel is atomic and self-contained
+A zettel is a single, atomic, self-contained piece of knowledge.
+
+## Links
+- [[A zettel gains meaning through its connections]] — A zettel requires a link outward to develop meaning.

@@ -12,7 +12,7 @@ The conventions this vault is written to. A note that violates one of these is a
 `YYYY-MM-DD` everywhere in prose and the `date` field. The `id` is the same instant as a 14-digit timestamp, `YYYYMMDDHHmmss`.
 
 ## Titles
-State the atomic claim directly — the title is the idea, not a topic label. Hedge deliberately: `may` when the claim is provisional, deterministic phrasing when it isn't. No semicolons; a title that needs one is two notes.
+State the atomic claim directly — the title is the idea, not a topic label. Hedge deliberately: `may` when the claim is provisional, deterministic phrasing when it isn't. No semicolons; a title that needs one is two notes. The title is also the **filename**: a note is created with a timestamp name and renamed to its claim once the idea is fully formed. The `id` stays in frontmatter as the permanent address, so the filename can change as the wording sharpens — Obsidian updates the links.
 
 ## Atomicity
 One idea per note. The body carries the mechanism without restating the title, and each sentence carries distinct weight — if a sentence only rephrases the one before it, cut it.
@@ -27,7 +27,7 @@ Topic tags are pluralized — `#books`, not `#book`. Status tags are the excepti
 A note body stays grounded in its single source. Original synthesis and cross-source connections live in *separate linked notes* — never imported into a source note's body. This is the rule that keeps a source note honest about where its claim came from.
 
 ## Frontmatter
-`id` and `date` are scaffolded by the Unique note creator from `templates/note`. `aliases` carries the human-readable title so backlinks read as prose rather than timestamps. Titles are written by hand after the idea is fully formed — never auto-generated.
+`id` and `date` are scaffolded by the Unique note creator from `templates/note`. There is no `aliases` field — the filename *is* the title (see Titles), so links already read as prose. Titles are written by hand after the idea is fully formed — never auto-generated.
 
 ## Task system
 Three surfaces: a single running log, project notes, and the calendar. Nothing else — no separate task inbox, no status apparatus.

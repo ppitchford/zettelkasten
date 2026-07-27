@@ -1,8 +1,6 @@
 ---
 id: "20260722181100"
 date: 2026-07-22
-aliases:
-  - Santa Maria seasoning
 tags:
   - recipes
 ---

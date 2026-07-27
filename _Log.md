@@ -34,45 +34,45 @@ The running record and capture surface — the one place to jot, newest day on t
 	- The medication has helped with my breathing, but I have a definitive deviated septum on my right side.
 	- The recommendation is to lose ~10-20 lbs of weight, sleep on my side, use nasal strips, and continue to address my allergy issues.
 	- If I continue to have issues in the next 3-6 months inquire to schedule a septoplasty.
-- Distilled Sari Azout's [Letter to a friend who is thinking of starting something new](https://www.sariazout.com/p/letter-to-a-friend) into six zettels and created a seventh synthesis zettel ([[20260423111706|Insecurity work is dangerous because it is frictionless]]).
+- Distilled Sari Azout's [Letter to a friend who is thinking of starting something new](https://www.sariazout.com/p/letter-to-a-friend) into six zettels and created a seventh synthesis zettel ([[Insecurity work is dangerous because it is frictionless]]).
 - Downloaded Obsidian and migrated note system. This required very little effort as the Neovim system was already using Markdown.
 
 **Notes created:**
-- [[20260423111415|Insecurity work produces no progress but repeats without notice]]
-- [[20260423111706|Insecurity work is dangerous because it is frictionless]]
-- [[20260423111913|Ideas require emotional capital as much as financial capital]]
-- [[20260423112440|The passion economy places a double burden on work]]
-- [[20260423113014|Pre-commit your stopping conditions before the pressure arrives]]
-- [[20260423113629|Industry norms pull a business toward conformity]]
-- [[20260423114152|The antidote to outcome-driven anxiety is treating the process as the destination]]
+- [[Insecurity work produces no progress but repeats without notice]]
+- [[Insecurity work is dangerous because it is frictionless]]
+- [[Ideas require emotional capital as much as financial capital]]
+- [[The passion economy places a double burden on work]]
+- [[Pre-commit your stopping conditions before the pressure arrives]]
+- [[Industry norms pull a business toward conformity]]
+- [[The antidote to outcome-driven anxiety is treating the process as the destination]]
 
 ## 2026-04-22
 **Notes created:**
-- [[20260422102309|Solving the right problem unlocks creative immersion]]
-- [[20260422104107|The moment to begin writing is a threshold, not a schedule]]
-- [[20260422105550|Emotional restraint is most powerful at the moment it breaks]]
+- [[Solving the right problem unlocks creative immersion]]
+- [[The moment to begin writing is a threshold, not a schedule]]
+- [[Emotional restraint is most powerful at the moment it breaks]]
 
 ## 2026-04-21
 - 7:00 am — Oil change appointment at the Chevrolet dealership in Carlsbad.
 - 8:00 am — Rescheduled my dentist and orthodontia appointments.
 
 **Notes created:**
-- [[20260421125041|A novel begins with a vital, surprising, unanswered question]]
-- [[20260421125144|A novel requires months or years of incubation before serious writing begins]]
-- [[20260421125305|The first challenge in writing prose is finding the voice and tone]]
-- [[20260421125339|Overcoming the confidence struggle requires giving yourself permission to write privately]]
+- [[A novel begins with a vital, surprising, unanswered question]]
+- [[A novel requires months or years of incubation before serious writing begins]]
+- [[The first challenge in writing prose is finding the voice and tone]]
+- [[Overcoming the confidence struggle requires giving yourself permission to write privately]]
 
 ## 2026-04-02
 - Completed the overhaul of my LinkedIn profile, working on the experience, education, and skills sections.
 - Continued to make progress on my Apple to Linux migration, setting up screenshot utilities and 1password.
-- Created zettels on the article about [[20260402142853|Surface acting]].
+- Created zettels on the article about [[Surface acting]].
 
 **Notes created:**
-- [[20260402142853|Surface acting]]
-- [[20260402143352|Social expectations drive performative emotions]]
-- [[20260402145825|Genuine emotions build psychological resources]]
-- [[20260402150916|Anhedonic flatness]]
-- [[20260402154729|Contentment performance creates a vicious cycle]]
+- [[Surface acting]]
+- [[Social expectations drive performative emotions]]
+- [[Genuine emotions build psychological resources]]
+- [[Anhedonic flatness]]
+- [[Contentment performance creates a vicious cycle]]
 
 ## 2026-04-01
 - Purchased my first orbital sander.
@@ -107,5 +107,5 @@ The running record and capture surface — the one place to jot, newest day on t
 - Scripts were added to the `.zshrc` to generate each note type using templates.
 
 **Notes created:**
-- [[20260325144335|A zettel is atomic and self-contained]]
-- [[20260325150246|A zettel gains meaning through its connections]]
+- [[A zettel is atomic and self-contained]]
+- [[A zettel gains meaning through its connections]]

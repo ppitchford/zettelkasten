@@ -1,8 +1,6 @@
 ---
 id: "20260722180800"
 date: 2026-07-22
-aliases:
-  - Real-time translation device
 tags:
   - seedling
 ---

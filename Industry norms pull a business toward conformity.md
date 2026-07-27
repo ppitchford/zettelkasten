@@ -1,5 +1,4 @@
 ---
-aliases: [Industry norms pull a business toward conformity]
 id: "20260423113629"
 date: 2026-04-23
 ---

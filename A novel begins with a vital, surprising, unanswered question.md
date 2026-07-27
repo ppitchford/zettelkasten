@@ -1,6 +1,4 @@
 ---
-aliases:
-  - A novel begins with a vital, surprising, unanswered question
 id: "20260421125041"
 date: 2026-04-21
 ---

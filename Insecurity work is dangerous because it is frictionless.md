@@ -1,5 +1,4 @@
 ---
-aliases: [Insecurity work is dangerous because it is frictionless ]
 id: "20260423111706"
 date: 2026-04-23
 ---
@@ -12,7 +11,7 @@ of that — it can be repeated on impulse without preparation or cost. Speed
 is the symptom; frictionlessness is the mechanism.
 
 ## Links
-- [[20260423111415]] — Frictionlessness is the mechanism behind insecurity work's compulsive repetition. 
+- [[Insecurity work produces no progress but repeats without notice]] — Frictionlessness is the mechanism behind insecurity work's compulsive repetition. 
 
 ## References
 - [Letter to a friend who is thinking of starting something new](https://www.sariazout.com/p/letter-to-a-friend)

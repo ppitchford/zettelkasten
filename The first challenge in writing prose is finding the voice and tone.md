@@ -1,5 +1,4 @@
 ---
-aliases: [The first challenge in writing prose is finding the voice and tone]
 id: "20260421125305"
 date: 2026-04-21
 ---
@@ -7,7 +6,7 @@ date: 2026-04-21
 Kingsolver explains that finding the voice and tone requires writing and discarding hundreds of pages before the real novel begins. She frames these early discarded pieces as "pages minus-100 to zero".
 
 ## Links
-- [[20260421125144|A novel requires months or years of incubation before serious writing begins]] — This challenge arises only after the incubation period concludes.
+- [[A novel requires months or years of incubation before serious writing begins]] — This challenge arises only after the incubation period concludes.
 
 ## References
 - [How do you begin a novel? – Barbara Kingsolver](https://barbarakingsolver.net/faqs/how-do-you-begin-a-novel/)

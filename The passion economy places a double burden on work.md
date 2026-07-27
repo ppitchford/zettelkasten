@@ -1,5 +1,4 @@
 ---
-aliases: [The passion economy places a double burden on work]
 id: "20260423112440"
 date: 2026-04-23
 ---

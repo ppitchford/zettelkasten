@@ -1,5 +1,4 @@
 ---
-aliases: [The antidote to outcome-driven anxiety is treating the process as the destination]
 id: "20260423114152"
 date: 2026-04-23
 ---

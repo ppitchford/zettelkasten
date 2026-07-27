@@ -1,8 +1,6 @@
 ---
 id: "20260722181000"
 date: 2026-07-22
-aliases:
-  - Grimdark painting technique
 tags:
   - seedling
 ---

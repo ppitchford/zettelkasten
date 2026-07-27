@@ -1,8 +1,6 @@
 ---
 id: "20260722180900"
 date: 2026-07-22
-aliases:
-  - Desktop made for one — seed
 tags:
   - seedling
 ---

@@ -1,8 +1,6 @@
 ---
 id: "20260513185300"
 date: 2026-05-13
-aliases:
-  - Committing to dotfiles
 ---
 # Committing to `dotfiles`
 

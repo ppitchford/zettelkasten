@@ -1,5 +1,4 @@
 ---
-aliases: [Insecurity work produces no progress but repeats without notice]
 id: "20260423111415"
 date: 2026-04-23
 ---

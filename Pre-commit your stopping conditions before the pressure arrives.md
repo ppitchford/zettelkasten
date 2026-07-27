@@ -1,5 +1,4 @@
 ---
-aliases: [Pre-commit your stopping conditions before the pressure arrives]
 id: "20260423113014"
 date: 2026-04-23
 ---

@@ -1,7 +1,6 @@
 ---
 id: "{{date:YYYYMMDDHHmmss}}"
 date: {{date:YYYY-MM-DD}}
-aliases:
 ---
 # Title
 > What is the single idea this note captures?

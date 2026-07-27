@@ -1,8 +1,6 @@
 ---
 id: "20260513185200"
 date: 2026-05-13
-aliases:
-  - Managing ornatus
 ---
 # Managing ornatus
 

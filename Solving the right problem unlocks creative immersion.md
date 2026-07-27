@@ -1,5 +1,4 @@
 ---
-aliases: [Solving the right problem unlocks creative immersion]
 id: "20260422102309"
 date: 2026-04-22
 ---
@@ -7,8 +6,8 @@ date: 2026-04-22
 Ishiguro's "Crash" — four weeks of total social isolation and 13-hour writing days — was not a productivity technique but a psychological one. The obstacle he identified was not lack of time but failure to fully inhabit the fictional world. By eliminating all competing reality, he engineered the mental stat where that world felt more real than the actual one; the output followed.
 
 ## Links
-- [[20260421125144|A novel requires months or years of incubation before serious writing begins]] — The Crash begins where incubation ends; immersion is only possible once you know enough.
-- [[20260421125339|Overcoming the confidence struggle requires giving yourself permission to write privately]] — Both Ishiguro and Kingsolver describe writing freely without concern for quality as the method of entry.
+- [[A novel requires months or years of incubation before serious writing begins]] — The Crash begins where incubation ends; immersion is only possible once you know enough.
+- [[Overcoming the confidence struggle requires giving yourself permission to write privately]] — Both Ishiguro and Kingsolver describe writing freely without concern for quality as the method of entry.
 
 ## References
 - [A crash course in novel writing: how Kazuo Ishiguro wrote The Remains of the Day in a month](https://thebookerprizes.com/the-booker-library/features/how-kazuo-ishiguro-wrote-the-remains-of-the-day)

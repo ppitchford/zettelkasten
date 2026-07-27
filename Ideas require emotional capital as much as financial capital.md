@@ -1,5 +1,4 @@
 ---
-aliases: [Ideas require emotional capital as much as financial capital ]
 id: "20260423111913"
 date: 2026-04-23
 ---

@@ -1,5 +1,4 @@
 ---
-aliases: [Contentment performance creates a vicious cycle ]
 id: "20260402154729"
 date: 2026-04-02
 ---
@@ -7,9 +6,9 @@ date: 2026-04-02
 The performance of contentment is socially rewarded — people who appear consistently positive are more likely to be socially accepted. This reinforces people's natural tendency to choose the path of least resistance by avoiding potential social friction. Furthermore, defaulting to the path of least resistance means they will avoid the introspective behavior needed to heal because it feels uncomfortable and doesn't produce a meaningful outcome in the short term.
 
 ## Links
-- [[20260402143352|Social expectations drive performative emotions]] — Social norm create an environment that keep contentment performance self-sustaining.
-- [[20260402150916|Anhedonic Flatness]] — The cycle of contentment performance perpetuates anhedonic flatness.
-- [[20260402142853|Surface Acting]] — Surface acting is the primary behavior this cycle reinforces.
+- [[Social expectations drive performative emotions]] — Social norm create an environment that keep contentment performance self-sustaining.
+- [[Anhedonic flatness]] — The cycle of contentment performance perpetuates anhedonic flatness.
+- [[Surface acting]] — Surface acting is the primary behavior this cycle reinforces.
 
 ## References
 [People who say they don't remember the last time they felt genuine aren't being dramatic - they've spent so long performing contentment that they forgot what the real thing feels like](https://vegoutmag.com/lifestyle/gen-people-who-say-they-dont-remember-the-last-time-they-felt-genuine-joy-arent-being-dramatic-theyve-spent-so-long-performing-contentment-that-they-forgot-what-the-real-thing-feels-like/)
