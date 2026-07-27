@@ -6,5 +6,8 @@
   "monospaceFontFamily": "CommitMono Nerd Font",
   "accentColor": "",
   "showRibbon": true,
-  "baseFontSize": 14
+  "baseFontSize": 14,
+  "enabledCssSnippets": [
+    "balanced-headings"
+  ]
 }
