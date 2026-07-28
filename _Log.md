@@ -8,6 +8,13 @@ aliases:
 
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
+## 2026-07-28
+- I rewrote the Morning Review as five steps against Tiago Forte's model, extending the mnemonic to Every Commitment Needs Tracking Today and pulling the choice of what to do today out of Tasks into a step of its own.
+- I gave both reviews their own headings so their bodies read standalone, which lets the same text serve as the description of the recurring calendar events.
+- I settled that a phrase or idea extracted from a book becomes a zettel directly, because the reading inbox holds only clipped articles that have not been judged yet.
+- I replaced "a thought with legs" with "an idea worth developing" across the style guide and this log so the vocabulary stays single.
+- I switched Obsidian to the dark theme.
+
 ## 2026-07-27
 - I overhauled the vault by moving to a single running log that replaces the weekly-note stream, renaming every zettel to a title-based filename, and pinning the system notes so they sort above the zettels.
 - I fixed the Obsidian Web Clipper, which had been wrapping author names in dead wikilinks, and I settled how clipped articles flow into the reading inbox.
