@@ -6,7 +6,7 @@ aliases:
 ---
 # Log
 
-The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, a thought with legs to a `#seedling` note, the rest kept as record or deleted.
+The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
 ## 2026-07-27
 - I overhauled the vault by moving to a single running log that replaces the weekly-note stream, renaming every zettel to a title-based filename, and pinning the system notes so they sort above the zettels.
@@ -32,6 +32,10 @@ The running record and capture surface — the one place to jot, newest day on t
 - [ ] Review [Cog](https://lab.puga.com.br/cog/) and determine whether to use or not.
 - [ ] Schedule a regular garage cleaning.
 - [ ] Pay the IRS penalty.
+- [ ] Watch [“How To Remember Everything You Read”](https://www.youtube.com/watch?v=UBdlprawTkA)
+- [ ] Watch [“How To Journal Like A Stoic Philosopher”](https://www.youtube.com/watch?v=6211qMWYz90)
+- [ ] Watch [“The Notebook System That Saved My Brain”](https://youtu.be/BDde5vwj83E?si=ZUdutti6PGZki8M0)
+- [ ] Watch [“9 Boring Habits That Will Put You Ahead of 99% of People”](https://youtu.be/LXaFHI_2Hus?si=VvabE5zhzaZ4lTrd)
 
 ## 2026-04-23
 - 8:30 appointment with Dr. Hirsch at *San Deigo Ear, Nose, and Throat*.
