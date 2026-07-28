@@ -9,7 +9,7 @@ aliases:
 Active work, planned work, and an inert Someday park — a commitment ladder, most-committed at the top. A project note holds the full task list and the next action; a weekly note surfaces a next action only when you intend to do it that week. Projects carry a status — **planned → active → done**; the Someday park sits below planned as uncommitted possibility, promoted only when a real pull appears.
 
 ## Active
-- [[ArtSpacesSoCal]] — Go search engine for SoCal galleries; learn-by-building (next: own the foundation, then the galleries handler)
+- [[ArtSpacesSoCal]] — Go search engine for SoCal galleries; learn-by-building (next: refresh Go via Tour of Go, then own the foundation)
 - [[frame]] — screenshot tool for Void / MangoWM (v1 shipped; Tier 2 follow-on)
 - [[Medicine cabinet install]] — bathroom install (next: clear-coat the pieces)
 - [[Kitchen shelf]] — shelf build and install (next: round the corner)
