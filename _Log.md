@@ -9,20 +9,20 @@ aliases:
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, a thought with legs to a `#seedling` note, the rest kept as record or deleted.
 
 ## 2026-07-27
-- Overhauled the vault: single running log (retired the weekly-note stream), title-based zettel filenames, pinned system notes (`_Log`, `_Style guide`, `_Learning`).
-- Fixed the Obsidian Web Clipper (unwrapped author wikilinks) and settled the reading-inbox capture flow.
-- Formalized the task system — three surfaces (log, projects, calendar) run by a daily Morning Review.
-- Adopted **project-based learning**: learning lives in the project note, with [[_Learning]] as the deliberate-study counterweight; researched and built a learning plan.
-- Scoped **[[ArtSpacesSoCal]]** as an active learn-by-build Go project — tutor-not-implementer agreement, Tour of Go refresher first.
-- Set up `writing/` as the home for original writing (essays).
+- I overhauled the vault by moving to a single running log that replaces the weekly-note stream, renaming every zettel to a title-based filename, and pinning the system notes so they sort above the zettels.
+- I fixed the Obsidian Web Clipper, which had been wrapping author names in dead wikilinks, and I settled how clipped articles flow into the reading inbox.
+- I formalized the task system around three surfaces, the log, project notes, and the calendar, and I defined a daily Morning Review that runs them.
+- I adopted project-based learning, in which each skill is learned by building a real project and the learning lives in that project's note, and I created [[_Learning]] as the counterweight for the deliberate study that building alone skips.
+- I scoped [[ArtSpacesSoCal]] as an active, learn-by-building Go project, established that Claude should tutor rather than write the code, and set a Go refresher as the first step.
+- I set up a writing folder as the home for my original writing and moved my first two essays into it.
 
 **To route (carried from the last weekly plan):**
 - [x] Make hotel reservation for our drive from UT to CA.
 - [x] Request Shane Peters forward his emails with the City of San Marcos.
 - [ ] Forward Shane's emails to Rachel to send to the lawyer for review.
-- [ ] Audit your task manager (Things3) and migrate tasks to Obsidian (Upcoming; Areas & Projects).
+- [x] Audit your task manager (Things3) and migrate tasks to Obsidian (Upcoming; Areas & Projects).
 - [ ] Update the name of Ornatus to SGDW (Solar Gradient Desktop Wallpaper).
-- [ ] Add tasks with dates and recurring tasks to your Google Calendar.
+- [x] Add tasks with dates and recurring tasks to your Google Calendar.
 - [ ] Schedule an appointment with a Primary Care doctor to establish care, have an annual physical, and have blood/lab work completed.
 - [ ] Determine what systems to use for class management, payments, etc. #yoga-studio
 - [ ] Review data in your Apple Passwords app.
