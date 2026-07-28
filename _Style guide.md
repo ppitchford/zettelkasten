@@ -46,7 +46,7 @@ Run this in 15 minutes or less and focus only on deciding and routing. Anything 
 2. **Calendar.** Look at today's schedule and determine what needs preparation. Then look at every event since your last review and determine what follow-up you owe. Anything that turns up becomes a task.
 3. **Notes.** Work through everything you have added to the log since your last review. For every idea worth developing, create a `#seedling` note. For every note you made, ask what it needs next and write that down as a task. Don't overthink the sort; the point is that a good idea survives, not that the filing is perfect.
 4. **Tasks.** State each task you collected as a concrete next action. Add it to a project note if it serves a project or to the calendar if it's time-bound. Confirm every active project has a next action, and scan `#waiting` for anything stalled.
-5. **Today.** Pick three tasks at most, favoring the ones that serve the week's priorities. Identify the one that matters most, then close the review and begin work on it.
+5. **Today.** Pick a maximum of three tasks, favoring ones that serve the week's priorities. Identify the one that matters most, then close the review and begin work on it.
 
 Returning after skipping a few days? Don't process the whole pile. Shed the captures in bulk, keep only the few that still pull at you, and move on.
 
