@@ -9,11 +9,16 @@ aliases:
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, a thought with legs to a `#seedling` note, the rest kept as record or deleted.
 
 ## 2026-07-27
-- Retired the weekly-note stream in favor of this single running log.
+- Overhauled the vault: single running log (retired the weekly-note stream), title-based zettel filenames, pinned system notes (`_Log`, `_Style guide`, `_Learning`).
+- Fixed the Obsidian Web Clipper (unwrapped author wikilinks) and settled the reading-inbox capture flow.
+- Formalized the task system — three surfaces (log, projects, calendar) run by a daily Morning Review.
+- Adopted **project-based learning**: learning lives in the project note, with [[_Learning]] as the deliberate-study counterweight; researched and built a learning plan.
+- Scoped **[[ArtSpacesSoCal]]** as an active learn-by-build Go project — tutor-not-implementer agreement, Tour of Go refresher first.
+- Set up `writing/` as the home for original writing (essays).
 
 **To route (carried from the last weekly plan):**
-- [ ] Make hotel reservation for our drive from UT to CA.
-- [ ] Request Shane Peters forward his emails with the City of San Marcos.
+- [x] Make hotel reservation for our drive from UT to CA.
+- [x] Request Shane Peters forward his emails with the City of San Marcos.
 - [ ] Forward Shane's emails to Rachel to send to the lawyer for review.
 - [ ] Audit your task manager (Things3) and migrate tasks to Obsidian (Upcoming; Areas & Projects).
 - [ ] Update the name of Ornatus to SGDW (Solar Gradient Desktop Wallpaper).
@@ -25,9 +30,8 @@ The running record and capture surface — the one place to jot, newest day on t
 - [ ] Organize your bathroom cabinets. #waiting 
 - [ ] [Check your Deco DNS settings.](https://forum.mikrotik.com/t/slow-network-speeds-with-pi-hole-as-dns/172892/8) #waiting 
 - [ ] Review [Cog](https://lab.puga.com.br/cog/) and determine whether to use or not.
-
-## 2026-07-24
-- Audit
+- [ ] Schedule a regular garage cleaning.
+- [ ] Pay the IRS penalty.
 
 ## 2026-04-23
 - 8:30 appointment with Dr. Hirsch at *San Deigo Ear, Nose, and Throat*.

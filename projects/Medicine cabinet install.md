@@ -12,13 +12,18 @@ tags:
 **Next action:** clear-coat the frames and shelf pieces
 
 ## Tasks (ordered)
-- [ ] Clear-coat the frames and shelf pieces
-- [ ] Drill the side pieces for brackets
+- [ ] Reduce the depth of each frame piece to 3 ¼” with the router.
+- [ ] Fasten the frame pieces together with single screws and wood glue.
+- [ ] Drill holes for the shelf brackets into the frames. 
+- [ ] Adhere a ¼” project board backing to the frames.
+- [ ] Apply the clear-coat the frames and backing.
+- [ ] Reduce the depth of each shelf to 3 ¼” with the router.
+- [ ] Apply the clear-coat the shelves.
 - [ ] Install the frames into the cavities
-- [ ] Install the shelf brackets
-- [ ] Install the shelves
-- [ ] Joint-compound the gaps
-- [ ] Paint the filler
+- [ ] Install the shelf brackets.
+- [ ] Install the shelves.
+- [ ] Apply joint-compound to the gaps between the frames and wall.
+- [ ] Paint the joint-compound to match the wall.
 
 ## Notes
 > Ordered — the next action is the first unchecked step.

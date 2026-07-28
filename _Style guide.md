@@ -26,6 +26,9 @@ Topic tags are pluralized — `#books`, not `#book`. Status tags are the excepti
 ## Source vs. synthesis
 A note body stays grounded in its single source. Original synthesis and cross-source connections live in *separate linked notes* — never imported into a source note's body. This is the rule that keeps a source note honest about where its claim came from.
 
+## Writing
+Original long-form writing — essays, drafts, reflections — lives in `writing/`, not root. It is the *output* of the slip-box, a layer above the zettels: an essay links *down* into the atomic notes it draws from. Distinct from a zettel (atomic, source-grounded) and from the log (dated capture).
+
 ## Frontmatter
 `id` and `date` are scaffolded by the Unique note creator from `templates/note`. There is no `aliases` field — the filename *is* the title (see Titles), so links already read as prose. Titles are written by hand after the idea is fully formed — never auto-generated.
 

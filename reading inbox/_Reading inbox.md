@@ -51,4 +51,3 @@ lossy rule: re-clip what still pulls at you, ignore the rest.
 - Master Claude Code: Proven Daily Workflows from 3 Technical Founders — video
 - Set up Claude Code for maximum productivity
 - Use AI agents like employees
-- Six Types of Working Genius
