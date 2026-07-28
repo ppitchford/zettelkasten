@@ -24,6 +24,7 @@ The running record and capture surface — the one place to jot, newest day on t
 - [ ] After your review, migrate the remaining data from Apple Passwords to your 1Password vault. #waiting
 - [ ] Organize your bathroom cabinets. #waiting 
 - [ ] [Check your Deco DNS settings.](https://forum.mikrotik.com/t/slow-network-speeds-with-pi-hole-as-dns/172892/8) #waiting 
+- [ ] Review [Cog](https://lab.puga.com.br/cog/) and determine whether to use or not.
 
 ## 2026-07-24
 - Audit
