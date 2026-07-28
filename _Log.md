@@ -9,7 +9,8 @@ aliases:
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
 ## 2026-07-28
-13:00 – Begin drive from Park City to San Marcos.
+- **13:00** Begin drive from Park City to San Marcos.
+
 **To route:**
 - [ ] Forward Shane's emails to Rachel to send to the lawyer for review. #waiting
 - [ ] Update the name of Ornatus to SGDW (Solar Gradient Desktop Wallpaper).
@@ -28,18 +29,18 @@ The running record and capture surface — the one place to jot, newest day on t
 - [ ] Watch [“9 Boring Habits That Will Put You Ahead of 99% of People”](https://youtu.be/LXaFHI_2Hus?si=VvabE5zhzaZ4lTrd)
 
 ## 2026-07-27
-- 12:57
+- **12:57**
 	- I overhauled the vault by moving to a single running log that replaces the weekly-note stream, renaming every zettel to a title-based filename, and pinning the system notes so they sort above the zettels. 
 	- I formalized the task system around three surfaces, the log, project notes, and the calendar, and I defined a daily Morning Review that runs them.
-- 13:39 — I fixed the Obsidian Web Clipper, which had been wrapping author names in dead wikilinks, and I settled how clipped articles flow into the reading inbox.
-- 18:22 — I adopted project-based learning, in which each skill is learned by building a real project and the learning lives in that project's note, and I created [[_Learning]] as the counterweight for the deliberate study that building alone skips.
-- 20:31 — I scoped [[ArtSpacesSoCal]] as an active, learn-by-building Go project, established that Claude should tutor rather than write the code, and set a Go refresher as the first step.
-- 21:03 — I set up a writing folder as the home for my original writing and moved my first two essays into it.
-- 21:18
+- **13:39** I fixed the Obsidian Web Clipper, which had been wrapping author names in dead wikilinks, and I settled how clipped articles flow into the reading inbox.
+- **18:22** I adopted project-based learning, in which each skill is learned by building a real project and the learning lives in that project's note, and I created [[_Learning]] as the counterweight for the deliberate study that building alone skips.
+- **20:31** I scoped [[ArtSpacesSoCal]] as an active, learn-by-building Go project, established that Claude should tutor rather than write the code, and set a Go refresher as the first step.
+- **21:03** I set up a writing folder as the home for my original writing and moved my first two essays into it.
+- **21:18**
 	- I rewrote the Morning Review as five steps against Tiago Forte's model, extending the mnemonic to Every Commitment Needs Tracking Today and pulling the choice of what to do today out of Tasks into a step of its own.
 	- I gave both reviews their own headings so their bodies read standalone, which lets the same text serve as the description of the recurring calendar events.
 	- I replaced "a thought with legs" with "an idea worth developing" across the style guide and this log so the vocabulary stays single.
-- 00:38 — I settled that a phrase or idea extracted from a book becomes a zettel directly, because the reading inbox holds only clipped articles that have not been judged yet.
+- **00:38** I settled that a phrase or idea extracted from a book becomes a zettel directly, because the reading inbox holds only clipped articles that have not been judged yet.
 
 **To route (carried from the last weekly plan):**
 - [x] Make hotel reservation for our drive from UT to CA.
@@ -48,7 +49,7 @@ The running record and capture surface — the one place to jot, newest day on t
 - [x] Add tasks with dates and recurring tasks to your Google Calendar.
 
 ## 2026-04-23
-- 8:30 appointment with Dr. Hirsch at *San Deigo Ear, Nose, and Throat*.
+- **08:30** Appointment with Dr. Hirsch at *San Deigo Ear, Nose, and Throat*.
 	- My sleep test score was '5' which is borderline for sleep apnea.
 	- The medication has helped with my breathing, but I have a definitive deviated septum on my right side.
 	- The recommendation is to lose ~10-20 lbs of weight, sleep on my side, use nasal strips, and continue to address my allergy issues.
@@ -72,8 +73,8 @@ The running record and capture surface — the one place to jot, newest day on t
 - [[Emotional restraint is most powerful at the moment it breaks]]
 
 ## 2026-04-21
-- 7:00 am — Oil change appointment at the Chevrolet dealership in Carlsbad.
-- 8:00 am — Rescheduled my dentist and orthodontia appointments.
+- **07:00** Oil change appointment at the Chevrolet dealership in Carlsbad.
+- **08:00** Rescheduled my dentist and orthodontia appointments.
 
 **Notes created:**
 - [[A novel begins with a vital, surprising, unanswered question]]
