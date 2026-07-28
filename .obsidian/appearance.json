@@ -9,5 +9,6 @@
   "baseFontSize": 14,
   "enabledCssSnippets": [
     "balanced-headings"
-  ]
+  ],
+  "theme": "obsidian"
 }
