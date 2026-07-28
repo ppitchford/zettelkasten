@@ -29,9 +29,10 @@ Committed to start within the horizon, not yet active. Promote into Active — a
 An inert park of things that might one day be worth doing. **This is not a queue.** Nothing here is owed. Skim it on a random revisit, and if one item has quietly grown a real thought or a real pull, promote it — into a seed note, a project, or a weekly plan. Everything else stays parked without guilt, and parking something is a legitimate resting place, not a deferral of a debt.
 
 ### Aspirational builds
-- Fault-tolerant RL octocopter
-- Local GuppyLM  instance for model training
-- Open-source robot vacuum
+- [Fault-tolerant RL octocopter](https://karolina.mgdubiel.com/drone/)
+- [Local GuppyLM  instance for model training](https://github.com/arman-bd/guppylm)
+- [OpenMower – ROS and RTOS-based robotic mower platform](https://openmower.de/)
+- [OOMWOO – Open-Source Robot Vacuum](https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/)
 - Super-forecaster for student success
 
 ### Business Ventures
@@ -39,8 +40,7 @@ An inert park of things that might one day be worth doing. **This is not a queue
 - Mix a couple of tracks under the *Reptidaddy* name.
 
 ### Home
-- Smart-home replacement (doorbell / lock / cameras / thermostat)
-- Spilhaus print for the office (once remodeled)
+- [Print and frame the Spilhaus Projection for the office.](https://storymaps.arcgis.com/stories/756bcae18d304a1eac140f19f4d5cb3d)
 - Home Lab build:
 	- Home security (cameras, doorbell, locks, etc.)
 	- Environmental management (thermostat, water leak detection, etc.)
@@ -49,36 +49,21 @@ An inert park of things that might one day be worth doing. **This is not a queue
 	- Uninterrupted Power Supply (UPS)
 
 ### Learning plans
-- [Fullstack to Backend](https://frontendmasters.com/learn/fullstack/)
-	- [Full Stack Fundamentals, v3](https://frontendmasters.com/courses/fullstack-v3/)
-	- [Complete Intro to Databases, v2](https://frontendmasters.com/courses/databases-v2/)
-	- [Complete Intro to Linux and the Command-Line](https://frontendmasters.com/courses/linux-command-line/)
-	- [Introduction to Node.js, v3](https://frontendmasters.com/courses/node-js-v3/)
-	- [API Design in Node.js, v5](https://frontendmasters.com/courses/api-design-nodejs-v5/)
-	- [Complete Intro to Containers, v2](https://frontendmasters.com/courses/complete-intro-containers-v2/)
-	- [Architect Cloud Infrastructure from Startup to Scale](https://frontendmasters.com/courses/cloud-infrastructure/)
-	- [Complete Intro to SQL & PostgreSQL](https://frontendmasters.com/courses/sql/)
-	- [Backend System Design](https://frontendmasters.com/courses/backend-system-design/)
-- [Go & Vanilla JS: Fullstack Without Frameworks](https://frontendmasters.com/courses/vanilla-js-go/)
-- [grokking Algorithms, Second Edition: An illustrated guide for programmers and other curious people](https://a.co/d/06RQ4rZQ)
-- [Introduction to Algorithms, 4th Edition](https://a.co/d/0a12KduP)
-- [Learn Go the Hard Way](https://learncodethehardway.com/courses/learn-go-the-hard-way/)
-- [Learn Python the Hard Way, 5th Edition (2023-2024)](https://learncodethehardway.com/client/#/product/learn-python-the-hard-way-5e-2023/)
-- [The Last Algorithms Course You’ll Need](https://frontendmasters.com/courses/algorithms/)
-- [The Last Algorithms Course You'll Want (Part 2)](https://frontendmasters.com/courses/advanced-algorithms/)
-- [The Little Book of Linear Algebra](https://little-book-of.github.io/linear-algebra/)
-- [The Little Learner: A straight line to deep learning](https://www.thelittlelearner.com/)
-- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
-- [The Nature of Code](https://natureofcode.com/)
+Consolidated into **[[Learning plan]]** — the ship track (Python/Go web apps) is active there; the algorithms and math/ML/creative resources live under Plans B and C, parked.
 
 ### Warhammer
 - [Course – Essential: Color Theory Collection](https://www.patreon.com/RomanLappatMiniatureArt/posts/essential-color-140801779)
-- Dry-brush texture palette
+- [Dry-brush Palette](https://www.youtube.com/watch?v=7sNeKkVmz4s)
 - Inquisitor Ostromandeus
 - Ravener Kill Team
 
 ### Woodworking
-- [Child’s Bookcase](https://ashdeco.com/products/midcentury-tree-bookshelf-nursery-kids-room?variant=53148781314355)
-- [Evergreen Workbench](https://scottwalsh.co/products/the-evergreen-workbench)
+- [Child’s bookcase](https://ashdeco.com/products/midcentury-tree-bookshelf-nursery-kids-room?variant=53148781314355)
+- [Desk](https://www.youtube.com/watch?v=W3VFZPa62yg)
+- [Indoor lounge chair](https://www.potterybarn.com/products/callum-chair-with-ottoman-mp/)
+- [Isaac Youngs Shaker wall clock](https://store.woodandshop.com/products/digital-building-the-isaac-youngs-shaker-wall-clock-with-will-myers)
 - [Mini paint holder](https://www.reddit.com/r/minipainting/comments/awuefl/its_not_a_mini_but_ive_designed_a_paint_rack_you/)
-- [Miter Saw Station](https://www.mwawoodworks.com/posts/miter-saw-station)
+- [Miter saw station](https://www.mwawoodworks.com/posts/miter-saw-station)
+- Patio dining set w/ room for 8
+- [Patio lounge chairs](https://lolldesigns.com/collections/lounge-chairs/products/lollygagger-outdoor-lounge-chair-tall)
+- [Small shop workbench](https://scottwalsh.co/products/small-shop-workbench)
