@@ -9,19 +9,19 @@ aliases:
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
 ## 2026-07-28
-- I rewrote the Morning Review as five steps against Tiago Forte's model, extending the mnemonic to Every Commitment Needs Tracking Today and pulling the choice of what to do today out of Tasks into a step of its own.
-- I gave both reviews their own headings so their bodies read standalone, which lets the same text serve as the description of the recurring calendar events.
-- I settled that a phrase or idea extracted from a book becomes a zettel directly, because the reading inbox holds only clipped articles that have not been judged yet.
-- I replaced "a thought with legs" with "an idea worth developing" across the style guide and this log so the vocabulary stays single.
-- I switched Obsidian to the dark theme.
+- 12:35 am — I rewrote the Morning Review as five steps against Tiago Forte's model, extending the mnemonic to Every Commitment Needs Tracking Today and pulling the choice of what to do today out of Tasks into a step of its own.
+- 12:35 am — I gave both reviews their own headings so their bodies read standalone, which lets the same text serve as the description of the recurring calendar events.
+- 12:38 am — I settled that a phrase or idea extracted from a book becomes a zettel directly, because the reading inbox holds only clipped articles that have not been judged yet.
+- 12:35 am — I replaced "a thought with legs" with "an idea worth developing" across the style guide and this log so the vocabulary stays single.
+- 12:35 am — I switched Obsidian to the dark theme.
 
 ## 2026-07-27
-- I overhauled the vault by moving to a single running log that replaces the weekly-note stream, renaming every zettel to a title-based filename, and pinning the system notes so they sort above the zettels.
-- I fixed the Obsidian Web Clipper, which had been wrapping author names in dead wikilinks, and I settled how clipped articles flow into the reading inbox.
-- I formalized the task system around three surfaces, the log, project notes, and the calendar, and I defined a daily Morning Review that runs them.
-- I adopted project-based learning, in which each skill is learned by building a real project and the learning lives in that project's note, and I created [[_Learning]] as the counterweight for the deliberate study that building alone skips.
-- I scoped [[ArtSpacesSoCal]] as an active, learn-by-building Go project, established that Claude should tutor rather than write the code, and set a Go refresher as the first step.
-- I set up a writing folder as the home for my original writing and moved my first two essays into it.
+- 12:57 pm — I overhauled the vault by moving to a single running log that replaces the weekly-note stream, renaming every zettel to a title-based filename, and pinning the system notes so they sort above the zettels.
+- 1:39 pm — I fixed the Obsidian Web Clipper, which had been wrapping author names in dead wikilinks, and I settled how clipped articles flow into the reading inbox.
+- 12:57 pm — I formalized the task system around three surfaces, the log, project notes, and the calendar, and I defined a daily Morning Review that runs them.
+- 6:22 pm — I adopted project-based learning, in which each skill is learned by building a real project and the learning lives in that project's note, and I created [[_Learning]] as the counterweight for the deliberate study that building alone skips.
+- 8:31 pm — I scoped [[ArtSpacesSoCal]] as an active, learn-by-building Go project, established that Claude should tutor rather than write the code, and set a Go refresher as the first step.
+- 9:03 pm — I set up a writing folder as the home for my original writing and moved my first two essays into it.
 
 **To route (carried from the last weekly plan):**
 - [x] Make hotel reservation for our drive from UT to CA.
