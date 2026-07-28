@@ -36,7 +36,7 @@ An inert park of things that might one day be worth doing. **This is not a queue
 - Super-forecaster for student success
 
 ### Business Ventures
-- Establish a compliance consulting practice and application suite for charter schools.
+- Establish a compliance consulting practice and application suite for charter schools. Read through [The Strategic Independent](https://tomcritchlow.com/strategy/) and the [Technical Consulting Handbook](https://github.com/sdg-1/consulting-handbook)
 - Mix a couple of tracks under the *Reptidaddy* name.
 
 ### Home
@@ -49,7 +49,7 @@ An inert park of things that might one day be worth doing. **This is not a queue
 	- Uninterrupted Power Supply (UPS)
 
 ### Learning plans
-Consolidated into **[[Learning plan]]** — the ship track (Python/Go web apps) is active there; the algorithms and math/ML/creative resources live under Plans B and C, parked.
+→ Moved out of Someday: deliberate study lives in **[[_Learning]]**, and learn-by-building lives in each project note.
 
 ### Warhammer
 - [Course – Essential: Color Theory Collection](https://www.patreon.com/RomanLappatMiniatureArt/posts/essential-color-140801779)

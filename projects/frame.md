@@ -20,6 +20,11 @@ The living, authoritative roadmap is `~/projects/frame/ROADMAP.md`. This note is
 - **Tier 2 — follow-on (gate open):** first move is QAO Rosé Pine theming. Candidates include spotlight, counter / step-mark, freeze-screen mode, multi-capture canvas, window-composite backgrounds, floating screenshots, OCR, and the `eframe` → raw `wayland-client` + `tiny-skia` rewrite.
 - **Tier 3 — parked:** screen recording, recording overlays, webcam overlay, padded social backgrounds, cloud upload.
 
+## Learning (Rust)
+Building `frame` is how you're learning Rust — the project *is* the curriculum. Reach for these only when a concept needs grounding:
+- [YARR — Yet Another Rust Resource](https://yarr.fyi/) — crash course aimed at experienced engineers new to low-level.
+- [The Rust Book](https://doc.rust-lang.org/book/) + [Rustlings](https://github.com/rust-lang/rustlings) — canonical reference and exercises (ownership, lifetimes).
+
 ## Notes
 - Source: `~/projects/frame/` — see `ROADMAP.md`, `CLAUDE.md`, `SPIKE-FINDINGS.md`.
 - This note deliberately carries no task checklist; the roadmap owns the task state.
