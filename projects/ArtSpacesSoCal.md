@@ -8,22 +8,33 @@ tags:
 ---
 # ArtSpacesSoCal
 
-A web app — and a **learn-by-building** project: the vehicle for learning to ship a Python/Go backend. The deliberate-study track that surrounds it lives in [[_Learning]].
+A boutique search engine for Southern California art galleries and events — and the **learn-by-building** vehicle for shipping a Go web app. Source: `~/projects/artspacesocal/`.
 
-**Status:** planned — needs scope before it goes active (no empty shells).
-**Next action:** define the scope and a "shipped" definition (collaborative session).
+**Status:** active
+**Next action:** walk `main.go` / `db.go` / `auth.go` to understand the foundation you own, then write the galleries **list** handler (explain-then-write).
 
-## Shipped =
-> The finish line. What does the first shippable version actually do? To define — this is what keeps learn-by-building from becoming learn-forever.
+## Stack (decided — already built)
+Go stdlib `net/http` (no framework), `modernc.org/sqlite` (pure-Go, static binary), `smhanov/auth` for sessions. Migrations embedded + numbered. Deployed to Hetzner via `deploy.sh` + systemd; DB backed up. The infra is done — the *app* is the greenfield.
 
-## Scope / roadmap
-> To define collaboratively, then sync tasks here.
+## Shipped = (lean v1)
+Deployed on Hetzner, a visitor can **search SoCal galleries by name/city and open a gallery detail page**, on real seed data. That's the finish line — it delivers the core promise and keeps this from becoming learn-forever.
 
-## Learning + build toolkit
-The skills this project teaches, pulled in as each is needed:
-- **SQL & PostgreSQL** — [FM course](https://frontendmasters.com/courses/sql/) (stack-neutral: joins, indexes, JSONB, transactions).
-- **Backend lane — pick one:** Python → [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/); or Go → [Go & Vanilla JS: Fullstack Without Frameworks](https://frontendmasters.com/courses/vanilla-js-go/) (prereq: [A Tour of Go](https://go.dev/tour/) + [Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests/)).
-- **Deploy — just-in-time:** Docker + a host, once there's something to deploy.
+## Roadmap
+1. **Own the foundation** — read the existing `main.go`, `db.go`, `auth.go`, `deploy.sh`; understand every line before adding to it.
+2. **Galleries browse** — a handler + `html/template` for a gallery list and a detail page. *First moment the app is real.* → Go handlers, templating, querying SQLite.
+3. **Search (FTS5)** — an FTS5 virtual table over galleries, a `/search` handler + results page. → SQLite full-text search. *This is the "search engine."*
+4. **Ship v1** — seed real SoCal galleries, deploy, verify live.
+- Fast-follows (v1.1+): `events` (migration `002`, belongs-to gallery), `artists`, a map view (lat/lon already stored), saved galleries (auth is already there).
+
+## How we work (learning agreement)
+A **learning** project: Claude is tutor/reviewer, **not** the implementer. **You write every line of application code.**
+- **Start explain-then-write**, and **fade deliberately**: once a pattern is familiar, drop to *review-after* (attempt solo, then I critique), then *hint-only* for the routine. Tell: if my explanation makes you think "I could've written that," attempt-first next time.
+- **Guardrail:** I explain the concept and point at the docs/pattern — I do *not* write the code in my explanation, or "you write it" collapses into transcription.
+
+## Learning references (pull just-in-time)
+- **Primary:** your own foundation code (same exact stack) + the Go stdlib docs (`net/http`, `html/template`, `database/sql`).
+- **Patterns:** [Go & Vanilla JS: Fullstack Without Frameworks](https://frontendmasters.com/courses/vanilla-js-go/) — the relevant section per milestone, not a binge. It uses Postgres + JWT (you use SQLite + sessions), so you *translate* the pattern rather than copy it.
+- **If Go syntax is still shaky:** [A Tour of Go](https://go.dev/tour/) first, so building is productive struggle, not floundering.
 
 ## Notes
 > Context, source paths, and honest links to related notes.
