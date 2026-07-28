@@ -39,15 +39,13 @@ Three surfaces: a single running log, project notes, and the calendar. Nothing e
 - **Projects** live in their own notes, indexed by `projects/_Projects.md`. A task tied to a project belongs in the project note, which carries the next action; pull an action into the day's log only when you intend to do it. Projects carry a status — **planned → active → done**. A planned project (committed, within ~6 months, not started) stays a line under the Planned heading until it has real scope or begins; don't create empty project notes, the same discipline as seed notes. Uncommitted possibilities live in the same note's **Someday** section — an inert park, not a queue — and graduate to Planned only when a real pull appears.
 - **Calendar** holds only time-bound events — appointments and dated deadlines. Never a task store. If a thing isn't tied to a clock, it goes in the log or a project. In Google Calendar these are **events, never Google Tasks** — Tasks would recreate a competing store outside the vault.
 
-The system is run by a daily **Morning Review** — a ~15-minute *triage, not a work session*: it only decides and routes; execution comes after.
+Run the daily **Morning Review** in about 15 minutes. It is a triage, not a work session: decide and route now, and do the work afterward. Follow the order *Every Commitment Needs Tracking*: email, calendar, notes, tasks.
 
-1. Skim the calendar for what's ahead and anything to prep.
-2. Process the Gmail inbox, routing each item to a task, a clip, or a calendar event.
-3. Sort the top of the log — send each capture to its home (a project, the calendar, a `#seedling` note, or the trash).
-4. Confirm each active project carries a next action.
-5. Scan `#waiting` and nudge anything that has gone quiet.
-6. Set today under the day's heading: at most ~3 tasks, and **star the one** that would make the day a win. Send anything time-bound to the calendar.
+1. **Clear your email.** Process the inbox oldest-first. Archive it, make it a task, or save it as a clip.
+2. **Review your calendar.** Scan today's events and note anything to prepare.
+3. **Organize your notes.** Send each capture at the top of the log to its home: a project, the calendar, a `#seedling` note, or the trash.
+4. **Choose your tasks.** Give each active project a next action, then scan `#waiting` for anything stalled. Pick at most three tasks for today, star the one that matters most, and schedule anything timed.
 
-After skipped days, don't guilt-process the pile — bulk-shed the captures per the lossy rule, keep the few that still pull, and move on.
+Returning after a gap? Don't process the whole pile. Shed it in bulk, keep the few that still pull, and move on.
 
-A lighter **weekly review** (optional, ~5 minutes, skippable) covers what the daily can't: skim `_Projects` (promote / demote / park anything?), clear stale `#waiting`, and glance at the active project and `_Learning` for drift. A weekly glance, not a weekly note.
+Once a week, run a lighter **Weekly Review** in about 5 minutes. It covers what the daily cannot. Skim `_Projects` and promote, demote, or park anything that has shifted. Clear stale `#waiting`. Glance at your active project and `_Learning` for drift. Then name the three things that must happen this week. This is a glance, not a note, so skip it freely.
