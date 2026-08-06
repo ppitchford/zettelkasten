@@ -23,6 +23,10 @@ Hand-curated topic notes are the way back in — a note that gathers the zettels
 A note body stays grounded in its single source. Original synthesis and cross-source connections live in *separate linked notes* — never imported into a source note's body. This is the rule that keeps a source note honest about where its claim came from.
 ## Writing
 Original long-form writing — essays, drafts, reflections — lives in `writing/`, not root. It is the *output* of the slip-box, a layer above the zettels: an essay links *down* into the atomic notes it draws from. Distinct from a zettel (atomic, source-grounded) and from the log (dated capture).
+## Sources
+Source notes live in `sources/`, not root. A source note holds extracts from one book or article — other people's words and ideas, page-cited — and is the raw material a zettel is drawn from. It is exempt from the title convention: the filename is `Author — Title`, not an atomic claim, because the note makes no claim of its own. A source note is created only when there are extracts to type into it. 
+
+Articles arrive via the Web Clipper into `reading inbox/` to be read. A clip that earns extraction after reading mints an `id`, moves to `sources/`, and its clipped full text is discarded — the extracts are what survive. Books have no digital staging: the physical pile is the queue.
 ## Frontmatter
 `id` and `date` are scaffolded by the Unique note creator from `templates/note`. There is no `aliases` field — the filename *is* the title (see Titles), so links already read as prose. Titles are written by hand after the idea is fully formed — never auto-generated.
 ## Task system
