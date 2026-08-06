@@ -26,7 +26,7 @@ Original long-form writing — essays, drafts, reflections — lives in `writing
 ## Sources
 Source notes live in `sources/`, not root. A source note holds extracts from one book or article — other people's words and ideas, page-cited — and is the raw material a zettel is drawn from. It is exempt from the title convention: the filename is `Author — Title`, not an atomic claim, because the note makes no claim of its own. A source note is created only when there are extracts to type into it. 
 
-Articles arrive via the Web Clipper into `reading inbox/` to be read. A clip that earns extraction after reading mints an `id`, moves to `sources/`, and its clipped full text is discarded — the extracts are what survive. Books have no digital staging: the physical pile is the queue.
+Articles arrive via the Web Clipper into `reading inbox/` to be read. A clip that earns extraction after reading mints an `id`, moves to `sources/`, and its clipped full text is discarded — the extracts are what survive. Books have no digital staging: the physical pile is the queue — the note is created directly in `sources/` from `templates/source`, minting its `id` then. In both cases `created` records the capture date and `id` the day the note entered the vault; for a graduating clip these differ, and that is correct.
 ## Frontmatter
 `id` and `date` are scaffolded by the Unique note creator from `templates/note`. There is no `aliases` field — the filename *is* the title (see Titles), so links already read as prose. Titles are written by hand after the idea is fully formed — never auto-generated.
 ## Task system
