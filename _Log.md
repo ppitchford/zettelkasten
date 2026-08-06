@@ -12,6 +12,35 @@ The running record and capture surface — the one place to jot, newest day on t
 - 13:10 — Submitted an application for the Director of Product role with Flux Power. Separately I message Michele
 
 **To route:**
+- [ ] Find the following articles and add to the reading inbox:
+	- [ ]  Separate Writing and Formatting
+	- [ ] How to Record and Retrieve Anything You've Ever Had to Look Up Twice
+	- [ ] How to effectively write quality code with AI
+	- [ ] Thin Desires Are Eating Your Life
+	- [ ] Amazon's Ring and Google's Nest — U.S. Surveillance State
+	- [ ] A mini data center
+	- [ ] How I Learned to Read Way, Way More
+	- [ ] Cognitive Debt: When Velocity Exceeds Comprehension
+	- [ ] uv is the best thing to happen to the Python ecosystem in a decade
+	- [ ] Rob Pike's 5 Rules of Programming
+	- [ ] The peril of laziness lost
+	- [ ] Meetings are forcing functions
+	- [ ] The Angine de Poitrine Argument for UBI
+	- [ ] The Git Commands I Run Before Reading Any Code
+	- [ ] June thoughts — newsletter
+	- [ ] How to help someone use a computer
+	- [ ] You Can't Tell People Anything — Habitat Chronicles
+	- [ ] agents need control flow, not more prompts
+	- [ ] Nobody Gets Promoted for Simplicity
+	- [ ] Good software knows when to stop
+	- [ ] Media vita in morte sumus
+	- [ ] The Creative Power of Walking
+	- [ ] Using LLMs at Oxide — also relevant to the Personal Website / job-search toolkit
+	- [ ] Bullshit Jobs — Graeber's theory
+	- [ ] How to Set up a Local Coding Agent on macOS — Kyle Howells
+	- [ ] Master Claude Code: Proven Daily Workflows from 3 Technical Founders — video
+	- [ ] Set up Claude Code for maximum productivity
+	- [ ] Use AI agents like employees
 - [ ] Update the name of Ornatus to SGDW (Solar Gradient Desktop Wallpaper).
 - [ ] Sign up for the SDFWA hand tool joinery class in the Fall.
 - [ ] Watch [Use AI to Level Up Your Project Work](https://www.projectmanagement.com/1217206/use-ai-to-level-up-your-project-work)
