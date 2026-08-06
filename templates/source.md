@@ -8,5 +8,3 @@ created: {{date}}
 # 
 
 ## Extracts
-
-## Links
