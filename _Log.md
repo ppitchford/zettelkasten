@@ -16,6 +16,9 @@ The running record and capture surface — the one place to jot, newest day on t
 - [ ] Sign up for the SDFWA hand tool joinery class in the Fall.
 - [ ] Watch [Use AI to Level Up Your Project Work](https://www.projectmanagement.com/1217206/use-ai-to-level-up-your-project-work)
 - [ ] Look up distance learning law programs.
+- [ ] Develop the translation-device seed into a real note.
+- [ ] Develop the Desktop made-for-one seed into a real note.
+- [ ] Distill grimdark technique from the Bene_Crafts guides into its reference note.
 - [x] Schedule an appointment with a Primary Care doctor to establish care, have an annual physical, and have blood/lab work completed.
 - [x] Determine what systems to use for class management, payments, etc. #yoga-studio
 - [x] Organize your bathroom cabinets. #waiting 
