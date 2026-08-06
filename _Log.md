@@ -9,7 +9,24 @@ aliases:
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
 ## 2026-08-06
-- 13:10 — Submitted an application for the Director of Product role with Flux Power. Separately I message Michele 
+- 13:10 — Submitted an application for the Director of Product role with Flux Power. Separately I message Michele
+
+**To route:**
+- [ ] Update the name of Ornatus to SGDW (Solar Gradient Desktop Wallpaper).
+- [ ] Sign up for the SDFWA hand tool joinery class in the Fall.
+- [ ] Watch [Use AI to Level Up Your Project Work](https://www.projectmanagement.com/1217206/use-ai-to-level-up-your-project-work)
+- [ ] Look up distance learning law programs.
+- [x] Schedule an appointment with a Primary Care doctor to establish care, have an annual physical, and have blood/lab work completed.
+- [x] Determine what systems to use for class management, payments, etc. #yoga-studio
+- [x] Organize your bathroom cabinets. #waiting 
+- [ ] [Check your Deco DNS settings.](https://forum.mikrotik.com/t/slow-network-speeds-with-pi-hole-as-dns/172892/8) #waiting 
+- [x] Review [Cog](https://lab.puga.com.br/cog/) and determine whether to use or not.
+- [x] Schedule a regular garage cleaning.
+- [x] Pay the IRS penalty.
+- [x] Watch [“How To Remember Everything You Read”](https://www.youtube.com/watch?v=UBdlprawTkA)
+- [x] Watch [“How To Journal Like A Stoic Philosopher”](https://www.youtube.com/watch?v=6211qMWYz90)
+- [x] Watch [“The Notebook System That Saved My Brain”](https://youtu.be/BDde5vwj83E?si=ZUdutti6PGZki8M0)
+- [x] Watch [“9 Boring Habits That Will Put You Ahead of 99% of People”](https://youtu.be/LXaFHI_2Hus?si=VvabE5zhzaZ4lTrd)
 ## 2026-07-31
 - 12:03 — Applied to be a mentor for the PMI San Diego chapter this fall.
 
@@ -21,23 +38,6 @@ The running record and capture surface — the one place to jot, newest day on t
 	- I switched the log to 24-hour times so that they match the `YYYY-MM-DD` dates and the `YYYYMMDDHHmmss` id.
 	- I settled the entry format as a bullet, the time, an em dash, and then the sentence, keeping the bullet because it is what carries the nesting.
 - 13:00 — Begin drive from Park City to San Marcos.
-
-**To route:**
-- [ ] Forward Shane's emails to Rachel to send to the lawyer for review. #waiting
-- [ ] Update the name of Ornatus to SGDW (Solar Gradient Desktop Wallpaper).
-- [ ] Schedule an appointment with a Primary Care doctor to establish care, have an annual physical, and have blood/lab work completed.
-- [ ] Determine what systems to use for class management, payments, etc. #yoga-studio
-- [ ] Review data in your Apple Passwords app.
-- [ ] After your review, migrate the remaining data from Apple Passwords to your 1Password vault. #waiting
-- [ ] Organize your bathroom cabinets. #waiting 
-- [ ] [Check your Deco DNS settings.](https://forum.mikrotik.com/t/slow-network-speeds-with-pi-hole-as-dns/172892/8) #waiting 
-- [ ] Review [Cog](https://lab.puga.com.br/cog/) and determine whether to use or not.
-- [ ] Schedule a regular garage cleaning.
-- [ ] Pay the IRS penalty.
-- [ ] Watch [“How To Remember Everything You Read”](https://www.youtube.com/watch?v=UBdlprawTkA)
-- [ ] Watch [“How To Journal Like A Stoic Philosopher”](https://www.youtube.com/watch?v=6211qMWYz90)
-- [ ] Watch [“The Notebook System That Saved My Brain”](https://youtu.be/BDde5vwj83E?si=ZUdutti6PGZki8M0)
-- [ ] Watch [“9 Boring Habits That Will Put You Ahead of 99% of People”](https://youtu.be/LXaFHI_2Hus?si=VvabE5zhzaZ4lTrd)
 
 ## 2026-07-27
 - 12:57
