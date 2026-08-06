@@ -46,8 +46,15 @@ An inert park of things that might one day be worth doing. **This is not a queue
 ### Home
 - [Print and frame the Spilhaus Projection for the office.](https://storymaps.arcgis.com/stories/756bcae18d304a1eac140f19f4d5cb3d)
 - Home Lab build:
-	- Home security (cameras, doorbell, locks, etc.)
-	- Environmental management (thermostat, water leak detection, etc.)
+	- Home security
+		- Cameras
+		- Doorbell
+		- Locks
+		- Sensors
+	- Environmental management
+		- Thermostat(s)
+		- Env sensors
+		- Water leak detection
 	- Network-Attached Storage (NAS – for backups & media)
 	- Networking (access points, router, wiring, etc.)
 	- Uninterrupted Power Supply (UPS)
@@ -70,4 +77,5 @@ An inert park of things that might one day be worth doing. **This is not a queue
 - [Miter saw station](https://www.mwawoodworks.com/posts/miter-saw-station)
 - Patio dining set w/ room for 8
 - [Patio lounge chairs](https://lolldesigns.com/collections/lounge-chairs/products/lollygagger-outdoor-lounge-chair-tall)
-- [Small shop workbench](https://scottwalsh.co/products/small-shop-workbench)
+- [Sewing table](https://www.pekovichwoodworks.com/sewing-table/)
+- [Shoe bench](https://www.pekovichwoodworks.com/work#/bench/)

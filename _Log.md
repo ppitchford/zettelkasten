@@ -8,6 +8,11 @@ aliases:
 
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
+## 2026-08-06
+- 13:10 — Submitted an application for the Director of Product role with Flux Power. Separately I message Michele 
+## 2026-07-31
+- 12:03 — Applied to be a mentor for the PMI San Diego chapter this fall.
+
 ## 2026-07-28
 - 09:30
 	- I time-stamped yesterday's entries, taking the times from the git history so that each bullet carries the time its thread of work began.
