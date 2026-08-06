@@ -1,9 +1,10 @@
 ---
+id: "{{date:YYYYMMDDHHmmss}}"
 title: 
 source: 
 author: 
 published: 
-created: {{date}}
+created: {{date:YYYY-MM-DD}}
 ---
 # 
 
