@@ -1,8 +1,12 @@
+---
+id: "20260806154440"
 title: How to Remember Everything You Read (My Notecard System)
 source: https://www.youtube.com/watch?v=UBdlprawTkA
 author: Ryan Holiday
 published: 2026-05-19
-# Holiday – How to Remember Everything You Read (My Notecard System)
+created: 2026-08-06
+---
+# Holiday — How to Remember Everything You Read (My Notecard System)
 
 ## Extracts
 
