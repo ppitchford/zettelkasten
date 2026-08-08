@@ -17,7 +17,7 @@ Active work, planned work, and an inert Someday park — a commitment ladder, mo
 ## Planned (next 6 months)
 Committed to start within the horizon, not yet active. Promote into Active — a full note, next actions surfaced into a weekly plan — when work begins. No empty shells: a planned project stays a line here until it has real scope or starts.
 
-- Desktop made for one — single-user desktop environment. Idea / seed: [[Desktop made for one — seed]]
+- Desktop made for one — single-user desktop environment. Idea / seed: [[Desktop made for one — the idea]]
 - Fireplace surround. Include lists for materials, cuts, and the work breakdown structure.
 - Grow a bonsai tree (for Maeve)
 - Maeve’s crib build — crib & mobile arm
