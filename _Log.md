@@ -8,46 +8,43 @@ aliases:
 
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
-## 2026-08-06
-- 13:10 — Submitted an application for the Director of Product role with Flux Power. Separately I message Michele
-
-**To route:**
-- [ ] Find the following articles and add to the reading inbox:
-	- [ ]  Separate Writing and Formatting
-	- [ ] How to Record and Retrieve Anything You've Ever Had to Look Up Twice
-	- [ ] How to effectively write quality code with AI
-	- [ ] Thin Desires Are Eating Your Life
-	- [ ] Amazon's Ring and Google's Nest — U.S. Surveillance State
-	- [ ] A mini data center
-	- [ ] How I Learned to Read Way, Way More
-	- [ ] Cognitive Debt: When Velocity Exceeds Comprehension
-	- [ ] uv is the best thing to happen to the Python ecosystem in a decade
-	- [ ] Rob Pike's 5 Rules of Programming
-	- [ ] The peril of laziness lost
-	- [ ] Meetings are forcing functions
-	- [ ] The Angine de Poitrine Argument for UBI
-	- [ ] The Git Commands I Run Before Reading Any Code
-	- [ ] June thoughts — newsletter
-	- [ ] How to help someone use a computer
-	- [ ] You Can't Tell People Anything — Habitat Chronicles
-	- [ ] agents need control flow, not more prompts
-	- [ ] Nobody Gets Promoted for Simplicity
-	- [ ] Good software knows when to stop
-	- [ ] Media vita in morte sumus
-	- [ ] The Creative Power of Walking
-	- [ ] Using LLMs at Oxide — also relevant to the Personal Website / job-search toolkit
-	- [ ] Bullshit Jobs — Graeber's theory
-	- [ ] How to Set up a Local Coding Agent on macOS — Kyle Howells
-	- [ ] Master Claude Code: Proven Daily Workflows from 3 Technical Founders — video
-	- [ ] Set up Claude Code for maximum productivity
-	- [ ] Use AI agents like employees
-- [ ] Update the name of Ornatus to SGDW (Solar Gradient Desktop Wallpaper).
+## 2026-08-09
+- [ ] Update the name of `Ornatus`.
 - [ ] Sign up for the SDFWA hand tool joinery class in the Fall.
 - [ ] Watch [Use AI to Level Up Your Project Work](https://www.projectmanagement.com/1217206/use-ai-to-level-up-your-project-work)
 - [ ] Look up distance learning law programs.
 - [ ] Develop the translation-device seed into a real note.
-- [ ] Develop the Desktop made-for-one seed into a real note.
-- [ ] Distill grimdark technique from the Bene_Crafts guides into its reference note.
+- [ ] Distill BeneCrafts grimdark technique into a reference note.
+## 2026-08-07
+- [x] Find the following articles and add to the reading inbox:
+	- [x]  Separate Writing and Formatting
+	- [x] How to Record and Retrieve Anything You've Ever Had to Look Up Twice
+	- [x] How to effectively write quality code with AI
+	- [x] Thin Desires Are Eating Your Life
+	- [x] Amazon's Ring and Google's Nest — U.S. Surveillance State
+	- [x] A mini data center
+	- [x] How I Learned to Read Way, Way More
+	- [x] Cognitive Debt: When Velocity Exceeds Comprehension
+	- [x] uv is the best thing to happen to the Python ecosystem in a decade
+	- [x] Rob Pike's 5 Rules of Programming
+	- [x] The peril of laziness lost
+	- [x] Meetings are forcing functions
+	- [x] The Angine de Poitrine Argument for UBI
+	- [x] The Git Commands I Run Before Reading Any Code
+	- [x] June thoughts — newsletter
+	- [x] How to help someone use a computer
+	- [x] You Can't Tell People Anything — Habitat Chronicles
+	- [x] agents need control flow, not more prompts
+	- [x] Nobody Gets Promoted for Simplicity
+	- [x] Good software knows when to stop
+	- [x] Media vita in morte sumus
+	- [x] The Creative Power of Walking
+	- [x] Using LLMs at Oxide — also relevant to the Personal Website / job-search toolkit
+	- [x] Bullshit Jobs — Graeber's theory
+	- [x] How to Set up a Local Coding Agent on macOS — Kyle Howells
+
+## 2026-08-06
+- 13:10 — Submitted an application for the Director of Product role with Flux Power. Separately I message Michele
 - [x] Schedule an appointment with a Primary Care doctor to establish care, have an annual physical, and have blood/lab work completed.
 - [x] Determine what systems to use for class management, payments, etc. #yoga-studio
 - [x] Organize your bathroom cabinets. #waiting 
