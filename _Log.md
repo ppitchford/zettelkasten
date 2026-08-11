@@ -8,13 +8,33 @@ aliases:
 
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
-## 2026-08-09
-- [ ] Update the name of `Ornatus`.
-- [ ] Sign up for the SDFWA hand tool joinery class in the Fall.
-- [ ] Watch [Use AI to Level Up Your Project Work](https://www.projectmanagement.com/1217206/use-ai-to-level-up-your-project-work)
+## 2026-08-11
+* 09:00 — Take dogs to PawCommons for a ½ day of play and grooming.
+* 12:00 — Check mail.
+* 15:16 — Pay the California Franchise Tax Board penalty.
+## 2026-08-10
+- 10:00 — Attend the anatomy scan appointment with Rachel.
+- 11:30 — Brunch with Rachel.
+- 12:30 — Remove shower doors in the second bathroom.
+- 13:30 — Update my PMI community profile.
+- 18:00 — Interview with PMI-SD representative for mentorship program.
+- [ ] Remove silicon residue and clean shower tub and walls.
+- [ ] Apply silicon to screw holes in shower walls (x6)
+- [ ] Migrate from MangoWM to DWL with Bar patch.
+- [ ] Migrate from fuzzel to dmenu.
+- [ ] Pick up a field notes pocket book to replace digital to-do list.
 - [ ] Look up distance learning law programs.
-- [ ] Develop the translation-device seed into a real note.
 - [ ] Distill BeneCrafts grimdark technique into a reference note.
+- [ ] Update `frame` to save screenshots to the `screenshot/` directory in `Pictures/`.
+- [ ] Visit a camera store to determine if a Ricoh GR IIIx or Nikon Z 50 II is the best option.
+- [ ] Review data in Apple Passwords.
+- [ ] Migrate data from Apple Passwords to 1Password. #waiting 
+## 2026-08-09
+- 11:37 — Spent thirty minutes trying to resync Obsidian mobile with my repository, but I seem to have an issue with my fine-grained access token. The quickest solution is to make a classic token with repository scope instead; it has no per-repository selection step to get wrong, so if the clone still give a 404 error message you'll know the problem is elsewhere.
+- 13:00 — Hands On Safety Test (HOST) at the San Diego Fine Woodworkers Association.
+- 19:00 — Dinner for Clendon’s birthday at Vigilucci’s in Carlsbad.
+
+- [x] Add reminder to calendar to sign up for the SDFWA hand tool joinery class on September 1.
 ## 2026-08-07
 - [x] Find the following articles and add to the reading inbox:
 	- [x]  Separate Writing and Formatting
