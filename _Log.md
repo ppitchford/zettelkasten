@@ -8,27 +8,50 @@ aliases:
 
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
+- [ ] Remove silicon residue and clean shower tub and walls.
+- [ ] Apply silicon to screw holes in shower walls (x6)
+- [ ] Migrate from MangoWM to DWL with Bar patch.
+- [ ] Migrate from fuzzel to dmenu.
+- [ ] Pick up a field notes pocket book to replace digital to-do list.
+- [ ] Distill BeneCrafts grimdark technique into a reference note.
+- [ ] Update `frame` to save screenshots to the `screenshot/` directory in `Pictures/`.
+- [ ] Visit a camera store to determine if a Ricoh GR IIIx or Nikon Z 50 II is the best option.
+- [ ] Review data in Apple Passwords.
+- [ ] Migrate data from Apple Passwords to 1Password. #waiting 
+- [ ] Remove silicon residue and clean shower tub and walls.
+- [ ] Apply silicon to screw holes in shower walls (x6) #waiting 
+- [ ] Migrate from fuzzel to dmenu.
+- [ ] Pick up a field notes pocket book to replace digital to-do list.
 ## 2026-08-11
-* 09:00 — Take dogs to PawCommons for a ½ day of play and grooming.
-* 12:00 — Check mail.
+* 09:00 — Took dogs to PawCommons for a ½ day of play and grooming.
+* 09:35 — Evaluated stock dwl on tty2.
+* 12:00 — Fixed `PATH`/`PKG_CONFIG_PATH` duplication, then added tty1 guard and compositor selector to `.zprofile`.
+* 12:55 — Built dwl v0.8 with bar, movestack, and gaps patches; wrote `config.h` carrying MangoWM keybinds.
+* 13:40 — Cut over to dwl as login compositor, and removed Quickshell and MangoWM from the boot path.
+	* Configuration is now compile-time which means every change costs a rebuild and a session.
+* 13:25 — Added bar patch to dwl with a transparent background.
+* 13:54 — Updated bar font to `iMWritingQuat Nerd Font` and a transparent selected scheme.
+* 14:11 — Implemented code to hide empty tags.
+* 14:24 — Replaced numbered tags with dots (bullets), changed the selected scheme color to Rosé Pine gold (0xf6c177), and hid the layout symbol.
 * 15:16 — Pay the California Franchise Tax Board penalty.
+* 16:54 — Installed `xdg-desktop-portal-gtk`; Helium and Obsidian now follow the theme live via Ornatus.
+	* `sweep_unattached`'s warning in `/tmp/ornatus.log` is still the only instrument for the unproven startup race fix.
+* 7:17 — Repaired `launcher` system menu — four of five actions were silently broken (swaylock, `loginctl`, `mmsg`); replaced with hyprlock and runit commands.
+* 18:26 — Replaced wifi name and volume text with Nerd Font glyphs in the status bar.
+* 18:48 — Added signal-driven bar refresh for instant volume feedback.
+* 18:56 — Replaced `pkill -f` with a PID file after the pattern matched the session pipeline and forced two logouts.
+* 19:05 — Uninstalled MangoWM and Quickshell; 1,746 lines removed from version control.
+
+- [x] Migrate from MangoWM to DWL with Bar patch.
 ## 2026-08-10
 - 10:00 — Attend the anatomy scan appointment with Rachel.
 - 11:30 — Brunch with Rachel.
 - 12:30 — Remove shower doors in the second bathroom.
 - 13:30 — Update my PMI community profile.
 - 18:00 — Interview with PMI-SD representative for mentorship program.
-- [ ] Remove silicon residue and clean shower tub and walls.
-- [ ] Apply silicon to screw holes in shower walls (x6)
-- [ ] Migrate from MangoWM to DWL with Bar patch.
-- [ ] Migrate from fuzzel to dmenu.
-- [ ] Pick up a field notes pocket book to replace digital to-do list.
-- [ ] Look up distance learning law programs.
-- [ ] Distill BeneCrafts grimdark technique into a reference note.
-- [ ] Update `frame` to save screenshots to the `screenshot/` directory in `Pictures/`.
-- [ ] Visit a camera store to determine if a Ricoh GR IIIx or Nikon Z 50 II is the best option.
-- [ ] Review data in Apple Passwords.
-- [ ] Migrate data from Apple Passwords to 1Password. #waiting 
+
+- [x] Look up distance learning law programs.
+
 ## 2026-08-09
 - 11:37 — Spent thirty minutes trying to resync Obsidian mobile with my repository, but I seem to have an issue with my fine-grained access token. The quickest solution is to make a classic token with repository scope instead; it has no per-repository selection step to get wrong, so if the clone still give a 404 error message you'll know the problem is elsewhere.
 - 13:00 — Hands On Safety Test (HOST) at the San Diego Fine Woodworkers Association.

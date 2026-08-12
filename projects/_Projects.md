@@ -30,14 +30,15 @@ Committed to start within the horizon, not yet active. Promote into Active — a
 An inert park of things that might one day be worth doing. **This is not a queue.** Nothing here is owed. Skim it on a random revisit, and if one item has quietly grown a real thought or a real pull, promote it — into a seed note, a project, or a weekly plan. Everything else stays parked without guilt, and parking something is a legitimate resting place, not a deferral of a debt.
 
 ### Aspirational builds
-- Desktop, e-ink translation device. Triangular shape (like a name card), battery powered, self-contained for real-time translation.
+- Compositor like river-classic written in Rust.
+- E-ink translation device. Triangular shape (like a name card), battery powered, self-contained for real-time translation.
 - [Fault-tolerant RL octocopter](https://karolina.mgdubiel.com/drone/)
 - [LLM from sctrach](https://github.com/angelos-p/llm-from-scratch)
 - [Local coding agent](https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos)
 - [Local GuppyLM  instance for model training](https://github.com/arman-bd/guppylm)
 - [OpenMower – ROS and RTOS-based robotic mower platform](https://openmower.de/)
 - [OOMWOO – Open-Source Robot Vacuum](https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/)
-- Super-forecaster for student success
+- Super-forecaster for student success.
 
 ### Business Ventures
 - Establish a compliance consulting practice and application suite for charter schools. Read through [The Strategic Independent](https://tomcritchlow.com/strategy/) and the [Technical Consulting Handbook](https://github.com/sdg-1/consulting-handbook)
