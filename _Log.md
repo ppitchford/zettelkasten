@@ -20,7 +20,16 @@ The running record and capture surface — the one place to jot, newest day on t
 - [ ] Remove silicon residue and clean shower tub and walls.
 - [ ] Apply silicon to screw holes in shower walls (x6) #waiting 
 - [ ] Pick up a field notes pocket book to replace digital to-do list.
-
+## 2026-08-13
+10:00 — Updated color scheme to match new wallpaper.
+11:19 — Dropped the unfocused window opacity in favour of a 3px lavender focus border.
+11:21 — Made the Waybar background opaque and wallpaper-toned, with Iceberg Dark glyph colours.
+11:29
+* Replaced the Rosé Pine theme bundles with Iceberg.
+* Pointed hyprlock's background at the current wallpaper.
+11:31 — Moved hyprlock to Iceberg Dark alongside the wallpaper change.
+12:14 — Replaced Iceberg with Catppuccin across all themed surfaces.
+13:49 — Reduced the scroller's outer padding via scroller_structs, inverted the mouse scroll direction, and removed the dead Autostart section and an untested per-monitor tag rule.
 ## 2026-08-12
 - 08:31 — Committed to dwl as the permanent compositor by hardcoding it into the `.zprofile` session chain and deleting the `~/.config/compositor` selector, making git checkout the recovery path rather than a runtime switch.
 - 08:46 — Regenerated the package manifests to capture the state of the system after the dwl migration.

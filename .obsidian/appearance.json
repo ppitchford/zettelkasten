@@ -4,7 +4,7 @@
   "interfaceFontFamily": "Helvetica",
   "textFontFamily": "iA Writer Quattro S",
   "monospaceFontFamily": "CommitMono Nerd Font",
-  "accentColor": "",
+  "accentColor": "#7759b4",
   "showRibbon": true,
   "baseFontSize": 14,
   "enabledCssSnippets": [
