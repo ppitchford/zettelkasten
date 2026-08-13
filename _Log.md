@@ -8,20 +8,45 @@ aliases:
 
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
 
-- [ ] Remove silicon residue and clean shower tub and walls.
-- [ ] Apply silicon to screw holes in shower walls (x6)
-- [ ] Migrate from MangoWM to DWL with Bar patch.
-- [ ] Migrate from fuzzel to dmenu.
-- [ ] Pick up a field notes pocket book to replace digital to-do list.
+
 - [ ] Distill BeneCrafts grimdark technique into a reference note.
-- [ ] Update `frame` to save screenshots to the `screenshot/` directory in `Pictures/`.
-- [ ] Visit a camera store to determine if a Ricoh GR IIIx or Nikon Z 50 II is the best option.
+- [ ] Visit a camera store to look at camera options:
+	- Ricoh GR IIIx
+	- Nikon Z 50 II
+	- Sony A6400
+	- Fujifilm X-M
 - [ ] Review data in Apple Passwords.
 - [ ] Migrate data from Apple Passwords to 1Password. #waiting 
 - [ ] Remove silicon residue and clean shower tub and walls.
 - [ ] Apply silicon to screw holes in shower walls (x6) #waiting 
-- [ ] Migrate from fuzzel to dmenu.
 - [ ] Pick up a field notes pocket book to replace digital to-do list.
+
+## 2026-08-12
+- 08:31 — Committed to dwl as the permanent compositor by hardcoding it into the `.zprofile` session chain and deleting the `~/.config/compositor` selector, making git checkout the recovery path rather than a runtime switch.
+- 08:46 — Regenerated the package manifests to capture the state of the system after the dwl migration.
+- 12:57
+	- Recorded the dwl migration in the Claude Code guidance files and tightened the instructions around asserting system state without verifying it.
+	- Replaced the old `launcher` script with native fuzzel for application  launching, and repurposed it as `varia`, a dispatcher covering the six modes fuzzel cannot handle: calc, files, emoji, symbols, clipboard, and system.
+	- Fixed the fuzzel theme by moving `border-width` and `border-radius` into the `[border]` section where they are actually read, switched the icon theme to Papirus for its full 88,300-icon set, and raised the file-search line count.
+	- Regenerated the manifests after installing Papirus and removing GIMP and foot.
+- 14:29 — Replaced dwl with MangoWM 0.14.4 from the Void repositories, installed alongside scenefx and cJSON against the existing wlroots 0.19.3. Wrote a minimal configuration stating only the values that differ from the shipped default: scroller layout on all nine tags with a 0.33 proportion preset for three columns on the ultrawide, 6px corner radius, 0.92 unfocused opacity, no borders, and no animations. Discovered in the process that the ultrawide enumerates as DP-2 under mango rather than DP-3 as it did under dwl.
+- 15:00 — Added Waybar using its dwl IPC modules, which mango 0.14.4 still speaks, with a static dark stylesheet in Inter SemiBold and JetBrainsMono Nerd Font. Renamed `dwl-session` to `wayland-session` and made it the single home for session startup, removing the duplicated `exec-once` list from the compositor config. Pointed `.zprofile` at mango, making it the login desktop.
+- 15:06 — Removed the dwl binary, the orphaned `dwl-status` script, and the `.gitignore` rule that excluded the binary, keeping the source tree as reference for the eventual Rust bar.
+- 15:08 — Dropped `wlroots0.19-devel`, orphaned now that nothing is built
+  against it, and swept 206MB of unrelated orphaned dependencies left behind by GIMP and foot.
+- 15:22 — Corrected the ornatus README, which still described the retired sixteen-frame solar gradient, a `wallpaper_dir` key that no longer exists, and a `mango.conf` theme mapping that was never needed. Documented the reload chain accurately, including the `gsettings` color-scheme call that reaches Chromium and Electron applications through the GTK portal.
+- 15:27 — Fixed the remaining file headers in `theme.rs`, `location.rs`,
+  `wayland/mod.rs` and the systemd unit, all of which still called ornatus a
+  solar-gradient daemon.
+- 15:30 — Rewrote `dump.sh` to write each package manifest to a temporary file and move it into place only on success, so a failed query can no longer truncate the record to nothing — a failure mode indistinguishable from a legitimate removal, and one nearly mistaken for it earlier in the day.
+- 15:35 — Noted `check-ignore -v` in the `.zshrc` dotfiles comment as the way to confirm which `.gitignore` rule is hiding a file, a trap the existing comment warned about without saying how to diagnose.
+- 15:45 — Switched Helium from a 461MB extracted tree to a single AppImage, reducing the install to 153MB and making future updates an atomic file replacement rather than a directory swap
+- 15:52 — Wrote `helium-update`, which checks GitHub for a newer release, confirms before acting, downloads to a temporary file, verifies the new binary reports the expected version, and only then swaps it into place. Its first run found an update waiting and moved from `0.15.3.1` to `0.15.4.1`.
+- 16:42 — Brought the greetd configuration into the system mirror and its install script, and removed the tuigreet keybinding overrides after establishing that the hint bar is hardcoded to F2, F3 and F12 regardless of the flags, so the displayed labels had been contradicting the actual bindings. Confirmed that unprivileged power actions must go through `loginctl`, since the bare binaries are root-only and unusable from the greeter.
+- Removed the dead `~/.config/GIMP` and `~/.config/Ladybird` directories.
+- Deleted two dangling runit service symlinks, `polkit` and `shhd`, that had been failing silently since March.
+- Deleted two zettelkasten notes superseded by the migration.
+- Verified the ornatus startup race is genuinely fixed: both outputs attached at zero milliseconds on a real boot.
 ## 2026-08-11
 * 09:00 — Took dogs to PawCommons for a ½ day of play and grooming.
 * 09:35 — Evaluated stock dwl on tty2.
