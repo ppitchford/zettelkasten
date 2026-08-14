@@ -10,6 +10,7 @@ Active work, planned work, and an inert Someday park — a commitment ladder, mo
 
 ## Active
 - [[ArtSpacesSoCal]] — Go search engine for SoCal galleries; learn-by-building (next: refresh Go via Tour of Go, then own the foundation)
+- [[Desktop made for one]] — single-user desktop on Void/MangoWM (next: strip greetd from `~/system`)
 - [[frame]] — screenshot tool for Void / MangoWM (v1 shipped; Tier 2 follow-on)
 - [[Medicine cabinet install]] — bathroom install (next: clear-coat the pieces)
 - [[Kitchen shelf]] — shelf build and install (next: round the corner)
@@ -17,7 +18,6 @@ Active work, planned work, and an inert Someday park — a commitment ladder, mo
 ## Planned (next 6 months)
 Committed to start within the horizon, not yet active. Promote into Active — a full note, next actions surfaced into a weekly plan — when work begins. No empty shells: a planned project stays a line here until it has real scope or starts.
 
-- Desktop made for one — single-user desktop environment. Idea / seed: [[Desktop made for one — the idea]]
 - Fireplace surround. Include lists for materials, cuts, and the work breakdown structure.
 - Grow a bonsai tree (for Maeve)
 - Maeve’s crib build — crib & mobile arm
