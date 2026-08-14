@@ -1,8 +1,6 @@
 ---
 id: "20260722165219"
 date: 2026-07-22
-aliases:
-  - Style guide
 ---
 # Style guide
 

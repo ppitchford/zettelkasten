@@ -1,8 +1,6 @@
 ---
 id: "20260722174700"
 date: 2026-07-22
-aliases:
-  - Reading inbox
 ---
 # Reading inbox
 

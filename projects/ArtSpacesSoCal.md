@@ -1,8 +1,6 @@
 ---
 id: "20260722180300"
 date: 2026-07-22
-aliases:
-  - ArtSpacesSoCal
 tags:
   - project
 ---

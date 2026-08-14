@@ -1,8 +1,6 @@
 ---
 id: "{{date:YYYYMMDDHHmmss}}"
 date: {{date:YYYY-MM-DD}}
-aliases:
-  - 
 tags:
   - project
 ---

@@ -1,8 +1,6 @@
 ---
 id: "20260722180400"
 date: 2026-07-22
-aliases:
-  - Medicine cabinet install
 tags:
   - project
 ---

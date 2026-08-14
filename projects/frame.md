@@ -1,8 +1,6 @@
 ---
 id: "20260722180100"
 date: 2026-07-22
-aliases:
-  - frame
 tags:
   - project
 ---

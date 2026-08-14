@@ -1,8 +1,6 @@
 ---
 id: "20260722180000"
 date: 2026-07-22
-aliases:
-  - Projects
 ---
 # Projects
 

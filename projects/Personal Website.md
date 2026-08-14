@@ -1,8 +1,6 @@
 ---
 id: "20260722180200"
 date: 2026-07-22
-aliases:
-  - Personal Website
 tags:
   - project
 ---
