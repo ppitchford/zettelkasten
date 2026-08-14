@@ -10,27 +10,28 @@ The running record and capture surface — the one place to jot, newest day on t
 
 
 - [ ] Distill BeneCrafts grimdark technique into a reference note.
-- [ ] Visit a camera store to look at camera options:
-	- Ricoh GR IIIx
-	- Nikon Z 50 II
-	- Sony A6400
-	- Fujifilm X-M
 - [ ] Review data in Apple Passwords.
 - [ ] Migrate data from Apple Passwords to 1Password. #waiting 
 - [ ] Remove silicon residue and clean shower tub and walls.
 - [ ] Apply silicon to screw holes in shower walls (x6) #waiting 
 - [ ] Pick up a field notes pocket book to replace digital to-do list.
-## 2026-08-13
-10:00 — Updated color scheme to match new wallpaper.
-11:19 — Dropped the unfocused window opacity in favour of a 3px lavender focus border.
-11:21 — Made the Waybar background opaque and wallpaper-toned, with Iceberg Dark glyph colours.
-11:29
-* Replaced the Rosé Pine theme bundles with Iceberg.
-* Pointed hyprlock's background at the current wallpaper.
-11:31 — Moved hyprlock to Iceberg Dark alongside the wallpaper change.
-12:14 — Replaced Iceberg with Catppuccin across all themed surfaces.
-13:49 — Reduced the scroller's outer padding via scroller_structs, inverted the mouse scroll direction, and removed the dead Autostart section and an untested per-monitor tag rule.
-## 2026-08-12
+### 2026-08-14
+* 11:15 — Traced Helium's "Opening in existing browser" with no window to two live compositors rather than a stale lock. Yesterday's greetd→agetty switch left the greetd-era mango running; the agetty-era one re-bound `wayland-0`, so Helium — started seven seconds after the first — stayed attached to a compositor with no visible output. Killed the orphaned tree and the duplicate daemon set it carried.
+* 11:57 — Removed greetd and tuigreet, then `/etc/greetd` by hand, three of whose four files were hand-written and so unowned by either package. xbps disabled the `_greeter` user rather than deleting it, which is correct — deleting would free UID 992 for reuse.
+* 12:10 — Confirmed the tty1 session can't be stacked: `.zprofile` execs, so mango replaces the login shell and the process runit supervises as `agetty-tty1` *is* the session. The duplicate was a one-time artifact of switching managers mid-session, not a standing fault.
+* 12:20 — Opened [[Desktop made for one]] as an active project note, carrying the machine's desktop configuration and its open threads. Promoted from Planned; resolves the dangling link in [[Desktop made for one — the idea]].
+
+### 2026-08-13
+* 10:00 — Updated color scheme to match new wallpaper.
+* 11:19 — Dropped the unfocused window opacity in favour of a 3px lavender focus border.
+* 11:21 — Made the Waybar background opaque and wallpaper-toned, with Iceberg Dark glyph colours.
+* 11:29
+	* Replaced the Rosé Pine theme bundles with Iceberg.
+	* Pointed hyprlock's background at the current wallpaper.
+* 11:31 — Moved hyprlock to Iceberg Dark alongside the wallpaper change.
+* 12:14 — Replaced Iceberg with Catppuccin across all themed surfaces.
+* 13:49 — Reduced the scroller's outer padding via scroller_structs, inverted the mouse scroll direction, and removed the dead Autostart section and an untested per-monitor tag rule.
+### 2026-08-12
 - 08:31 — Committed to dwl as the permanent compositor by hardcoding it into the `.zprofile` session chain and deleting the `~/.config/compositor` selector, making git checkout the recovery path rather than a runtime switch.
 - 08:46 — Regenerated the package manifests to capture the state of the system after the dwl migration.
 - 12:57
@@ -56,7 +57,7 @@ The running record and capture surface — the one place to jot, newest day on t
 - Deleted two dangling runit service symlinks, `polkit` and `shhd`, that had been failing silently since March.
 - Deleted two zettelkasten notes superseded by the migration.
 - Verified the ornatus startup race is genuinely fixed: both outputs attached at zero milliseconds on a real boot.
-## 2026-08-11
+### 2026-08-11
 * 09:00 — Took dogs to PawCommons for a ½ day of play and grooming.
 * 09:35 — Evaluated stock dwl on tty2.
 * 12:00 — Fixed `PATH`/`PKG_CONFIG_PATH` duplication, then added tty1 guard and compositor selector to `.zprofile`.
