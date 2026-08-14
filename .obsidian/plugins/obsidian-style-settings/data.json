@@ -8,5 +8,6 @@
   "catppuccin-heading-settings@@ctp-h4": "var(--ctp-subtext0)",
   "catppuccin-heading-settings@@ctp-h5": "var(--ctp-subtext0)",
   "catppuccin-heading-settings@@ctp-h6": "var(--ctp-subtext0)",
-  "catppuccin-heading-settings@@ctp-page-title": "var(--ctp-subtext0)"
+  "catppuccin-heading-settings@@ctp-page-title": "var(--ctp-subtext0)",
+  "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-full-palette"
 }

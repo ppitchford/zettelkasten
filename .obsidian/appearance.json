@@ -1,10 +1,10 @@
 {
-  "cssTheme": "Catppuccin",
+  "cssTheme": "Minimal",
   "showViewHeader": false,
-  "interfaceFontFamily": "Helvetica",
-  "textFontFamily": "iA Writer Quattro S",
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Inter",
   "monospaceFontFamily": "CommitMono Nerd Font",
-  "accentColor": "",
+  "accentColor": "#736a95",
   "showRibbon": true,
   "baseFontSize": 14,
   "enabledCssSnippets": [
