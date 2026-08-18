@@ -9,9 +9,9 @@ tags:
 Single-user desktop environment on the Framework 13 / Void Linux machine — compositor, session, theme, bar, lock. The proof-of-concept the idea drives, and the standing record of how the machine is actually configured. Sessions should read this before changing anything on the desktop.
 
 **Status:** active
-**Next action:** strip greetd from `~/system` — the mirror still installs config for removed packages
+**Next action:** reconcile `system-build-state.md` — it is untracked in the vault and overlaps this record; fold it in or promote it
 
-State below was current on 2026-08-14. Claims about *what is installed or enabled* decay; verify before relying on one. Claims about *method* — how a thing behaves, how to diagnose it — do not.
+State below was current on 2026-08-14, revised 2026-08-17. Claims about *what is installed or enabled* decay; verify before relying on one. Claims about *method* — how a thing behaves, how to diagnose it — do not.
 
 ## Compositor
 
@@ -46,7 +46,7 @@ Removal took `xbps-remove tuigreet greetd`, then `rm -rf /etc/greetd`. xbps remo
 
 **Power actions.** `loginctl poweroff` / `reboot` / `suspend`, which reach elogind through polkit. The bare `poweroff`, `reboot`, `halt` and `zzz` binaries are root-only with no setuid and fail silently for an unprivileged user. `varia system` was calling all of them and had been broken since installation; its logout case was also still `pkill -x dwl`. All four fixed.
 
-**elogind reports `down` under runit and is fine.** The wrapper re-execs and orphans the daemon to PID 1, so runit loses the pid. `pgrep -a elogind` showing `elogind-daemon` is the real check. Three rounds were spent chasing this as a crash loop.
+**elogind reports `down` under runit and is fine.** The wrapper re-execs and orphans the daemon to PID 1, so runit loses the pid. `pgrep -x elogind` is the real check. Three rounds were spent chasing this as a crash loop — and then a fourth, because this note and `install.sh` both matched on `elogind-daemon`, which is not the process's name and matches nothing: the reload branch in `install.sh` silently took its else path on every run. Corrected 2026-08-17.
 
 ## Wallpaper
 
@@ -66,11 +66,30 @@ Uses `dwl/tags` and `dwl/window`; mango 0.14.4 still advertises `zdwl_ipc_manage
 
 Background repointed to the current wallpaper — the configured `junji-ito-dark.png` had not existed for some time and hyprlock fails to black silently. Mocha colours, 3px mauve outline on the input field. Fingerprint and password auth confirmed working in parallel, including through a suspend and resume cycle.
 
+## Apps XBPS doesn't own
+
+Helium and Obsidian are the two applications installed outside the package manager, so `xbps-install -Su` never touches them and nothing else records how they got here. Each has an updater on PATH that is now the sole install record: `helium-update` and `obsidian-update`, both of which install from nothing when their prefix is absent. A rebuild is therefore clone dotfiles → `~/system/install.sh` → run both. Neither tree is tracked; both are far too large, and `~/.gitignore` says so where the rule would otherwise look like an oversight.
+
+**1Password decides which browsers may exist, and its reasons are invisible from the outside.** Resolved 2026-08-17, from the extension in Helium never using the fingerprint reader. The whole chain is extension → `1Password-BrowserSupport` → desktop app → polkit → `pam_fprintd` → reader, and if the first hop fails the extension silently falls back to asking for the account password. Nothing in the UI says why.
+
+BrowserSupport verifies the browser binary before it will connect, and Helium failed that check two different ways:
+
+- **As an AppImage: `BrowserFileDidNotExist`.** The binary lives in a user FUSE mount, and `fuse_allow_current_process()` requires euid, suid, uid *and* egid, sgid, gid all to match the mounting user. `1Password-BrowserSupport` is setgid `onepassword`, so it fails the gid half unconditionally and cannot stat the binary at all. No AppImage browser can ever pass this. `sg <group> -c 'ls <mountpoint>'` reproduces the denial in one line, which is the cheap way to confirm it.
+- **Extracted under `$HOME`: `BrowserProcessVerification(BinaryPermissions)`.** 1Password rejects a binary on a user-writable path. Root-owning the file alone would not help; the parent directories are writable, so the binary could simply be swapped.
+
+`/opt/helium`, root-owned, passes both — which is why the install lives there and not in `~/.local/opt` beside Obsidian, which has no such constraint. `/etc/1password/custom_allowed_browsers` must also name the binary (`helium`), and is now mirrored in `~/system`; without it the extension cannot reach the app no matter where the tree sits.
+
+`~/.config/1Password/logs/BrowserSupport/1Password_rCURRENT.log` names the exact gate that failed on every connection attempt. It is the only thing that made this diagnosable, and it is worth reading first the next time the extension "just asks for a password".
+
+**This is also why the YubiKey swap stays a one-line change.** The extension's unlock runs through `/etc/pam.d/polkit-1`, the same stack as sudo and the desktop app — so replacing `pam_fprintd.so` with a U2F module in the two mirrored PAM files covers the browser extension too, with nothing browser-specific to redo.
+
+Obsidian is the same shape and a different lesson: it self-updates its asar into `~/.config/obsidian`, so the *app* stays current while the Electron shell around it — and the Chromium inside that shell — never moves. It sat on an April 2025 shell running a current 1.13.7 asar. `obsidian-update` updates the half that carries browser CVEs. Upstream publishes no signatures for those assets, unlike Helium's tarballs, which are verified against a pinned key; TLS to github.com is the whole trust boundary there.
+
 ## Diagnosing a client with no window
 
 Resolved 2026-08-14, from Helium reporting "Opening in existing browser" with no window after the agetty switch. The method generalises to any Wayland client that appears to start and then isn't there.
 
-Helium's profile is `~/.config/net.imput.helium` — the AppImage shim passes no `--user-data-dir`, and the directory is named for the app id, not the binary, which is why `~/.config/helium` globs found nothing.
+Helium's profile is `~/.config/net.imput.helium` — the shim passes no `--user-data-dir`, and the directory is named for the app id, not the binary, which is why `~/.config/helium` globs found nothing. (Helium was an AppImage when this was written; it is an extracted tree in `/opt` now, and the profile path is unchanged.)
 
 `SingletonLock` in a Chromium profile is a **symlink whose target is `hostname-pid`** — here `framework13-2305`. That makes stale-versus-live a one-step check: read the link, test the pid. It was live, so the singleton hand-off was working correctly and the lock was never the problem.
 
@@ -99,12 +118,18 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 
 ## Open
 
-- **greetd is still in the system mirror.** `~/system/etc/greetd/{config.toml,tuigreet-start}`, the install block at `~/system/install.sh:28-38`, and both `greetd` and `tuigreet` in `~/system/packages/xbps-manual.txt`. A rebuild would reinstall packages that were deliberately removed and install config for a service that no longer exists. This is now a correctness problem, not tidiness.
-- **`50-fprintd.rules` is not mirrored.** `/etc/polkit-1/rules.d/50-fprintd.rules` grants enrolment to `philipp` and exists only on this machine — fingerprint enrolment would silently stop working after a rebuild. Same gap the greetd config had.
-- **`~/.claude/CLAUDE.md` still describes dwl** as the compositor, with dwl-specific procedure: `config.h` rebuilds, logout-to-reload, the `ETXTBSY` workaround, the `~/projects/dwl` source path. None of it applies to mango, and it will keep misdirecting sessions until rewritten.
 - **Wallpaper derivation not captured.** The ffmpeg downscale exists nowhere in the dotfiles; a rebuild wouldn't reproduce it.
-- `helium.png` under `~/.local/share/icons/hicolor/*/apps/` is untracked; that directory has no `.gitignore` negation.
+- **`system-build-state.md` is untracked in the vault** and covers ground this note also covers. Two records of the same machine is one too many.
+- **Waybar breaks at mango 0.16.0.** The config uses `dwl/tags` and `dwl/window`; mango deprecates dwl IPC there. Verified 2026-08-17 that the repo still ships `mangowc-0.14.4_1`, which is what's installed, so `xbps-install -Su` won't spring it yet. The replacement is `mango/window` on a recent Waybar, or a custom module.
 - Stale assets in `~/Pictures/wallpapers/`: `watchtower-wide.jpg`, `junji-ito-light.png`, `bw_dunes.jpg`, `solar-gradients/`. Deliberately left.
+
+## Closed since 2026-08-14
+
+- greetd is gone from the mirror, the install script and `xbps-manual.txt`. Verified 2026-08-17.
+- `50-fprintd.rules` is mirrored at `~/system/etc/polkit-1/rules.d/` with an install block. It grants *enrolment*, which is a separate permission from the verification sudo and polkit perform at the prompt — so a rebuild missing it looks fine until a finger has to be re-registered.
+- `~/.claude/CLAUDE.md` describes mango, not dwl.
+- The launcher icons under `~/.local/share/icons/hicolor/*/apps/` are deliberately *not* tracked. Both artwork files ship inside the upstream tarballs and are reinstalled by `helium-update` and `obsidian-update` on every run, so tracking them would version a generated file. `~/.gitignore` records the reasoning.
+- `~/.local/bin/obsidian` was a *directory* on PATH holding an AppImage, shadowed by a `.zshrc` alias that pointed into it. Both are gone; the shim is a file like every other launcher.
 
 ## Links
 - [[Desktop made for one — the idea]] — the design question this build is the proof-of-concept for.
