@@ -5,14 +5,6 @@ date: 2026-07-27
 # Log
 
 The running record and capture surface — the one place to jot, newest day on top. Under today's `## YYYY-MM-DD`, drop whatever lands: a task, a fleeting thought, what happened, a note you made. It is not a task ledger — in the Morning Review the captures get sorted out: tasks to a project or the calendar, an idea worth developing to a `#seedling` note, the rest kept as record or deleted.
-
-
-- [ ] Distill BeneCrafts grimdark technique into a reference note.
-- [ ] Review data in Apple Passwords.
-- [ ] Migrate data from Apple Passwords to 1Password. #waiting 
-- [ ] Remove silicon residue and clean shower tub and walls.
-- [ ] Apply silicon to screw holes in shower walls (x6) #waiting 
-- [ ] Pick up a field notes pocket book to replace digital to-do list.
 ### 2026-08-18
 * 10:07 — The status bar was gone and nothing recorded why: waybar was not running at all, and `wayland-session` had started it as a bare `waybar &` — no supervision, no log — so a mid-session death left no trace to read. It now respawns, records every exit to `~/.cache/waybar.log`, and gives up after ten immediate failures so a broken config fails loudly instead of spinning silently. The battery module chatters its charge state to stdout on every poll, which would bury the useful lines, so that is filtered out. Verified by killing it and by swapping the binary for `false` to force the bail.
 * 13:05 — Occasional localized fracture on the ultrawide, still undiagnosed. Only one thing is settled: mango is not doing it. `allow_tearing` defaults to `TEARING_DISABLED` at 0.14.4, the config never sets it, and `check_tearing_frame_allow` — which has exactly one caller — returns false immediately, so the compositor never requests an async flip. Every other explanation was proposed and withdrawn: a bandwidth deficit that had double-counted the 8b/10b encoding, a link "fallback" from HBR2 to HBR that is simply the lowest tier carrying the mode and therefore what a power-optimising driver picks, and a missing FEC that is normal for a sink supporting neither FEC nor DSC. A screenshot caught nothing because the artifact had already passed. What remains untested is whether it appears on a genuinely static screen: if nothing is redrawing and it still fractures, it cannot be a compositor repaint bug and the fault is downstream in the link or the panel.
