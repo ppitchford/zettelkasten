@@ -68,7 +68,8 @@ An inert park of things that might one day be worth doing. **This is not a queue
 - Ravener Kill Team
 
 ### Woodworking
-- [Child’s bookcase](https://ashdeco.com/products/midcentury-tree-bookshelf-nursery-kids-room?variant=53148781314355)
+- [Bookcase – Kids](https://ashdeco.com/products/midcentury-tree-bookshelf-nursery-kids-room?variant=53148781314355)
+- [Clothing Rack – Kids, Foldable](https://www.homedepot.com/p/B-BALANBO-Beige-Foldable-Kids-Clothing-Rack-Stand-for-Dress-Up-Playroom-Nursery-Portable-Hanging-Organizer-for-Toddler-Pets-KW-ETSJGYJ100/337019096?source=shoppingads&locale=en-US&fp=ggl&pla=&mtc=SHOPPING-BF-HDH-GGL-D59H-059_042_MINOR_INT_FURN-NA-NA-NA-PMAX-NA-RDC-NA-NA-NBR-NA-NA-NA-All_In_Subclass_PMAX_2026)
 - [Desk](https://www.youtube.com/watch?v=W3VFZPa62yg)
 - [Indoor lounge chair](https://www.potterybarn.com/products/callum-chair-with-ottoman-mp/)
 - [Isaac Youngs Shaker wall clock](https://store.woodandshop.com/products/digital-building-the-isaac-youngs-shaker-wall-clock-with-will-myers)
@@ -78,3 +79,4 @@ An inert park of things that might one day be worth doing. **This is not a queue
 - [Patio lounge chairs](https://lolldesigns.com/collections/lounge-chairs/products/lollygagger-outdoor-lounge-chair-tall)
 - [Sewing table](https://www.pekovichwoodworks.com/sewing-table/)
 - [Shoe bench](https://www.pekovichwoodworks.com/work#/bench/)
+- [Wardrobe – Kids](https://www.westelm.com/products/kids-josephine-wardrobe-d810/)
