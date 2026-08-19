@@ -81,13 +81,13 @@ Bundle files under `~/.config/theme/{light,dark}/`: `kitty.conf`, `fuzzel.ini`, 
 
 Static, outside ornatus's `MAPPINGS`. Opaque `#000000`, Sanctum glyphs, focused tag on the same green as the window border.
 
-**The reason it doesn't follow the sun has changed, and is now weaker.** It used to be pinned to the wallpaper rather than the theme, which made the fourth `Mapping` and `SIGUSR2` reload in `theme.rs` genuinely unnecessary. Now it is black by choice while a light bundle still exists, so the bar and the lock screen both sit black against a light desktop through the day. That was accepted deliberately on 2026-08-19, but it is a standing inconsistency rather than a resolved question, and the fourth `Mapping` is the fix if it starts to grate.
+**It does not follow the sun, and that is the intent.** The bar was previously pinned to the wallpaper rather than the theme, which made the fourth `Mapping` and `SIGUSR2` reload in `theme.rs` unnecessary by accident. It is now black by choice: confirmed 2026-08-19 that the bar and the lock screen should stay black at all hours, including against the light desktop. The fourth `Mapping` is therefore not wanted — don't add it, and don't record this as drift.
 
 Uses `dwl/tags` and `dwl/window`; mango 0.14.4 still advertises `zdwl_ipc_manager_v2`. Mango deprecates dwl IPC at 0.16.0, at which point these modules stop working — the replacement is `mango/window` on a recent Waybar, or a custom module. That is the thing that breaks on upgrade.
 
 ## Hyprlock
 
-Solid `color = rgb(000000)` — no `path` at all, which removes the failure mode that bit before, where a configured image (`junji-ito-dark.png`) had stopped existing and hyprlock failed to black silently. Sanctum colours, green outline on the input field. Verified visually 2026-08-19. Fingerprint and password auth confirmed working in parallel, including through a suspend and resume cycle.
+Black at all hours by design, like the bar — confirmed 2026-08-19, not an oversight of the solar switch. Solid `color = rgb(000000)` — no `path` at all, which removes the failure mode that bit before, where a configured image (`junji-ito-dark.png`) had stopped existing and hyprlock failed to black silently. Sanctum colours, green outline on the input field. Verified visually 2026-08-19. Fingerprint and password auth confirmed working in parallel, including through a suspend and resume cycle.
 
 ## Neovim
 
@@ -96,6 +96,24 @@ Tracks the theme marker like everything else — and **had never actually done s
 Sanctum ships no Neovim port. `folke/tokyonight.nvim` is installed and kept purely as the highlight engine, with its colour slots overwritten by Sanctum's through `on_colors` — every group tokyonight defines then resolves to a Sanctum colour. lualine runs `theme = "auto"` so it derives from the active colorscheme instead of contradicting it. Rosé Pine removed.
 
 Verified across a live marker flip: light gives `bg=#f4f4f0 fg=#161616`, dark gives `bg=#000000 fg=#c7c5c2`.
+
+## Application theming through the portal
+
+GTK, Chromium and Electron applications follow the light/dark switch, and the whole path is `xdg-desktop-portal`. ornatus sets `org.gnome.desktop.interface color-scheme` to `prefer-dark` / `prefer-light` (`theme.rs:155`); `xdg-desktop-portal-gtk` reads that GSetting and re-exports it as the `org.freedesktop.appearance` `color-scheme` key, which is what applications actually subscribe to.
+
+**Verified end to end on 2026-08-19**, by flipping the key by hand and watching Helium and Obsidian both go dark against a still-light desktop:
+
+```sh
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+gdbus call --session --dest org.freedesktop.portal.Desktop \
+  --object-path /org/freedesktop/portal/desktop \
+  --method org.freedesktop.portal.Settings.ReadOne \
+  org.freedesktop.appearance color-scheme
+```
+
+The reply is `uint32`: **0 no preference, 1 prefer dark, 2 prefer light** — note this is *not* the same encoding as the GSetting's strings, and reading the GSetting alone doesn't prove the portal is re-exporting it. Restore with `prefer-light` afterwards; nothing does it for you (see Open).
+
+Obsidian needs `"theme": "system"` in `.obsidian/appearance.json` for any of this to reach it — that is Obsidian's own base-colour-scheme setting, independent of `cssTheme`. Both are currently Sanctum-side: `cssTheme` is the same Sanctum theme the desktop palette came from.
 
 ## Apps XBPS doesn't own
 
@@ -151,8 +169,8 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 
 ## Open
 
+- **ornatus asserts the colour-scheme key only on a theme *change*, never at startup.** Applying is idempotent — if the marker and symlinks already match, nothing is written and no signals are sent — so a key that is wrong for any other reason stays wrong until the next sunrise or sunset. Setting it by hand for the verification above put the desktop and the browsers in disagreement, and ornatus would not have corrected it. A reconcile-on-apply in `theme.rs` would close this, and it is a small change.
 - **Qt applications ignore the theme.** `QT_QPA_PLATFORMTHEME` is unset, so Qt clients don't follow the portal colour-scheme that GTK, Chromium and Electron all honour. No install is needed — `libqxdgdesktopportal.so` already ships in `/usr/lib/qt6/plugins/platformthemes/` — but the variable has to be exported in `.zprofile` ahead of the compositor `exec`, since apps spawned from mango keybinds inherit the compositor's environment rather than `wayland-session`'s. Note that the Qt client this actually affects is unidentified: `qt6-base` is installed and something wrote `QtProject.conf` on 2026-08-17, but okular is *not* installed and was named in error.
-- **waybar and hyprlock stay black under the light theme.** See Waybar above. Deliberate, but unresolved.
 - **`system-build-state.md` is untracked in the vault** and covers ground this note also covers. Two records of the same machine is one too many.
 - **Waybar breaks at mango 0.16.0.** The config uses `dwl/tags` and `dwl/window`; mango deprecates dwl IPC there. Verified 2026-08-17 that the repo still ships `mangowc-0.14.4_1`, which is what's installed, so `xbps-install -Su` won't spring it yet. The replacement is `mango/window` on a recent Waybar, or a custom module.
 - Stale assets in `~/Pictures/wallpapers/`: `watchtower-wide.jpg`, `junji-ito-light.png`, `bw_dunes.jpg`, `solar-gradients/`. Deliberately left.
