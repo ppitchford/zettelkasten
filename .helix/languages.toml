@@ -1,0 +1,18 @@
+# IWE language server, scoped to this vault only.
+#
+# Project-local rather than ~/.config/helix/languages.toml so iwes does not
+# attach to every markdown file on the machine — README files in project
+# repos have no business being indexed as notes.
+[language-server.iwe]
+command = "iwes"
+
+[[language]]
+name = "markdown"
+language-servers = ["iwe"]
+
+# Deliberately off, against the upstream snippet's default of true.
+# `iwe init` reported that `iwe normalize` would rewrite 223 of 226 files:
+# formatting on every save would rewrite the vault out from under Obsidian
+# and bury real edits in reformatting noise. Format explicitly with :format
+# when you actually want it.
+auto-format = false
