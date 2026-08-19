@@ -1,6 +1,6 @@
-# CLAUDE.md — Zettelkasten
+# CLAUDE.md — Notes
 
-A working-notes vault (Obsidian, plain Markdown + YAML frontmatter, git). This file orients Claude Code sessions running in this directory.
+A working-notes vault (plain Markdown + YAML frontmatter, git), edited in Helix with the IWE language server. This file orients Claude Code sessions running in this directory.
 ## What this repo is
 A Zettelkasten plus a task system. Notes are atomic, densely linked, and grounded in their sources. This is an ongoing intellectual practice — developing insight is the point, not note count.
 ## Read first
@@ -9,7 +9,7 @@ A Zettelkasten plus a task system. Notes are atomic, densely linked, and grounde
 - **Root** — zettels, seed notes (`#seedling`), and topic notes. The filename is the title; the `id` in frontmatter is the permanent address.
 - **System notes** are prefixed `_` so they sort above the zettels: `_Log.md`,
   `_Style guide.md`, `_Learning.md`, `projects/_Projects.md`. This file cannot take the prefix — Claude Code loads it by exact name.
-- **Folders** — `projects/`, `reading inbox/` (clipped articles to read), `sources/` (extract notes, filename `Author — Title`), `writing/` (original long-form), `templates/`, `attachments/`.
+- **Folders** — `projects/` and `sources/` (extract notes, filename `Author — Title`). That is the complete list. `reading inbox/`, `writing/`, `templates/` and `attachments/` were removed on 2026-08-19: scaffolding for categories that were empty, superseded, or actively harmful. Root is flat and stays flat — links are the structure, not folders. Do not propose topic folders.
 ## Where the work is
 `_Log.md` — newest day on top — is the running record and capture surface; open tasks
 sit under the current date in a `**To route:**` block. `projects/_Projects.md` indexes
@@ -19,9 +19,19 @@ active, planned, and someday projects. There is no separate task file.
 - **Claude Code does NOT:** draft zettel content from sources, or write titles. Processing a source into notes is collaborative and one-at-a-time — drafted, critiqued, revised in an interactive chat. Titles are written by hand after the idea is fully formed. Never bulk-generate note bodies.
 ## Git
 - Upstream tracking is configured on `main`; `git push` alone suffices.
-- **Pull before editing.** The vault syncs to an iOS phone via `obsidian-git`, so `_Log.md` may be ahead of local. Verify a clean tree before starting.
+- **Verify a clean tree before starting.** This machine is now the only writer — the iOS phone and `obsidian-git` are gone — so a pull is a no-op, but a dirty tree means work in progress that is not yours to commit.
 - Commit at logical checkpoints with clear messages; prefer a branch for anything that touches many files.
-- `.zk/` is gitignored (legacy `zk` plugin era).
+- `.zk/` is gitignored and dead (legacy `zk` plugin era, retired with zk-nvim). Not in version control, so deleting it is irreversible.
 ## Environment
-- Obsidian (AppImage on Void Linux / Wayland, `--ozone-platform=wayland`). Core Templates plugin scaffolds `id`/`date` from `templates/note`.
+- Helix (`hx`, xbps) with the IWE language server. Obsidian was removed on 2026-08-19 along with its Web Clipper; there is no GUI editor and no mobile capture surface.
 - Python is available for batch operations.
+
+## IWE
+The vault is a graph indexed by `iwes`. Three things about its model are not guessable:
+- A document is addressed by **key** — its path without the extension. `projects/frame`, not `frame.md`.
+- Links are bare wiki names (`[[frame]]`) that resolve by shortest unambiguous path suffix. This works only while every filename in the vault is unique. Check before adding a file whose basename already exists.
+- A link **alone on its own line** is an inclusion link and means structural nesting. An inline link is a cross-reference. They are not interchangeable.
+
+Two hazards:
+- **Never run `iwe normalize`**, and never call the `iwe_normalize` MCP tool. It rewrites nearly every file in the vault in one command. `.helix/languages.toml` sets `auto-format = false` for the same reason — do not turn it on.
+- `wiki_link_path = "preserve"` in `.iwe/config.toml` is deliberate. `iwe init` detected and chose `"short"`, which rewrites link paths as documents move. Renaming a note as its wording sharpens is routine here, so it must stay `"preserve"`.

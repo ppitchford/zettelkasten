@@ -20,13 +20,18 @@ Hand-curated topic notes are the way back in — a note that gathers the zettels
 ## Source vs. synthesis
 A note body stays grounded in its single source. Original synthesis and cross-source connections live in *separate linked notes* — never imported into a source note's body. This is the rule that keeps a source note honest about where its claim came from.
 ## Writing
-Original long-form writing — essays, drafts, reflections — lives in `writing/`, not root. It is the *output* of the slip-box, a layer above the zettels: an essay links *down* into the atomic notes it draws from. Distinct from a zettel (atomic, source-grounded) and from the log (dated capture).
+Original long-form writing is the *output* of the slip-box, a layer above the zettels: an essay links *down* into the atomic notes it draws from. Distinct from a zettel (atomic, source-grounded) and from the log (dated capture).
+
+`writing/` was removed on 2026-08-19. It held two drafts that were neither essays nor zettels — no frontmatter, no header, no links in either direction — and they moved out of the vault with it. **Open: where finished long-form lives.** If it lives outside the vault it cannot link down into the zettels, which is the whole point of the layer; that argues for recreating `writing/` the day a real essay exists rather than for a home elsewhere.
 ## Sources
 Source notes live in `sources/`, not root. A source note holds extracts from one book or article — other people's words and ideas, page-cited — and is the raw material a zettel is drawn from. It is exempt from the title convention: the filename is `Author — Title`, not an atomic claim, because the note makes no claim of its own. A source note is created only when there are extracts to type into it. 
 
-Articles arrive via the Web Clipper into `reading inbox/` to be read. A clip that earns extraction after reading mints an `id`, moves to `sources/`, and its clipped full text is discarded — the extracts are what survive. Books have no digital staging: the physical pile is the queue — the note is created directly in `sources/` from `templates/source`, minting its `id` then. In both cases `created` records the capture date and `id` the day the note entered the vault; for a graduating clip these differ, and that is correct.
+**There is no digital staging.** Books queue as a physical pile; articles are not captured at all. The note is created in `sources/` and mints its `id` at that moment.
+
+The Web Clipper and `reading inbox/` were removed on 2026-08-19. In seven weeks the clipper produced 175 clips and one source note. Capture was frictionless, so nothing was weighed before it was kept, and the full-text artifact it left behind read as progress without being any — [[Insecurity work is dangerous because it is frictionless]] names the mechanism. **Open: what, if anything, replaces article capture.** The honest candidate is nothing.
+
 ## Frontmatter
-`id` and `date` are scaffolded by the Unique note creator from `templates/note`. There is no `aliases` field — the filename *is* the title (see Titles), so links already read as prose. Titles are written by hand after the idea is fully formed — never auto-generated.
+`id` and `date` are written when the note is created. The Obsidian Templates plugin that used to scaffold them, and `templates/`, were removed on 2026-08-19; IWE carries a `document_template` and `key_template` in `.iwe/config.toml` but they are not yet wired to produce this frontmatter. **Open: scaffolding mechanism.** There is no `aliases` field — the filename *is* the title (see Titles), so links already read as prose. Titles are written by hand after the idea is fully formed — never auto-generated.
 ## Task system
 Three surfaces: a single running log, project notes, and the calendar. Nothing else — no separate task inbox, no status apparatus.
 
@@ -36,7 +41,7 @@ Three surfaces: a single running log, project notes, and the calendar. Nothing e
 ### Morning Review
 Run this in 15 minutes or less and focus only on deciding and routing. Anything you have not written down is an open loop your mind keeps holding. The review closes those loops so you can stop carrying them. Follow the order *Every Commitment Needs Tracking Today* (Email, Calendar, Notes, Tasks, Today).
 
-1. **Email.** Process the inbox one message at a time. Starting with the oldest, ask whether it needs action. If it does, make it a task. If it links to something worth reading, send that to the reading inbox. Otherwise archive it and move on.
+1. **Email.** Process the inbox one message at a time. Starting with the oldest, ask whether it needs action. If it does, make it a task. Otherwise archive it and move on. (This step used to route links to the reading inbox, which no longer exists — see Sources.)
 2. **Calendar.** Look at today's schedule and determine what needs preparation. Then look at every event since your last review and determine what follow-up you owe. Anything that turns up becomes a task.
 3. **Notes.** Work through everything you have added to the log since your last review. For every idea worth developing, create a `#seedling` note. For every note you made, ask what it needs next and write that down as a task. Don't overthink the sort; the point is that a good idea survives, not that the filing is perfect.
 4. **Tasks.** State each task you collected as a concrete next action. Add it to a project note if it serves a project or to the calendar if it's time-bound. Confirm every active project has a next action, and scan `#waiting` for anything stalled.
