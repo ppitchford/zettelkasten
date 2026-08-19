@@ -1,10 +1,10 @@
 {
-  "cssTheme": "Minimal",
+  "cssTheme": "Sanctum",
   "showViewHeader": false,
-  "interfaceFontFamily": "Inter",
-  "textFontFamily": "Inter",
-  "monospaceFontFamily": "CommitMono Nerd Font",
-  "accentColor": "#736a95",
+  "interfaceFontFamily": "Noto Sans",
+  "textFontFamily": "Noto Serif",
+  "monospaceFontFamily": "NotoMono Nerd Font",
+  "accentColor": "",
   "showRibbon": true,
   "baseFontSize": 14,
   "enabledCssSnippets": [
