@@ -1,9 +1,0 @@
-{
-  "attachmentFolderPath": "attachments",
-  "alwaysUpdateLinks": true,
-  "openBehavior": "file:_Log.md",
-  "newFileLocation": "root",
-  "newFileFolderPath": "/",
-  "promptDelete": false,
-  "showInlineTitle": false
-}
