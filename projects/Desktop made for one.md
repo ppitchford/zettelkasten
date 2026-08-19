@@ -11,11 +11,11 @@ Single-user desktop environment on the Framework 13 / Void Linux machine — com
 **Status:** active
 **Next action:** reconcile `system-build-state.md` — it is untracked in the vault and overlaps this record; fold it in or promote it
 
-State below was current on 2026-08-14, revised 2026-08-17. Claims about *what is installed or enabled* decay; verify before relying on one. Claims about *method* — how a thing behaves, how to diagnose it — do not.
+State below was current on 2026-08-14, revised 2026-08-19. Claims about *what is installed or enabled* decay; verify before relying on one. Claims about *method* — how a thing behaves, how to diagnose it — do not.
 
 ## Compositor
 
-MangoWM 0.14.4 (`/usr/bin/mango`, packaged), config at `~/.config/mango/config.conf`. Unfocused opacity removed; focus is signalled by a 3px border in Catppuccin Mocha mauve `#cba6f7`, with unfocused borders fully transparent `0x00000000` so focus changes don't shift geometry. `rootcolor` set to `#373d49` to match the wallpaper during startup. `urgentcolor` `#f38ba8`.
+MangoWM 0.14.4 (`/usr/bin/mango`, packaged), config at `~/.config/mango/config.conf`. Unfocused opacity removed; focus is signalled by a 3px border in Sanctum's dark accent green `#669961`, with unfocused borders fully transparent `0x00000000` so focus changes don't shift geometry. `rootcolor` is `#000000` to match the desktop, but ornatus's layer-shell surface covers it — it only shows in the window before ornatus attaches, so it is a startup backstop rather than the thing that makes the desktop black. `urgentcolor` `#c54128`.
 
 `scroller_structs=5` reduces the scroller's edge inset; combined with `gappoh=3` that leaves 8px at each screen edge. `mouse_natural_scrolling` removed, which reverts to the default and inverts the scroll direction. The empty Autostart section and an untested per-monitor tag rule were deleted.
 
@@ -50,21 +50,50 @@ Removal took `xbps-remove tuigreet greetd`, then `rm -rf /etc/greetd`. xbps remo
 
 ## Wallpaper
 
-`~/Pictures/wallpapers/wallpaper-1-3840.jpg`, downscaled from the 7952×4473 master via ffmpeg Lanczos at `yuvj444p -q:v 2`. Measured: dominant `#373d49` (h 220, s 14, l 25), lilac highlights h 274–296, dusty rose h 345, nothing above 17% saturation. Consumed by both ornatus and hyprlock.
+**Flat black since 2026-08-19.** `~/Pictures/wallpapers/black.jpg`, generated with `ffmpeg -f lavfi -i color=c=black:s=64x64 -frames:v 1 -q:v 1`. 245 bytes, and 64×64 rather than full-resolution because ornatus scales to cover — a uniform source upscales to a uniform result at near-zero decode cost, against ~300ms per output for the 4K JPEG it replaced. JPEG is lossy, so the decode was verified before use: `ffmpeg -i black.jpg -f rawvideo -pix_fmt rgb24 - | od -An -tu1 -v | sort -u` returns only `0`.
+
+ornatus takes a single `wallpaper` path, not one per variant, so the desktop is black at all hours — the light bundle dims the applications while the ground stays `#000000`. Intended.
+
+hyprlock no longer consumes a wallpaper at all; it draws `color = rgb(000000)` directly, which decouples the lock screen from the image file that previously had to exist for it not to fail silently to black.
+
+`wallpaper-1-3840.jpg` and its ffmpeg derivation are retired. The measured `#373d49` that the bar was pinned to is now historical.
 
 ## Theme
 
-Catppuccin — Mocha dark, Latte light — after Rosé Pine → Iceberg → Catppuccin in a single day. Bundle files under `~/.config/theme/{light,dark}/`: `kitty.conf`, `fuzzel.ini`, `mako.conf`. Fuzzel carries a 3px border at radius 6, `#cba6f7` in both variants (Latte's `#8839ef` was too harsh), matching mango so the focus signal is one colour throughout.
+**Sanctum** since 2026-08-19 — the lineage is now Rosé Pine → Iceberg → Catppuccin → Tokyo Night → Sanctum. Palettes lifted from [github.com/jdanielmourao/obsidian-sanctum](https://github.com/jdanielmourao/obsidian-sanctum): hues and the grey ramp in `src/scss/variables/colors.scss`, role assignments in `theme.scss`. The same theme now runs in Obsidian, which is where it came from.
+
+Dark is the theme's own `sanctum-black` variant — `--background: rgb(var(--black))`, a literal `#000000`, so pure black is native to Sanctum rather than an override forced onto it. Light is `sanctum-default-light`: `#f4f4f0` ground, `#161616` text.
+
+The greys are a warm-neutral ramp on a Le Corbusier Architectural Polychromy basis, built so each step greyscales to a matching value — a different character from Tokyo Night's cool navy, which is what it briefly replaced. Tokyo Night lasted a few hours and fell to one property: its Day variant sets body text to `#3760bf`, a blue rather than a black, which reads wrong on a light ground.
+
+Two deliberate departures from a literal transcription:
+
+- Mako's dark background is `#161616`, not `#000000`. Sanctum maps notices to `--background-modifier-message: var(--layer-1)`; a notification is a raised layer in this theme, not base background.
+- Sanctum's `--text-on-accent` is white uniformly. On the green accent that measures 3.30:1 against black's 6.29:1, so the focused-tag text is black and only the red urgent state takes white (5.00:1, against black's 4.16:1).
+
+Sanctum defines no terminal ANSI set — it is an Obsidian theme. The sixteen colours in `kitty.conf` are derived from its ten-step hue ramps and are therefore local authorship, not upstream.
+
+Bundle files under `~/.config/theme/{light,dark}/`: `kitty.conf`, `fuzzel.ini`, `mako.conf`. Fuzzel's border matches mango's accent in each variant so the focus signal stays one colour throughout.
 
 ## Waybar
 
-Static, outside ornatus's `MAPPINGS`. Opaque `#373d49` — the measured modal colour beneath the bar on both outputs. Because it's pinned to the wallpaper rather than the theme, it never needs to follow the sun, so the planned fourth `Mapping` and `SIGUSR2` reload in `theme.rs` were dropped. Mocha glyphs; focused tag uses the same mauve as the window border.
+Static, outside ornatus's `MAPPINGS`. Opaque `#000000`, Sanctum glyphs, focused tag on the same green as the window border.
+
+**The reason it doesn't follow the sun has changed, and is now weaker.** It used to be pinned to the wallpaper rather than the theme, which made the fourth `Mapping` and `SIGUSR2` reload in `theme.rs` genuinely unnecessary. Now it is black by choice while a light bundle still exists, so the bar and the lock screen both sit black against a light desktop through the day. That was accepted deliberately on 2026-08-19, but it is a standing inconsistency rather than a resolved question, and the fourth `Mapping` is the fix if it starts to grate.
 
 Uses `dwl/tags` and `dwl/window`; mango 0.14.4 still advertises `zdwl_ipc_manager_v2`. Mango deprecates dwl IPC at 0.16.0, at which point these modules stop working — the replacement is `mango/window` on a recent Waybar, or a custom module. That is the thing that breaks on upgrade.
 
 ## Hyprlock
 
-Background repointed to the current wallpaper — the configured `junji-ito-dark.png` had not existed for some time and hyprlock fails to black silently. Mocha colours, 3px mauve outline on the input field. Fingerprint and password auth confirmed working in parallel, including through a suspend and resume cycle.
+Solid `color = rgb(000000)` — no `path` at all, which removes the failure mode that bit before, where a configured image (`junji-ito-dark.png`) had stopped existing and hyprlock failed to black silently. Sanctum colours, green outline on the input field. Verified visually 2026-08-19. Fingerprint and password auth confirmed working in parallel, including through a suspend and resume cycle.
+
+## Neovim
+
+Tracks the theme marker like everything else — and **had never actually done so**. `init.lua` required `options` and called `require("lazy").setup("plugins")`, and nothing else: `lua/theme.lua` was never required, so its file watcher and light/dark switching had been dead code since they were written. Rosé Pine was configured solely by its lazy `opts`, which is why the editor sat on dark Main whatever `~/.config/theme/current` said, and why nobody noticed — a dark editor under a dark theme looks correct half the time. Fixed 2026-08-19; the `require("theme")` goes *before* `lazy.setup` so the `User LazyDone` autocmd exists before lazy fires that event.
+
+Sanctum ships no Neovim port. `folke/tokyonight.nvim` is installed and kept purely as the highlight engine, with its colour slots overwritten by Sanctum's through `on_colors` — every group tokyonight defines then resolves to a Sanctum colour. lualine runs `theme = "auto"` so it derives from the active colorscheme instead of contradicting it. Rosé Pine removed.
+
+Verified across a live marker flip: light gives `bg=#f4f4f0 fg=#161616`, dark gives `bg=#000000 fg=#c7c5c2`.
 
 ## Apps XBPS doesn't own
 
@@ -104,6 +133,8 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 
 ## Learnings worth keeping
 
+- **ornatus reads `config.toml` once at startup and `--refresh` does not reload it.** `Config::load_or_create` is called at `main.rs:98`; SIGUSR1 runs `app.refresh()`, which is the sun-and-theme path only. A wallpaper change therefore needs the daemon restarted, not signalled — and the failure is quiet, because the refresh succeeds and logs normally while rendering nothing new. The wallpaper is also only redrawn when a surface is first configured or resized, never on the refresh tick.
+- **A file in `~/.config` is not evidence a package is installed.** xbps leaves config behind on removal. `~/.config/okularrc` and `okularpartrc` are still present for an okular that was uninstalled; reading them as an installed app produced a wrong claim about which Qt applications run here. Check `xbps-query`.
 - **`/etc/mango/config.conf` is a sample, not the compiled defaults.** Deleting `border_radius=6` on the grounds that it matched the shipped file removed the rounded corners — the compiled default is 0. The minimal-config principle therefore needs a caveat: delete only what has been confirmed to behave identically when absent.
 - **"reload_config merges, doesn't reset" is contradicted.** Removing `border_radius` and reloading took effect immediately. Whatever the earlier observation was, it does not generalise.
 - `mmsg dispatch reload_config` returns `{"success":true}` and is a more reliable check than pressing `SUPER+r`, since it distinguishes a failed reload from a setting that did nothing.
@@ -118,7 +149,9 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 
 ## Open
 
-- **Wallpaper derivation not captured.** The ffmpeg downscale exists nowhere in the dotfiles; a rebuild wouldn't reproduce it.
+- **The black desktop does not survive a rebuild.** Neither `~/.config/ornatus/config.toml` nor `~/Pictures/wallpapers/black.jpg` is tracked — `~/.gitignore` ignores by default and neither has a `!` line. A fresh clone gets Sanctum everywhere and ornatus's *default* wallpaper. The generating command is recorded under Wallpaper above, which is the minimum; tracking the config file is the actual fix.
+- **Qt applications ignore the theme.** `QT_QPA_PLATFORMTHEME` is unset, so Qt clients don't follow the portal colour-scheme that GTK, Chromium and Electron all honour. No install is needed — `libqxdgdesktopportal.so` already ships in `/usr/lib/qt6/plugins/platformthemes/` — but the variable has to be exported in `.zprofile` ahead of the compositor `exec`, since apps spawned from mango keybinds inherit the compositor's environment rather than `wayland-session`'s. Note that the Qt client this actually affects is unidentified: `qt6-base` is installed and something wrote `QtProject.conf` on 2026-08-17, but okular is *not* installed and was named in error.
+- **waybar and hyprlock stay black under the light theme.** See Waybar above. Deliberate, but unresolved.
 - **`system-build-state.md` is untracked in the vault** and covers ground this note also covers. Two records of the same machine is one too many.
 - **Waybar breaks at mango 0.16.0.** The config uses `dwl/tags` and `dwl/window`; mango deprecates dwl IPC there. Verified 2026-08-17 that the repo still ships `mangowc-0.14.4_1`, which is what's installed, so `xbps-install -Su` won't spring it yet. The replacement is `mango/window` on a recent Waybar, or a custom module.
 - Stale assets in `~/Pictures/wallpapers/`: `watchtower-wide.jpg`, `junji-ito-light.png`, `bw_dunes.jpg`, `solar-gradients/`. Deliberately left.
