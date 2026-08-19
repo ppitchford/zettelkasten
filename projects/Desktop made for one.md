@@ -50,11 +50,13 @@ Removal took `xbps-remove tuigreet greetd`, then `rm -rf /etc/greetd`. xbps remo
 
 ## Wallpaper
 
-**Flat black since 2026-08-19.** `~/Pictures/wallpapers/black.jpg`, generated with `ffmpeg -f lavfi -i color=c=black:s=64x64 -frames:v 1 -q:v 1`. 245 bytes, and 64×64 rather than full-resolution because ornatus scales to cover — a uniform source upscales to a uniform result at near-zero decode cost, against ~300ms per output for the 4K JPEG it replaced. JPEG is lossy, so the decode was verified before use: `ffmpeg -i black.jpg -f rawvideo -pix_fmt rgb24 - | od -An -tu1 -v | sort -u` returns only `0`.
+**Flat black since 2026-08-19.** `~/.config/theme/black.jpg`, generated with `ffmpeg -f lavfi -i color=c=black:s=64x64 -frames:v 1 -q:v 1`. 245 bytes, and 64×64 rather than full-resolution because ornatus scales to cover — a uniform source upscales to a uniform result at near-zero decode cost, against ~300ms per output for the 4K JPEG it replaced. JPEG is lossy, so the decode was verified before use: `ffmpeg -i black.jpg -f rawvideo -pix_fmt rgb24 - | od -An -tu1 -v | sort -u` returns only `0`.
 
 ornatus takes a single `wallpaper` path, not one per variant, so the desktop is black at all hours — the light bundle dims the applications while the ground stays `#000000`. Intended.
 
 hyprlock no longer consumes a wallpaper at all; it draws `color = rgb(000000)` directly, which decouples the lock screen from the image file that previously had to exist for it not to fail silently to black.
+
+It lives under `~/.config/theme/` rather than `~/Pictures/` because it is part of the theme rather than a photograph, and because that directory is already tracked. Safe to put there: ornatus never enumerates `theme_dir` — `theme.rs` only joins the fixed names `current` and `<variant>/<source_name>` — so a stray file at its root is ignored.
 
 `wallpaper-1-3840.jpg` and its ffmpeg derivation are retired. The measured `#373d49` that the bar was pinned to is now historical.
 
@@ -149,7 +151,6 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 
 ## Open
 
-- **The black desktop does not survive a rebuild.** Neither `~/.config/ornatus/config.toml` nor `~/Pictures/wallpapers/black.jpg` is tracked — `~/.gitignore` ignores by default and neither has a `!` line. A fresh clone gets Sanctum everywhere and ornatus's *default* wallpaper. The generating command is recorded under Wallpaper above, which is the minimum; tracking the config file is the actual fix.
 - **Qt applications ignore the theme.** `QT_QPA_PLATFORMTHEME` is unset, so Qt clients don't follow the portal colour-scheme that GTK, Chromium and Electron all honour. No install is needed — `libqxdgdesktopportal.so` already ships in `/usr/lib/qt6/plugins/platformthemes/` — but the variable has to be exported in `.zprofile` ahead of the compositor `exec`, since apps spawned from mango keybinds inherit the compositor's environment rather than `wayland-session`'s. Note that the Qt client this actually affects is unidentified: `qt6-base` is installed and something wrote `QtProject.conf` on 2026-08-17, but okular is *not* installed and was named in error.
 - **waybar and hyprlock stay black under the light theme.** See Waybar above. Deliberate, but unresolved.
 - **`system-build-state.md` is untracked in the vault** and covers ground this note also covers. Two records of the same machine is one too many.
@@ -158,6 +159,7 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 
 ## Closed since 2026-08-14
 
+- **The black desktop survives a rebuild.** `~/.config/ornatus/config.toml` and `~/.config/theme/black.jpg` are both tracked as of 2026-08-19; the config needed a `!` line, the image needed only to be moved into the already-tracked theme directory. Before that a fresh clone would have got Sanctum everywhere sitting on ornatus's default wallpaper — the one part of the change that would not have reproduced.
 - greetd is gone from the mirror, the install script and `xbps-manual.txt`. Verified 2026-08-17.
 - `50-fprintd.rules` is mirrored at `~/system/etc/polkit-1/rules.d/` with an install block. It grants *enrolment*, which is a separate permission from the verification sudo and polkit perform at the prompt — so a rebuild missing it looks fine until a finger has to be re-registered.
 - `~/.claude/CLAUDE.md` describes mango, not dwl.
