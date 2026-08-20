@@ -12,7 +12,7 @@ language-servers = ["iwe"]
 
 # Deliberately off, against the upstream snippet's default of true.
 # `iwe init` reported that `iwe normalize` would rewrite 223 of 226 files:
-# formatting on every save would rewrite the vault out from under Obsidian
-# and bury real edits in reformatting noise. Format explicitly with :format
+# formatting on every save would rewrite nearly every file in the vault and
+# bury real edits in reformatting noise. Format explicitly with :format
 # when you actually want it.
 auto-format = false

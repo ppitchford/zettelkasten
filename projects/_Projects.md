@@ -19,7 +19,7 @@ Committed to start within the horizon, not yet active. Promote into Active — a
 - Maeve’s crib build — crib & mobile arm
 - Online prediction market for everyday people's issues.
 - Assemble and paint your Memnyr Strategists
-- [[Personal Website]] — personal site written plain vanilla; hand-authored HTML/CSS/JS, no build step
+- Personal Website — personal site written plain vanilla; hand-authored HTML/CSS/JS, no build step. `~/projects/website/`, constraints and scope in its `CLAUDE.md`
 - Set up a system for tracking one-time and recurring expenses for the house (1673 Archer).
 
 ## Someday
