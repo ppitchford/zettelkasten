@@ -1,14 +1,10 @@
 ---
 id: "20260814121839"
 date: 2026-08-14
-tags:
-  - project
 ---
 # Desktop made for one
 
 Single-user desktop environment on the Framework 13 / Void Linux machine — compositor, session, theme, bar, lock. The proof-of-concept the idea drives, and the standing record of how the machine is actually configured. Sessions should read this before changing anything on the desktop.
-
-**Status:** active
 
 State below was current on 2026-08-14, revised 2026-08-20. Claims about *what is installed or enabled* decay; verify before relying on one. Claims about *method* — how a thing behaves, how to diagnose it — do not.
 
@@ -152,9 +148,7 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 
 - **ornatus reads `config.toml` once at startup and `--refresh` does not reload it.** `Config::load_or_create` is called at `main.rs:98`; SIGUSR1 runs `app.refresh()`, which is the sun-and-theme path only. A wallpaper change therefore needs the daemon restarted, not signalled — and the failure is quiet, because the refresh succeeds and logs normally while rendering nothing new. The wallpaper is also only redrawn when a surface is first configured or resized, never on the refresh tick.
 - **A file in `~/.config` is not evidence a package is installed.** xbps leaves config behind on removal. `~/.config/okularrc` and `okularpartrc` are still present for an okular that was uninstalled; reading them as an installed app produced a wrong claim about which Qt applications run here. Check `xbps-query`.
-- **`/etc/mango/config.conf` is a sample, not the compiled defaults.** Deleting `border_radius=6` on the grounds that it matched the shipped file removed the rounded corners — the compiled default is 0. The minimal-config principle therefore needs a caveat: delete only what has been confirmed to behave identically when absent.
 - **"reload_config merges, doesn't reset" is contradicted.** Removing `border_radius` and reloading took effect immediately. Whatever the earlier observation was, it does not generalise.
-- `mmsg dispatch reload_config` returns `{"success":true}` and is a more reliable check than pressing `SUPER+r`, since it distinguishes a failed reload from a setting that did nothing.
 - **xbps disables system users, it doesn't delete them.** Removing greetd printed "Disabled `_greeter` system user" — the account survives with its GECOS rewritten to name the uninstalled package and its shell set to `/bin/false`. Deliberate: deleting it would free UID 992 for reuse by the next system package, which would silently re-own any file still carrying it. Leave these alone.
 - Iceberg Light inverts the ANSI convention. `color0` at 92% lightness, every bright darker than its normal. Tooling emitting bright colours for emphasis gets the opposite. This was the actual cause of the "colours don't stand out" problem — not saturation, and not accent separation, on which Iceberg Light scored better than Rosé Pine Dawn.
 - Mocha's `color15` is darker than `color7` — same inversion class, confined to the white slot. Left stock.
@@ -170,11 +164,9 @@ The install-shape lesson outlives the application. Obsidian self-updated its asa
 
 ## Open
 
-- **ornatus asserts the colour-scheme key only on a theme *change*, never at startup.** Applying is idempotent — if the marker and symlinks already match, nothing is written and no signals are sent — so a key that is wrong for any other reason stays wrong until the next sunrise or sunset. Setting it by hand for the verification above put the desktop and the browsers in disagreement, and ornatus would not have corrected it. A reconcile-on-apply in `theme.rs` would close this, and it is a small change.
 - **Qt applications ignore the theme.** `QT_QPA_PLATFORMTHEME` is unset, so Qt clients don't follow the portal colour-scheme that GTK, Chromium and Electron all honour. No install is needed — `libqxdgdesktopportal.so` already ships in `/usr/lib/qt6/plugins/platformthemes/` — but the variable has to be exported in `.zprofile` ahead of the compositor `exec`, since apps spawned from mango keybinds inherit the compositor's environment rather than `wayland-session`'s. Note that the Qt client this actually affects is unidentified: `qt6-base` is installed and something wrote `QtProject.conf` on 2026-08-17, but okular is *not* installed and was named in error.
 - **`system-build-state.md` is untracked in the vault** and covers ground this note also covers. Two records of the same machine is one too many.
 - **Waybar breaks at mango 0.16.0.** The config uses `dwl/tags` and `dwl/window`; mango deprecates dwl IPC there. Verified 2026-08-17 that the repo still ships `mangowc-0.14.4_1`, which is what's installed, so `xbps-install -Su` won't spring it yet. The replacement is `mango/window` on a recent Waybar, or a custom module.
-- **`~/.gitignore` still explains itself in terms of Obsidian.** Three comments are now false: line 31 says `mimeapps.list` carries the `obsidian` scheme handler (it does not — checked 2026-08-20), and lines 82 and 88 name `obsidian-update` as a reason not to track `~/.local/opt` and the launcher icons. The rules are still right; only the reasoning is stale, which is the failure mode a comment exists to prevent.
 - Stale assets in `~/Pictures/wallpapers/`: `watchtower-wide.jpg`, `junji-ito-light.png`, `bw_dunes.jpg`, `solar-gradients/`. Deliberately left.
 
 ## Closed since 2026-08-14

@@ -4,23 +4,32 @@ date: 2026-07-22
 ---
 # Projects
 
-Active work, planned work, and an inert Someday park — a commitment ladder, most-committed at the top. A project note holds the scope, the approach, and the reasoning behind them; the task list and the next action live in Things3, not here. A project with a source directory keeps all of that in the repo instead, where it stays beside the code and cannot drift out of sight — its entry below is then a line with a path rather than a link. Projects carry a status — **planned → active → done**; the Someday park sits below planned as uncommitted possibility, promoted only when a real pull appears.
+A commitment ladder, most-committed at the top, ending in an inert Someday park. A project note holds the scope, the approach, and the reasoning behind them; the task list and the next action live in Things3, not here. A project with a source directory keeps all of that in the repo instead, where it stays beside the code and cannot drift out of sight — its entry below is then a line with a path rather than a link. The ladder runs **planned → active → shipped**, with **Waiting** for work that is real but blocked on something outside your control, and the Someday park below all of it as uncommitted possibility, promoted only when a real pull appears. Active means in progress now, not merely intended — a project sitting untouched for a month belongs in Planned, and saying so is the point of the list.
 
 ## Active
-- ArtSpacesSoCal — Go search engine for SoCal galleries; learn-by-building. `~/projects/artspacesocal/`, scope and roadmap in its `CLAUDE.md`
-- [[Desktop made for one]] — single-user desktop on Void/MangoWM
-- frame — screenshot tool for Void / MangoWM; v1 shipped, Tier 2 follow-on. `~/projects/frame/`, roadmap in `ROADMAP.md`
+- ornatus — wallpaper and theme daemon. Current work is the reconcile-on-apply fix in `theme.rs`, and it is the re-entry point for learning Rust under a working agreement that actually forbids Claude writing the code. `~/projects/ornatus/`, findings in `NOTES.md`
+- Personal Website — plain vanilla, hand-authored HTML/CSS/JS, no build step. Repo and constraints exist; one page to write and deploy. `~/projects/website/`, scope in its `CLAUDE.md`
 
 ## Planned (next 6 months)
-Committed to start within the horizon, not yet active. Promote into Active — a full note, next actions surfaced into a weekly plan — when work begins. No empty shells: a planned project stays a line here until it has real scope or starts.
+Committed to start within the horizon, not yet active. Promote into Active when work actually begins, not when it is decided on. No empty shells: a planned project stays a line here until it has real scope or starts.
 
+- ArtSpacesSoCal — Go search engine for SoCal galleries; learn-by-building. Committed but untouched since July; the first step is the Go refresher. `~/projects/artspacesocal/`, scope and roadmap in its `CLAUDE.md`
 - Fireplace surround. Include lists for materials, cuts, and the work breakdown structure.
 - Grow a bonsai tree (for Maeve)
 - Maeve’s crib build — crib & mobile arm
 - Online prediction market for everyday people's issues.
 - Assemble and paint your Memnyr Strategists
-- Personal Website — personal site written plain vanilla; hand-authored HTML/CSS/JS, no build step. `~/projects/website/`, constraints and scope in its `CLAUDE.md`
 - Set up a system for tracking one-time and recurring expenses for the house (1673 Archer).
+
+## Waiting
+
+Real work, blocked on something outside your control. Nothing here is owed effort until its blocker clears.
+
+- A status bar in Rust — replaces Waybar and targets mango's own IPC rather than the dwl protocol deprecated at 0.16.0, so it survives the upgrade that breaks the current bar. Layer-shell surface, a soft renderer, fcft for text, and `mmsg watch all-tags` / `watch focusing-client` / `watch all-monitors` as persistent event streams rather than polls — block on the stream, redraw on change. Blocked twice over: Void still ships 0.14.4, so nothing is broken yet, and this is the *next* Rust project only if ornatus proves the new agreement holds.
+
+## Shipped
+
+- frame — screenshot tool for Void / MangoWM. v1 running on the Print keys daily since the cutover on 2026-07-21. Tier 2 candidates are unchosen rather than pending, and two Tier 1 questions stay open. `~/projects/frame/`, roadmap in `ROADMAP.md`
 
 ## Someday
 An inert park of things that might one day be worth doing. **This is not a queue.** Nothing here is owed. Skim it on a random revisit, and if one item has quietly grown a real thought or a real pull, promote it — into a seed note, a project, or a weekly plan. Everything else stays parked without guilt, and parking something is a legitimate resting place, not a deferral of a debt.
