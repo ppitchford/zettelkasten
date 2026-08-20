@@ -10,7 +10,7 @@ Single-user desktop environment on the Framework 13 / Void Linux machine — com
 
 **Status:** active
 
-State below was current on 2026-08-14, revised 2026-08-19. Claims about *what is installed or enabled* decay; verify before relying on one. Claims about *method* — how a thing behaves, how to diagnose it — do not.
+State below was current on 2026-08-14, revised 2026-08-20. Claims about *what is installed or enabled* decay; verify before relying on one. Claims about *method* — how a thing behaves, how to diagnose it — do not.
 
 ## Compositor
 
@@ -61,7 +61,7 @@ It lives under `~/.config/theme/` rather than `~/Pictures/` because it is part o
 
 ## Theme
 
-**Sanctum** since 2026-08-19 — the lineage is now Rosé Pine → Iceberg → Catppuccin → Tokyo Night → Sanctum. Palettes lifted from [github.com/jdanielmourao/obsidian-sanctum](https://github.com/jdanielmourao/obsidian-sanctum): hues and the grey ramp in `src/scss/variables/colors.scss`, role assignments in `theme.scss`. The same theme now runs in Obsidian, which is where it came from.
+**Sanctum** since 2026-08-19 — the lineage is now Rosé Pine → Iceberg → Catppuccin → Tokyo Night → Sanctum. Palettes lifted from [github.com/jdanielmourao/obsidian-sanctum](https://github.com/jdanielmourao/obsidian-sanctum): hues and the grey ramp in `src/scss/variables/colors.scss`, role assignments in `theme.scss`. Obsidian itself was removed on 2026-08-19, so the palette now outlives the application it was written for.
 
 Dark is the theme's own `sanctum-black` variant — `--background: rgb(var(--black))`, a literal `#000000`, so pure black is native to Sanctum rather than an override forced onto it. Light is `sanctum-default-light`: `#f4f4f0` ground, `#161616` text.
 
@@ -100,7 +100,7 @@ Verified across a live marker flip: light gives `bg=#f4f4f0 fg=#161616`, dark gi
 
 GTK, Chromium and Electron applications follow the light/dark switch, and the whole path is `xdg-desktop-portal`. ornatus sets `org.gnome.desktop.interface color-scheme` to `prefer-dark` / `prefer-light` (`theme.rs:155`); `xdg-desktop-portal-gtk` reads that GSetting and re-exports it as the `org.freedesktop.appearance` `color-scheme` key, which is what applications actually subscribe to.
 
-**Verified end to end on 2026-08-19**, by flipping the key by hand and watching Helium and Obsidian both go dark against a still-light desktop:
+**Verified end to end on 2026-08-19**, by flipping the key by hand and watching Helium and Obsidian — removed later the same day — both go dark against a still-light desktop:
 
 ```sh
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
@@ -112,11 +112,11 @@ gdbus call --session --dest org.freedesktop.portal.Desktop \
 
 The reply is `uint32`: **0 no preference, 1 prefer dark, 2 prefer light** — note this is *not* the same encoding as the GSetting's strings, and reading the GSetting alone doesn't prove the portal is re-exporting it. Restore with `prefer-light` afterwards; nothing does it for you (see Open).
 
-Obsidian needs `"theme": "system"` in `.obsidian/appearance.json` for any of this to reach it — that is Obsidian's own base-colour-scheme setting, independent of `cssTheme`. Both are currently Sanctum-side: `cssTheme` is the same Sanctum theme the desktop palette came from.
-
 ## Apps XBPS doesn't own
 
-Helium and Obsidian are the two applications installed outside the package manager, so `xbps-install -Su` never touches them and nothing else records how they got here. Each has an updater on PATH that is now the sole install record: `helium-update` and `obsidian-update`, both of which install from nothing when their prefix is absent. A rebuild is therefore clone dotfiles → `~/system/install.sh` → run both. Neither tree is tracked; both are far too large, and `~/.gitignore` says so where the rule would otherwise look like an oversight.
+Helium is the only application installed outside the package manager, so `xbps-install -Su` never touches it and nothing else records how it got here. `helium-update` on PATH is the sole install record, and it installs from nothing when `/opt/helium` is absent. A rebuild is therefore clone dotfiles → `~/system/install.sh` → run it. The tree is not tracked; it is far too large, and `~/.gitignore` says so where the rule would otherwise look like an oversight.
+
+Obsidian was the second such application until 2026-08-19 (see Retired).
 
 **1Password decides which browsers may exist, and its reasons are invisible from the outside.** Resolved 2026-08-17, from the extension in Helium never using the fingerprint reader. The whole chain is extension → `1Password-BrowserSupport` → desktop app → polkit → `pam_fprintd` → reader, and if the first hop fails the extension silently falls back to asking for the account password. Nothing in the UI says why.
 
@@ -125,13 +125,11 @@ BrowserSupport verifies the browser binary before it will connect, and Helium fa
 - **As an AppImage: `BrowserFileDidNotExist`.** The binary lives in a user FUSE mount, and `fuse_allow_current_process()` requires euid, suid, uid *and* egid, sgid, gid all to match the mounting user. `1Password-BrowserSupport` is setgid `onepassword`, so it fails the gid half unconditionally and cannot stat the binary at all. No AppImage browser can ever pass this. `sg <group> -c 'ls <mountpoint>'` reproduces the denial in one line, which is the cheap way to confirm it.
 - **Extracted under `$HOME`: `BrowserProcessVerification(BinaryPermissions)`.** 1Password rejects a binary on a user-writable path. Root-owning the file alone would not help; the parent directories are writable, so the binary could simply be swapped.
 
-`/opt/helium`, root-owned, passes both — which is why the install lives there and not in `~/.local/opt` beside Obsidian, which has no such constraint. `/etc/1password/custom_allowed_browsers` must also name the binary (`helium`), and is now mirrored in `~/system`; without it the extension cannot reach the app no matter where the tree sits.
+`/opt/helium`, root-owned, passes both — which is why the install lives under `/opt` rather than anywhere in `$HOME`. `/etc/1password/custom_allowed_browsers` must also name the binary (`helium`), and is now mirrored in `~/system`; without it the extension cannot reach the app no matter where the tree sits.
 
 `~/.config/1Password/logs/BrowserSupport/1Password_rCURRENT.log` names the exact gate that failed on every connection attempt. It is the only thing that made this diagnosable, and it is worth reading first the next time the extension "just asks for a password".
 
 **This is also why the YubiKey swap stays a one-line change.** The extension's unlock runs through `/etc/pam.d/polkit-1`, the same stack as sudo and the desktop app — so replacing `pam_fprintd.so` with a U2F module in the two mirrored PAM files covers the browser extension too, with nothing browser-specific to redo.
-
-Obsidian is the same shape and a different lesson: it self-updates its asar into `~/.config/obsidian`, so the *app* stays current while the Electron shell around it — and the Chromium inside that shell — never moves. It sat on an April 2025 shell running a current 1.13.7 asar. `obsidian-update` updates the half that carries browser CVEs. Upstream publishes no signatures for those assets, unlike Helium's tarballs, which are verified against a pinned key; TLS to github.com is the whole trust boundary there.
 
 ## Diagnosing a client with no window
 
@@ -166,12 +164,17 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 
 `/etc/greetd/inquisitor` — a Warhammer 40K themed greetd greeter, deleted with the rest of `/etc/greetd` on 2026-08-14. Recorded because it is worth *not* reviving: it never worked. Its `send_recv` opened a fresh connection to `/run/greetd.sock` per message and wrote bare JSON with no length prefix, while greetd's IPC requires a 4-byte little-endian header on one persistent connection. `create_session` and the password response therefore landed on separate connections with no shared session state, and authentication could not have succeeded. The two helpers that *did* build the header, `greetd_msg` and `greetd_recv`, were never called.
 
+**Obsidian**, removed 2026-08-19 along with its Web Clipper. The clipper was the last real argument for keeping the application, and the clipper turned out to be the problem rather than a capability worth protecting — 175 clips in seven weeks against one source note. 626MB of tree and profile, neither ever tracked; the shim, the updater, the desktop entry and the `obsidian://` scheme handler were tracked, and are gone. `obsidian-update` is recoverable from the dotfiles history if this is ever reversed.
+
+The install-shape lesson outlives the application. Obsidian self-updated its asar into `~/.config/obsidian`, so the *app* stayed current while the Electron shell around it — and the Chromium inside that shell — never moved: an April 2025 shell running a current 1.13.7 asar. Any self-updating Electron application has that split, and an updater is only doing its job if it covers the half carrying browser CVEs. Upstream published no signatures for those assets, unlike Helium's tarballs, which are verified against a pinned key; TLS to github.com was the whole trust boundary there.
+
 ## Open
 
 - **ornatus asserts the colour-scheme key only on a theme *change*, never at startup.** Applying is idempotent — if the marker and symlinks already match, nothing is written and no signals are sent — so a key that is wrong for any other reason stays wrong until the next sunrise or sunset. Setting it by hand for the verification above put the desktop and the browsers in disagreement, and ornatus would not have corrected it. A reconcile-on-apply in `theme.rs` would close this, and it is a small change.
 - **Qt applications ignore the theme.** `QT_QPA_PLATFORMTHEME` is unset, so Qt clients don't follow the portal colour-scheme that GTK, Chromium and Electron all honour. No install is needed — `libqxdgdesktopportal.so` already ships in `/usr/lib/qt6/plugins/platformthemes/` — but the variable has to be exported in `.zprofile` ahead of the compositor `exec`, since apps spawned from mango keybinds inherit the compositor's environment rather than `wayland-session`'s. Note that the Qt client this actually affects is unidentified: `qt6-base` is installed and something wrote `QtProject.conf` on 2026-08-17, but okular is *not* installed and was named in error.
 - **`system-build-state.md` is untracked in the vault** and covers ground this note also covers. Two records of the same machine is one too many.
 - **Waybar breaks at mango 0.16.0.** The config uses `dwl/tags` and `dwl/window`; mango deprecates dwl IPC there. Verified 2026-08-17 that the repo still ships `mangowc-0.14.4_1`, which is what's installed, so `xbps-install -Su` won't spring it yet. The replacement is `mango/window` on a recent Waybar, or a custom module.
+- **`~/.gitignore` still explains itself in terms of Obsidian.** Three comments are now false: line 31 says `mimeapps.list` carries the `obsidian` scheme handler (it does not — checked 2026-08-20), and lines 82 and 88 name `obsidian-update` as a reason not to track `~/.local/opt` and the launcher icons. The rules are still right; only the reasoning is stale, which is the failure mode a comment exists to prevent.
 - Stale assets in `~/Pictures/wallpapers/`: `watchtower-wide.jpg`, `junji-ito-light.png`, `bw_dunes.jpg`, `solar-gradients/`. Deliberately left.
 
 ## Closed since 2026-08-14
@@ -180,8 +183,7 @@ Orphaned Wayland clients mostly exit when their compositor dies, but not all of 
 - greetd is gone from the mirror, the install script and `xbps-manual.txt`. Verified 2026-08-17.
 - `50-fprintd.rules` is mirrored at `~/system/etc/polkit-1/rules.d/` with an install block. It grants *enrolment*, which is a separate permission from the verification sudo and polkit perform at the prompt — so a rebuild missing it looks fine until a finger has to be re-registered.
 - `~/.claude/CLAUDE.md` describes mango, not dwl.
-- The launcher icons under `~/.local/share/icons/hicolor/*/apps/` are deliberately *not* tracked. Both artwork files ship inside the upstream tarballs and are reinstalled by `helium-update` and `obsidian-update` on every run, so tracking them would version a generated file. `~/.gitignore` records the reasoning.
-- `~/.local/bin/obsidian` was a *directory* on PATH holding an AppImage, shadowed by a `.zshrc` alias that pointed into it. Both are gone; the shim is a file like every other launcher.
+- The Helium launcher icon under `~/.local/share/icons/hicolor/*/apps/` is deliberately *not* tracked. The artwork ships inside the upstream tarball and is reinstalled by `helium-update` on every run, so tracking it would version a generated file. `~/.gitignore` records the reasoning. The Obsidian icon beside it went with the application on 2026-08-19.
 
 ## Links
 - [[Desktop made for one — the idea]] — the design question this build is the proof-of-concept for.
