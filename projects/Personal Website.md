@@ -9,7 +9,6 @@ tags:
 Personal site written plain vanilla — hand-authored HTML, CSS, and JavaScript served exactly as written, with no build step, framework, or transpiler.
 
 **Status:** planned
-**Next action:** Write `index.html` and `styles.css` by hand and serve the directory
 
 ## Approach
 [Plain vanilla web](https://plainvanillaweb.com/index.html) is the reference. The trade it names is short-term comfort for long-term simplicity and effectively zero maintenance — nothing underneath the site can rot, because there is nothing underneath it.
@@ -20,13 +19,6 @@ Personal site written plain vanilla — hand-authored HTML, CSS, and JavaScript 
 - **Vanilla routing and state**, if the site ever grows past static pages.
 
 It assumes existing fluency in the three languages rather than teaching them — this is an eject button on tooling, not a first project.
-
-## Tasks
-- [ ] Write `index.html` and `styles.css` by hand; serve the directory and confirm it renders
-- [ ] Create the repo with a remote on the first commit
-- [ ] Decide hosting — the only constraint is static files with no server-side logic
-- [ ] Reach for a custom element when a second page needs the same markup, not before
-- [ ] Implement Plausible analytics
 
 ## Notes
 - No source path yet. The previous attempt lived at `~/projects/website` — a Hugo scaffold, two commits, last touched 2026-06-10, never deployed and never given a remote. Deleted 2026-08-17 in favour of starting empty, since Hugo was itself the build step and theme layer this approach removes.

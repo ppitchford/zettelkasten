@@ -148,7 +148,6 @@ The running record and capture surface — the one place to jot, newest day on t
 - [x] Schedule an appointment with a Primary Care doctor to establish care, have an annual physical, and have blood/lab work completed.
 - [x] Determine what systems to use for class management, payments, etc. #yoga-studio
 - [x] Organize your bathroom cabinets. #waiting 
-- [ ] [Check your Deco DNS settings.](https://forum.mikrotik.com/t/slow-network-speeds-with-pi-hole-as-dns/172892/8) #waiting 
 - [x] Review [Cog](https://lab.puga.com.br/cog/) and determine whether to use or not.
 - [x] Schedule a regular garage cleaning.
 - [x] Pay the IRS penalty.

@@ -9,7 +9,6 @@ tags:
 Single-user desktop environment on the Framework 13 / Void Linux machine — compositor, session, theme, bar, lock. The proof-of-concept the idea drives, and the standing record of how the machine is actually configured. Sessions should read this before changing anything on the desktop.
 
 **Status:** active
-**Next action:** reconcile `system-build-state.md` — it is untracked in the vault and overlaps this record; fold it in or promote it
 
 State below was current on 2026-08-14, revised 2026-08-19. Claims about *what is installed or enabled* decay; verify before relying on one. Claims about *method* — how a thing behaves, how to diagnose it — do not.
 

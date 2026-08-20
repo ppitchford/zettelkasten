@@ -9,7 +9,6 @@ tags:
 A boutique search engine for Southern California art galleries and events — and the **learn-by-building** vehicle for shipping a Go web app. Source: `~/projects/artspacesocal/`.
 
 **Status:** active
-**Next action:** work through [A Tour of Go](https://go.dev/tour/) as a refresher, then walk `main.go` / `db.go` / `auth.go` to understand the foundation you own.
 
 ## Stack (decided — already built)
 Go stdlib `net/http` (no framework), `modernc.org/sqlite` (pure-Go, static binary), `smhanov/auth` for sessions. Migrations embedded + numbered. Deployed to Hetzner via `deploy.sh` + systemd; DB backed up. The infra is done — the *app* is the greenfield.

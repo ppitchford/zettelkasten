@@ -9,7 +9,6 @@ tags:
 Screenshot tool for Void / MangoWM (Wayland), written in Rust; replaces the `~/.local/bin/screenshot` wrapper.
 
 **Status:** v1 shipped — Tier 1 complete, cutover landed 2026-07-21
-**Next action:** Quick Access Overlay Rosé Pine theming (first Tier 2 move)
 
 ## Roadmap
 The living, authoritative roadmap is `~/projects/frame/ROADMAP.md`. This note is a pointer and status summary, not a copy — track detail there so the two never drift.

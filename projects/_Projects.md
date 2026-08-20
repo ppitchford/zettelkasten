@@ -4,14 +4,12 @@ date: 2026-07-22
 ---
 # Projects
 
-Active work, planned work, and an inert Someday park — a commitment ladder, most-committed at the top. A project note holds the full task list and the next action; a weekly note surfaces a next action only when you intend to do it that week. Projects carry a status — **planned → active → done**; the Someday park sits below planned as uncommitted possibility, promoted only when a real pull appears.
+Active work, planned work, and an inert Someday park — a commitment ladder, most-committed at the top. A project note holds the scope, the approach, and the reasoning behind them; the task list and the next action live in Things3, not here. Projects carry a status — **planned → active → done**; the Someday park sits below planned as uncommitted possibility, promoted only when a real pull appears.
 
 ## Active
-- [[ArtSpacesSoCal]] — Go search engine for SoCal galleries; learn-by-building (next: refresh Go via Tour of Go, then own the foundation)
-- [[Desktop made for one]] — single-user desktop on Void/MangoWM (next: strip greetd from `~/system`)
+- [[ArtSpacesSoCal]] — Go search engine for SoCal galleries; learn-by-building
+- [[Desktop made for one]] — single-user desktop on Void/MangoWM
 - [[frame]] — screenshot tool for Void / MangoWM (v1 shipped; Tier 2 follow-on)
-- [[Medicine cabinet install]] — bathroom install (next: clear-coat the pieces)
-- [[Kitchen shelf]] — shelf build and install (next: round the corner)
 
 ## Planned (next 6 months)
 Committed to start within the horizon, not yet active. Promote into Active — a full note, next actions surfaced into a weekly plan — when work begins. No empty shells: a planned project stays a line here until it has real scope or starts.
