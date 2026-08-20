@@ -173,7 +173,7 @@ The running record and capture surface — the one place to jot, newest day on t
 	- I formalized the task system around three surfaces, the log, project notes, and the calendar, and I defined a daily Morning Review that runs them.
 - 13:39 — I fixed the Obsidian Web Clipper, which had been wrapping author names in dead wikilinks, and I settled how clipped articles flow into the reading inbox.
 - 18:22 — I adopted project-based learning, in which each skill is learned by building a real project and the learning lives in that project's note, and I created [[_Learning]] as the counterweight for the deliberate study that building alone skips.
-- 20:31 — I scoped [[ArtSpacesSoCal]] as an active, learn-by-building Go project, established that Claude should tutor rather than write the code, and set a Go refresher as the first step.
+- 20:31 — I scoped ArtSpacesSoCal as an active, learn-by-building Go project, established that Claude should tutor rather than write the code, and set a Go refresher as the first step.
 - 21:03 — I set up a writing folder as the home for my original writing and moved my first two essays into it.
 - 21:18
 	- I rewrote the Morning Review as five steps against Tiago Forte's model, extending the mnemonic to Every Commitment Needs Tracking Today and pulling the choice of what to do today out of Tasks into a step of its own.

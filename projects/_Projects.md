@@ -4,12 +4,12 @@ date: 2026-07-22
 ---
 # Projects
 
-Active work, planned work, and an inert Someday park — a commitment ladder, most-committed at the top. A project note holds the scope, the approach, and the reasoning behind them; the task list and the next action live in Things3, not here. Projects carry a status — **planned → active → done**; the Someday park sits below planned as uncommitted possibility, promoted only when a real pull appears.
+Active work, planned work, and an inert Someday park — a commitment ladder, most-committed at the top. A project note holds the scope, the approach, and the reasoning behind them; the task list and the next action live in Things3, not here. A project with a source directory keeps all of that in the repo instead, where it stays beside the code and cannot drift out of sight — its entry below is then a line with a path rather than a link. Projects carry a status — **planned → active → done**; the Someday park sits below planned as uncommitted possibility, promoted only when a real pull appears.
 
 ## Active
-- [[ArtSpacesSoCal]] — Go search engine for SoCal galleries; learn-by-building
+- ArtSpacesSoCal — Go search engine for SoCal galleries; learn-by-building. `~/projects/artspacesocal/`, scope and roadmap in its `CLAUDE.md`
 - [[Desktop made for one]] — single-user desktop on Void/MangoWM
-- [[frame]] — screenshot tool for Void / MangoWM (v1 shipped; Tier 2 follow-on)
+- frame — screenshot tool for Void / MangoWM; v1 shipped, Tier 2 follow-on. `~/projects/frame/`, roadmap in `ROADMAP.md`
 
 ## Planned (next 6 months)
 Committed to start within the horizon, not yet active. Promote into Active — a full note, next actions surfaced into a weekly plan — when work begins. No empty shells: a planned project stays a line here until it has real scope or starts.

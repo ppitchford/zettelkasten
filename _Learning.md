@@ -4,7 +4,7 @@ date: 2026-07-27
 ---
 # Learning
 
-Deliberate study that isn't a build project. Skill-building that *is* a project lives in the project note — you learn by building it ([[ArtSpacesSoCal]], [[frame]]). This note holds the rest: foundations you study rather than ship, and the for-joy long-horizon track. It's the deliberate counterweight to project-based learning, which only teaches what a build happens to need.
+Deliberate study that isn't a build project. Skill-building that *is* a project lives with the project itself — you learn by building it, and the references sit in the repo that hosts the build (`~/projects/artspacesocal/CLAUDE.md`, `~/projects/frame/CLAUDE.md`). This note holds the rest: foundations you study rather than ship, and the for-joy long-horizon track. It's the deliberate counterweight to project-based learning, which only teaches what a build happens to need.
 
 ## Fundamentals (deliberate study — credibility + interviews)
 - [**grokking Algorithms, 2e**](https://a.co/d/0bOWrjWu) — primary. Gentle, illustrated, Python examples (matches your stack). Enough breadth for a technical PM.

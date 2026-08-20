@@ -28,8 +28,8 @@ active, planned, and someday projects. There is no separate task file.
 
 ## IWE
 The vault is a graph indexed by `iwes`. Three things about its model are not guessable:
-- A document is addressed by **key** — its path without the extension. `projects/frame`, not `frame.md`.
-- Links are bare wiki names (`[[frame]]`) that resolve by shortest unambiguous path suffix. This works only while every filename in the vault is unique. Check before adding a file whose basename already exists.
+- A document is addressed by **key** — its path without the extension. `projects/_Projects`, not `_Projects.md`.
+- Links are bare wiki names (`[[Desktop made for one]]`) that resolve by shortest unambiguous path suffix. This works only while every filename in the vault is unique. Check before adding a file whose basename already exists.
 - A link **alone on its own line** is an inclusion link and means structural nesting. An inline link is a cross-reference. They are not interchangeable.
 
 Two hazards:
