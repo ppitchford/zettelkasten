@@ -9,6 +9,10 @@ command = "iwes"
 [[language]]
 name = "markdown"
 language-servers = ["iwe"]
+# Hard-wrap target for `:reflow` and the ruler that marks it. Helix has no
+# wrap-as-you-type, so reflow is an explicit command, not a typing behaviour.
+text-width = 80
+rulers = [80]
 
 # Deliberately off, against the upstream snippet's default of true.
 # `iwe init` reported that `iwe normalize` would rewrite 223 of 226 files:

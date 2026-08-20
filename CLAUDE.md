@@ -30,7 +30,7 @@ active, planned, and someday projects. There is no separate task file.
 The vault is a graph indexed by `iwes`. Three things about its model are not guessable:
 - A document is addressed by **key** — its path without the extension. `projects/_Projects`, not `_Projects.md`.
 - Links are bare wiki names (`[[Desktop made for one]]`) that resolve by shortest unambiguous path suffix. This works only while every filename in the vault is unique. Check before adding a file whose basename already exists.
-- A link **alone on its own line** is an inclusion link and means structural nesting. An inline link is a cross-reference. They are not interchangeable.
+- A link **alone as its own paragraph** is an inclusion link and means structural nesting — `iwe squash` pulls the target's whole body in as a nested section. A link inside a list item or inline in a sentence is a cross-reference, gloss or no gloss. Verified 2026-08-20; the distinction is the paragraph, not the line.
 
 Two hazards:
 - **Never run `iwe normalize`**, and never call the `iwe_normalize` MCP tool. It rewrites nearly every file in the vault in one command. `.helix/languages.toml` sets `auto-format = false` for the same reason — do not turn it on.
