@@ -19,3 +19,7 @@ created: 2026-08-06
 
 > To read attentively and not be satisfied with just getting the gist of it. —Marcus Aurelius, *Meditations* (Book 1, Section 7)
 
+## Links
+- [[The friction of transcription is what makes reading stick]] — The zettel drawn from the sixth extract.
+- [[Collection without use is failure]] — The zettel drawn from the fifth extract.
+- [[Insecurity work is dangerous because it is frictionless]] — Frictionless capture removes the passes this system treats as the mechanism.
