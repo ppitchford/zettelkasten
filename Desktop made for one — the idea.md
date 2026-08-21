@@ -11,4 +11,4 @@ The idea behind the proof-of-concept: a desktop environment built for a single, 
 > assume, or hard-code that a general-purpose desktop can't?
 
 ## Links
-- [[Desktop made for one]] — the proof-of-concept project this idea drives.
+- [Desktop made for one](~/projects/desktop/Desktop made for one.md) — the proof-of-concept project this idea drives, kept in its own repo beside the code it produced.
