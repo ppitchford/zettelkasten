@@ -8,13 +8,15 @@ A Zettelkasten plus a task system. Notes are atomic, densely linked, and grounde
 ## Layout
 - **Root** — zettels, seed notes (`#seedling`), and topic notes. The filename is the title; the `id` in frontmatter is the permanent address.
 - **System notes** are prefixed `_` so they sort above the zettels: `_Log.md`,
-  `_Style guide.md`, `_Learning.md`, `_Projects.md`. This file cannot take the prefix — Claude Code loads it by exact name.
+  `_Style guide.md`. This file cannot take the prefix — Claude Code loads it by exact name.
 - **Folders** — there are none. `projects/` and `sources/` were removed on 2026-08-20, holding two files and one between them; `reading inbox/`, `writing/`, `templates/` and `attachments/` went on 2026-08-19. Source notes keep their `Author — Title` filename, which marks them on sight without needing a directory. Root is flat and stays flat — links are the structure, not folders. Do not propose topic folders, including a return of these.
 ## Where the work is
-`_Log.md` — newest day on top — is the running record and capture surface. Open tasks
-live in Things3, not here; a `**To route:**` block under a date is a historical
-artifact of the old system. `_Projects.md` indexes the commitment ladder — active,
-planned, waiting, shipped, someday.
+`_Log.md` — newest day on top — is the running record and capture surface, and it is
+the only system note left besides the style guide. Open tasks live in Things3, not
+here; a `**To route:**` block under a date is a historical artifact of the old system.
+`_Projects.md` and `_Learning.md` were deleted on 2026-08-20 — the commitment ladder
+and the study list were inventories, and inventories belong in Things3. Do not
+recreate either one here.
 ## Division of labor — important
 - **Claude Code does:** mechanical vault work — batch renames and `git mv`, link rewrites and broken-link verification, frontmatter and template operations, scaffolding shells for lists already specified elsewhere.
 - **Claude Code does NOT:** draft zettel content from sources, or write titles. Processing a source into notes is collaborative and one-at-a-time — drafted, critiqued, revised in an interactive chat. Titles are written by hand after the idea is fully formed. Never bulk-generate note bodies.
@@ -29,7 +31,7 @@ planned, waiting, shipped, someday.
 
 ## IWE
 The vault is a graph indexed by `iwes`. Three things about its model are not guessable:
-- A document is addressed by **key** — its path without the extension. The vault is flat, so a key is just the filename: `_Projects`, not `_Projects.md`.
+- A document is addressed by **key** — its path without the extension. The vault is flat, so a key is just the filename: `_Log`, not `_Log.md`.
 - Links are bare wiki names (`[[Desktop made for one]]`) that resolve by shortest unambiguous path suffix. This works only while every filename in the vault is unique. Check before adding a file whose basename already exists.
 - A link **alone as its own paragraph** is an inclusion link and means structural nesting — `iwe squash` pulls the target's whole body in as a nested section. A link inside a list item or inline in a sentence is a cross-reference, gloss or no gloss. Verified 2026-08-20; the distinction is the paragraph, not the line.
 
