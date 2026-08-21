@@ -32,7 +32,7 @@ Real work, blocked on something outside your control. Nothing here is owed effor
 - frame — screenshot tool for Void / MangoWM. v1 running on the Print keys daily since the cutover on 2026-07-21. Tier 2 candidates are unchosen rather than pending, and two Tier 1 questions stay open. `~/projects/frame/`, roadmap in `ROADMAP.md`
 
 ## Someday
-An inert park of things that might one day be worth doing. **This is not a queue.** Nothing here is owed. Skim it on a random revisit, and if one item has quietly grown a real thought or a real pull, promote it — into a seed note, a project, or a weekly plan. Everything else stays parked without guilt, and parking something is a legitimate resting place, not a deferral of a debt.
+An inert park of things that might one day be worth doing. **This is not a queue.** Nothing here is owed. Skim it on a random revisit, and if one item has quietly grown a real thought or a real pull, promote it — into a note, or into a project. Everything else stays parked without guilt, and parking something is a legitimate resting place, not a deferral of a debt.
 
 ### Aspirational builds
 - Compositor like river-classic written in Rust.

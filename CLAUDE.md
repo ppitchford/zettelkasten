@@ -11,9 +11,10 @@ A Zettelkasten plus a task system. Notes are atomic, densely linked, and grounde
   `_Style guide.md`, `_Learning.md`, `_Projects.md`. This file cannot take the prefix — Claude Code loads it by exact name.
 - **Folders** — there are none. `projects/` and `sources/` were removed on 2026-08-20, holding two files and one between them; `reading inbox/`, `writing/`, `templates/` and `attachments/` went on 2026-08-19. Source notes keep their `Author — Title` filename, which marks them on sight without needing a directory. Root is flat and stays flat — links are the structure, not folders. Do not propose topic folders, including a return of these.
 ## Where the work is
-`_Log.md` — newest day on top — is the running record and capture surface; open tasks
-sit under the current date in a `**To route:**` block. `_Projects.md` indexes
-active, planned, and someday projects. There is no separate task file.
+`_Log.md` — newest day on top — is the running record and capture surface. Open tasks
+live in Things3, not here; a `**To route:**` block under a date is a historical
+artifact of the old system. `_Projects.md` indexes the commitment ladder — active,
+planned, waiting, shipped, someday.
 ## Division of labor — important
 - **Claude Code does:** mechanical vault work — batch renames and `git mv`, link rewrites and broken-link verification, frontmatter and template operations, scaffolding shells for lists already specified elsewhere.
 - **Claude Code does NOT:** draft zettel content from sources, or write titles. Processing a source into notes is collaborative and one-at-a-time — drafted, critiqued, revised in an interactive chat. Titles are written by hand after the idea is fully formed. Never bulk-generate note bodies.
