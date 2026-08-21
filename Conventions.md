@@ -41,6 +41,8 @@ Source notes live in root like everything else. A source note holds extracts fro
 
 **There is no digital staging.** Books queue as a physical pile; articles are not captured at all. The note is created at that moment and mints its `id` then.
 
+**An observation is a source.** A claim can be grounded in something you measured rather than something you read — a command and its output, a count of a room, a rate over a period. What makes it a source is not that someone wrote it down but that the claim can be checked against something outside your memory of forming it, and a reproducible command is a stronger citation than a page number, because anyone can re-run it. Cite what was measured, how, and *when*: measured sources change while a text does not, so `wc -c *.md` run on a date and *ten of twelve patrons on their phones, 2026-08-31 18:00* both carry a timestamp that a page citation doesn't need. The claim the note makes is the mechanism; the measurement is only its evidence, and evidence is dated.
+
 The working practice is narrower than the apparatus suggests: read, form a claim, write the zettel, cite the source inside it, and skip the source note entirely. 21 of 28 zettels already carried their own `## References` before the rule was written down.
 
 ## Long-form writing
