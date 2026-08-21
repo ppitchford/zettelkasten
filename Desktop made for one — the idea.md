@@ -12,3 +12,5 @@ The idea behind the proof-of-concept: a desktop environment built for a single, 
 
 ## Links
 - [Desktop made for one](~/projects/desktop/Desktop made for one.md) — the proof-of-concept project this idea drives, kept in its own repo beside the code it produced.
+- [[Industry norms pull a business toward conformity]] — The same refusal of the general-audience default, moved from business to software.
+- [[The friction of transcription is what makes reading stick]] — Building the desktop rather than installing one is difficult, and the difficulty is what teaches the machine.
