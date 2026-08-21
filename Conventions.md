@@ -27,7 +27,9 @@ The system notes — this file and `Log.md` — take plain names like every othe
 
 **Frontmatter.** `id` and `date` are written when the note is created. `date` is `YYYY-MM-DD`, as dates are everywhere in prose; `id` is the same instant as a 14-digit `YYYYMMDDHHmmss` timestamp. There is no `aliases` field — the filename *is* the title, so links already read as prose.
 
-**Tags.** Topic tags are pluralized — `#books`, not `#book`. Status tags are the exception: `#seedling` marks a root note filling the writing-inbox role now that the folder is retired, and it stays until the note is developed. Status describes one note, so it reads in the singular.
+**Type.** `type` in frontmatter names what kind of document a note is, and it is written only when the note is *not* an ordinary zettel. `type: seedling` is a rough capture — a fleeting idea, not yet worked out — and taking the line off is the event that marks the note as developed. `type: essay` is long-form output. A finished zettel carries no `type` at all: it is the default, and thirty files declaring themselves evergreen would be noise rather than information. Source notes need no type either, since `Author — Title` marks them on sight.
+
+Hashtags were dropped on 2026-08-21. One syntax was carrying three jobs — topic, status, and kind — and `iwe find --filter` reads frontmatter, not tags.
 
 **Source vs. synthesis.** A note body stays grounded in its single source. Original synthesis and cross-source connections live in *separate linked notes*, never imported into a source note's body. This is the rule that keeps a source note honest about where its claim came from.
 
@@ -65,13 +67,13 @@ Three surfaces hold work, and none of them is a note. The log captures, the task
 - **The calendar** holds only time-bound events — appointments and dated deadlines. Never a task store. In Google Calendar these are **events, never Google Tasks**, which would be a second task store beside the task manager.
 - **Reviews** are a checklist in the task manager, not a vault convention: four of the five daily steps were always Email, Calendar, Tasks and Today, which happen in the app. The one step that touches the vault is in that checklist too — work through the log's captures, turn what is worth developing into a note, delete the rest. Don't re-add the routine here.
 
-## Open questions
-- **Where finished long-form lives.** `writing/` is gone. If long-form lives outside the vault it cannot link down into the zettels, which is the whole point of the layer — that argues for recreating the folder the day a real essay exists rather than finding it a home elsewhere.
-- **What, if anything, replaces article capture.** The honest candidate is nothing.
-- **What scaffolds `id` and `date`.** The Obsidian Templates plugin is gone. IWE carries a `document_template` and `key_template` in `.iwe/config.toml`, but they are not yet wired to produce this frontmatter.
+## Conventions in waiting
+- **Long-form stays in root, marked `type: essay`.** An essay links *down* into the zettels, so it has to share their namespace; publishing selects it by query — `iwe find --filter 'type: essay'` — rather than by directory. No `writing/` or `essays/` folder: the reason a folder felt necessary was publishing, and publishing is a selection problem, not a location one.
+- **Article capture is Instapaper, outside the vault.** Articles are saved and read there, with the reading tracked as a task; what reaches the vault is a claim, never a clipping. If the queue starts growing faster than the notes drawn from it, drop the tool and go without one — the stopping condition is pre-committed for the reason [[Pre-commit your stopping conditions before the pressure arrives]] gives.
+- **Frontmatter is scaffolded by `new-note`** in `.zshrc`, which calls `iwe create --template default` and supplies `id` and `date` itself. IWE's `{{id}}` renders a random slug rather than a timestamp, so the 14-digit `id` has to come from the shell; the template owns the body.
 
 ## What was removed, and why
-The vault is small on purpose, and each of these was deliberate. The criterion throughout: what stays is what links — applied at review, not at creation. A new note may link to nothing yet; a claim can open a cluster, and `#seedling` marks it until it does. What the criterion catches is the note that has had time and still connects to nothing in either direction, and even then the first move is to write the note that would connect it. An index manufactures links, so appearing in one is not evidence.
+The vault is small on purpose, and each of these was deliberate. The criterion throughout: what stays is what links — applied at review, not at creation. A new note may link to nothing yet; a claim can open a cluster, and `type: seedling` marks it until it does. What the criterion catches is the note that has had time and still connects to nothing in either direction, and even then the first move is to write the note that would connect it. An index manufactures links, so appearing in one is not evidence.
 
 - **`reading inbox/` and the Web Clipper**, 2026-08-19. Seven weeks produced 175 clips and one source note. Capture was frictionless, so nothing was weighed before it was kept, and the full-text artifact read as progress without being any — [[Insecurity work is dangerous because it is frictionless]] names the mechanism.
 - **`writing/`**, 2026-08-19. Two drafts that were neither essays nor zettels: no frontmatter, no header, no links in either direction.

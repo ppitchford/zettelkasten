@@ -1,8 +1,7 @@
 ---
 id: "20260722180900"
 date: 2026-07-22
-tags:
-  - seedling
+type: seedling
 ---
 # Desktop made for one — the idea
 
