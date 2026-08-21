@@ -8,7 +8,7 @@ The running record and capture surface — the one place to jot, newest day on t
 
 ## 2026-08-21
 - 10:19 — Rewrote the log from 2026-03-25 forward: first person past tense for what I did, nested bullets folded into sentences, `**Notes created:**` blocks folded into ordinary entries, and 07-27 condensed from 376 words to 230 with all nine of its decisions kept. Dropped the checked-task blocks across August as routed work Things3 already owns, keeping 08-07 as one line because the clipping rate is what makes the 08-19 deletion legible.
-- The pass started from the log outweighing the zettels 1.47 to 1 and reading as a change log. What makes reasoning inert is not the tense but that nothing links to it, so the pass also pulled out the claims worth writing up — three of them, in `~/Documents/Notes to write.txt`, the largest being that a failure producing no signal is indistinguishable from success.
+- The pass started from the log outweighing the zettels 1.47 to 1 and reading as a change log. What makes reasoning inert is not the tense but that nothing links to it, so the pass also pulled out three claims worth writing up: that a failure producing no signal is indistinguishable from success, that the apparatus grew as the output fell, and that claims survive projectlessness where material does not.
 
 ## 2026-08-20
 - 10:48 — Moved every open task into Things3 and stripped the checklists and next-action fields from the project notes, leaving them holding scope and reasoning only. Brought [[Desktop made for one]] current with Obsidian's removal in the same pass.
