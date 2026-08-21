@@ -34,7 +34,7 @@ by path rather than wiki link: a link resolves only inside this graph.
 ## IWE
 The vault is a graph indexed by `iwes`. Three things about its model are not guessable:
 - A document is addressed by **key** — its path without the extension. The vault is flat, so a key is just the filename: `Conventions`, not `Conventions.md`.
-- Links are bare wiki names (`[[Desktop made for one]]`) that resolve by shortest unambiguous path suffix. This works only while every filename in the vault is unique. Check before adding a file whose basename already exists.
+- Links are bare wiki names (`[[Surface acting]]`) that resolve by shortest unambiguous path suffix. This works only while every filename in the vault is unique. Check before adding a file whose basename already exists.
 - A link **alone as its own paragraph** is an inclusion link and means structural nesting — `iwe squash` pulls the target's whole body in as a nested section. A link inside a list item or inline in a sentence is a cross-reference, gloss or no gloss. Verified 2026-08-20; the distinction is the paragraph, not the line.
 
 Four hazards:
