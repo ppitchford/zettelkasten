@@ -12,7 +12,7 @@ A Zettelkasten plus a task system. Notes are atomic, densely linked, and grounde
   on 2026-08-20. It is not a zettel, so the atomic-claim title rule does not apply to it.
 - **Folders** — there are none. `projects/` and `sources/` were removed on 2026-08-20, holding two files and one between them; `reading inbox/`, `writing/`, `templates/` and `attachments/` went on 2026-08-19. Source notes keep their `Author — Title` filename, which marks them on sight without needing a directory. Root is flat and stays flat — links are the structure, not folders. Do not propose topic folders, including a return of these.
 ## Where the work is — not here
-The vault holds notes and nothing else. Capture is `~/inbox.md`, written by `inb` from
+The vault holds notes and nothing else. Capture is `~/inbox.md`, written by `inbox` from
 any shell; the dated record is `~/log/log.md` in its own private repo, which left the
 vault on 2026-08-21 because it carries medical, employment and financial detail. Open
 tasks and the project ladder live in Things3 — `_Projects.md` and `_Learning.md` were

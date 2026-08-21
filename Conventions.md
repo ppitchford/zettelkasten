@@ -51,7 +51,7 @@ The working practice is narrower than the apparatus suggests: read, form a claim
 Original long-form writing is the *output* of the slip-box, a layer above the zettels: an essay links *down* into the atomic notes it draws from. Distinct from a zettel (atomic, source-grounded) and from the log (dated capture).
 
 ## Capture, and the log
-Neither lives in the vault any more, as of 2026-08-21. Capture is `~/inbox.md`, written by `inb` from any shell and flushed into the task manager by hand; it is emptied, not kept. The dated record is `~/log/log.md` in its own private repo, because it carries medical results, job applications and money, and those don't belong beside notes that may one day be published. The conventions governing it moved with it, into that repo's `README.md`.
+Neither lives in the vault any more, as of 2026-08-21. Capture is `~/inbox.md`, written by `inbox` from any shell and flushed into the task manager by hand; it is emptied, not kept. The dated record is `~/log/log.md` in its own private repo, because it carries medical results, job applications and money, and those don't belong beside notes that may one day be published. The conventions governing it moved with it, into that repo's `README.md`.
 
 What the vault keeps from the arrangement is the rule that made it work: **a claim is first noticed in the log and does not live there.** When a day's entry carries a finding worth generalizing, it becomes a zettel or it goes inert. That is how the log came to outweigh the zettels 1.47 to 1 before anyone looked.
 
